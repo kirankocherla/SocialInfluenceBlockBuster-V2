@@ -1,0 +1,8 @@
+@font-face {
+font-family: 'AvenirNextLTPro-DemiCn';
+src: url('AvenirNextLTPro-DemiCn.otf');
+src: url('AvenirNextLTPro-DemiCn?#iefix’) format('embedded-opentype');
+src: url('AvenirNextLTPro-DemiCn.otf') format('embedded-opentype');
+font-weight: normal;
+font-style: normal;
+}

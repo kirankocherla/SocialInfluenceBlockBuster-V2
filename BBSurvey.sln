@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BBSurvey", "BBSurvey\BBSurvey.csproj", "{DCC7E34D-B3DA-48DC-B91B-E9622CE872E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BBSurveyVer2", "BBSurveyVer2\BBSurveyVer2.csproj", "{FC749343-108B-4257-AFFD-277D8A5659EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCC7E34D-B3DA-48DC-B91B-E9622CE872E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC7E34D-B3DA-48DC-B91B-E9622CE872E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC7E34D-B3DA-48DC-B91B-E9622CE872E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC7E34D-B3DA-48DC-B91B-E9622CE872E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC749343-108B-4257-AFFD-277D8A5659EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC749343-108B-4257-AFFD-277D8A5659EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC749343-108B-4257-AFFD-277D8A5659EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC749343-108B-4257-AFFD-277D8A5659EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

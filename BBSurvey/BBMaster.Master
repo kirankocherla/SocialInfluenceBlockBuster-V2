@@ -1,0 +1,246 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BBMaster.master.cs" Inherits="BBSurvey.BBMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Blockbuster.dk</title>
+    <link href="Style/BBStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="DIV_20">
+		<div id="DIV_21">
+			<div id="DIV_22">
+			</div>
+		</div>
+		<div id="DIV_24">
+			<div id="DIV_25">
+			</div>
+		</div>
+	</div>
+	<bb id="BB-TITLE_26">
+	</bb>
+	<!-- Top blue bar -->
+	<bb id="BB-HEADER_27">
+	<div id="DIV_28">
+			<ul id="UL_29">
+				<li id="LI_30">
+					 <a href="BBHome.aspx" id="A_31">BLOCKBUSTER</a>
+				</li>
+				<ul id="UL_32" style="width:400px;">
+					<li id="LI_33">
+						<a href="BbCategory.aspx" id="A_34">genrer</a>
+					</li>
+					<li id="LI_35">
+						<a href="BBInspiration.aspx" id="A_36">inspiration</a>
+					</li>
+					<li id="LI_37">
+						<a href="/b&#248;rn" id="A_38">b&#248;rn</a>
+					</li>
+					<li id="LI_39">
+						<a href="/dansk" id="A_40">dansk</a>
+					</li>
+					<li id="LI_41">
+						 <a href="/om" id="A_42">Om&nbsp;&nbsp;</a>
+					</li>
+				</ul>
+			</ul>
+			<div id="DIV_43">
+				 <a href="/min-samling" id="A_44"> <span id="SPAN_45">Opret / Log ind</span>
+				<div id="DIV_46">
+				</div> 				
+			</div>
+		</div>
+	</bb>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    <bb id="BB-FOOTER_2392">
+	<div id="DIV_2393">
+		<h2 id="H2_2394">
+			Her kan du se BLOCKBUSTER
+		</h2>
+		<div id="DIV_2395" style="display:block;">			
+			<div id="DIV_2397" style="float:left;position:table-grid;">
+				<a href="/hj&#230;lp/mobil" id="A_2396">
+				<img src="images/bb-icon__phone.png" id="IMG_2398" alt='' />
+				<h3 id="H3_2399">
+					mobil
+				</h3>
+				</a>
+			</div>
+			<div id="DIV_2401"  style="float:left;position:table-grid;">
+				<a href="/hj&#230;lp/tablet" id="A_2400">
+				<img src="images/bb-icon__tablet.png" id="IMG_2402" alt='' />
+				<h3 id="H3_2403">
+					tablet
+				</h3>
+				</a>
+			</div>
+			<div id="DIV_2405"  style="float:left;position:table-grid;">
+				<a href="/hj&#230;lp/pc-mac" id="A_2404">
+				<img src="images/bb-icon__computer.png" id="IMG_2406" alt='' />
+				<h3 id="H3_2407">
+					pc/mac
+				</h3>
+				</a>
+			</div>
+			<div id="DIV_2409"  style="float:left;position:table-grid;">
+				<a href="/hj&#230;lp/playstation" id="A_2408">
+				<img src="images/bb-icon__console.png" id="IMG_2410" alt='' />
+				<h3 id="H3_2411">
+					playstation
+				</h3>
+				</a>
+			</div>
+			<div id="DIV_2413"  style="float:left;position:table-grid;">
+				<a href="/hj&#230;lp/smart-tv" id="A_2412">
+				<img src="images/bb-icon__television.png" id="IMG_2414" alt='' />
+				<h3 id="H3_2415">
+					smart tv
+				</h3>
+				</a>
+			</div>
+		</div>
+		<div id="DIV_2416">
+			<div id="DIV_2417">
+				<div id="DIV_2418">
+					<div id="DIV_2419">
+					</div>
+					<h2 id="H2_2420">
+						Start
+					</h2>
+				</div>
+				<ul id="UL_2421">
+					<li id="LI_2422">
+						 <a href="/opret" id="A_2423">Opret profil</a>
+					</li>
+					<li id="LI_2424">
+						 <a href="/hj&#230;lp/leje" id="A_2425">Lej film</a>
+					</li>
+					<li id="LI_2426">
+						 <a href="/hj&#230;lp/k&#248;b" id="A_2427">K&#248;b film</a>
+					</li>
+					<li id="LI_2428">
+						 <a href="/hj&#230;lp/viewright" id="A_2429">Installer player</a>
+					</li>
+				</ul>
+			</div>
+			<div id="DIV_2430">
+				<div id="DIV_2431">
+					<div id="DIV_2432">
+					</div>
+					<h2 id="H2_2433">
+						Om
+					</h2>
+				</div>
+				<ul id="UL_2434">
+					<li id="LI_2435">
+						 <a href="/om" id="A_2436">Om Blockbuster</a>
+					</li>
+					<li id="LI_2437">
+						 <a href="/hj&#230;lp/priser" id="A_2438">Priser</a>
+					</li>
+					<li id="LI_2439">
+						 <a href="/hj&#230;lp/vilk&#229;r" id="A_2440">Vilk&#229;r</a>
+					</li>
+					<li id="LI_2441">
+						 <a href="/hj&#230;lp/persondatapolitik" id="A_2442">Persondatapolitik</a>
+					</li>
+					<li id="LI_2443">
+						 <a href="https://www.facebook.com/blockbusterdenmark" id="A_2444">M&#248;d os p&#229; Facebook</a>
+					</li>
+				</ul>
+			</div>
+			<div id="DIV_2445">
+				<div id="DIV_2446">
+					<div id="DIV_2447">
+					</div>
+					<h2 id="H2_2448">
+						Hj&#230;lp
+					</h2>
+				</div>
+				<ul id="UL_2449">
+					<li id="LI_2450">
+						 <a href="/hj&#230;lp" id="A_2451">FAQ</a>
+					</li>
+					<li id="LI_2452">
+						 <a href="/kontakt" id="A_2453">Kontakt kundeservice</a>
+					</li>
+					<li id="LI_2454">
+						 <a href="https://www.facebook.com/blockbusterdenmark" id="A_2455">Facebook kundeservice</a>
+					</li>
+					<li id="LI_2456">
+						 <a href="/hj&#230;lp/viewright" id="A_2457">Installer player</a>
+					</li>
+					<li id="LI_2458">
+						 <a href="/nulstil" id="A_2459">Glemt adgangskode</a>
+					</li>
+				</ul>
+			</div>
+			<div id="DIV_2460">
+				<div id="DIV_2461">
+					<div id="DIV_2462">
+					</div>
+					<h2 id="H2_2463">
+						Profil
+					</h2>
+				</div>
+				<ul id="UL_2464">
+					<li id="LI_2465">
+						 <a href="/min-samling" id="A_2466">Min Samling</a>
+					</li>
+					<li id="LI_2467">
+						 <a href="/historik" id="A_2468">K&#248;bshistorik</a>
+					</li>
+					<li id="LI_2469">
+						 <a href="/hj&#230;lp/klippekort" id="A_2470">K&#248;b klippekort</a>
+					</li>
+					<li id="LI_2471">
+						 <a href="/profil" id="A_2472">Skift betalingskort</a>
+					</li>
+					<li id="LI_2473">
+						 <a href="/profil" id="A_2474">Tilmeld Nyhedsbrev</a>
+					</li>
+				</ul>
+			</div>
+			<div id="DIV_2475">
+				<div id="DIV_2476">
+					<div id="DIV_2477">
+					</div>
+					<h2 id="H2_2478">
+						Genveje
+					</h2>
+				</div>
+				<ul id="UL_2479">
+					<li id="LI_2480">
+						 <a href="/hj&#230;lp/smart-tv" id="A_2481">Se film p&#229; Smart TV</a>
+					</li>
+					<li id="LI_2482">
+						 <a href="/hj&#230;lp/playstation" id="A_2483">Se film p&#229; PlayStation</a>
+					</li>
+					<li id="LI_2484">
+						 <a href="/hj&#230;lp/mobil" id="A_2485">Se film p&#229; mobil</a>
+					</li>
+					<li id="LI_2486">
+						 <a href="/hj&#230;lp/tablet" id="A_2487">Se film p&#229; tablet</a>
+					</li>
+					<li id="LI_2488">
+						 <a href="/hj&#230;lp/pc-mac" id="A_2489">Se film p&#229; PC/Mac</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="DIV_2490">
+			<p id="P_2491">
+				©2014 BLOCKBUSTER. Alle rettigheder forbeholdes. BLOCKBUSTER udbydes af TDC A/S, Teglholmsgade 1, 0900 K&#248;benhavn CVR 14773908, kundeservice@blockbuster.dk <a href="/hj&#230;lp/cookies" id="A_2492">cookies</a>
+			</p>
+			</div>
+		</div>
+	</bb>
+    </form>
+</body>
+</html>

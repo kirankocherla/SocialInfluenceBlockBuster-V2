@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0cb9c46a0cb24e93a7b2aa00e4aa5a36" Name="Diagram1">
+        <EntityTypeShape EntityType="SocialInfluenceModel.ExperimentData" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialInfluenceModel.ExperimentDefData" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialInfluenceModel.ExperimentFriendsShown" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialInfluenceModel.ExperimentPageVisitLog" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialInfluenceModel.ExperimentServiceInfo" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialInfluenceModel.FacebookFriend" Width="1.5" PointX="5.25" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialInfluenceModel.FacebookUserData" Width="1.5" PointX="3" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialInfluenceModel.ResponseItem" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="SocialInfluenceModel.FK_ExperimentData_ResponseItem" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialInfluenceModel.FK_ExperimentFriendsShown_ResponseItem" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialInfluenceModel.FK_FacebookFriend_FacebookUserData" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialInfluenceModel.FK_FacebookUserData_ResponseItem" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialInfluenceModel.FK_ResponseItem_ResponseItem" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

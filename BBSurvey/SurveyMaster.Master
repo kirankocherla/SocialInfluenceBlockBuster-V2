@@ -1,0 +1,135 @@
+﻿<%@ master language="C#" autoeventwireup="true" codebehind="SurveyMaster.master.cs" inherits="BBSurvey.SurveyMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Social Influence</title>
+    <link href="Style/SurveyStyleSheet.css" rel="stylesheet" />
+    <asp:contentplaceholder id="head" runat="server">
+    </asp:contentplaceholder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="DIV_2">
+        </div>
+        <div id="DIV_3">
+            <div id="DIV_4">
+                <div id="DIV_5">
+                    <div id="DIV_6">
+                        <div id="DIV_7">
+                            <div id="DIV_8">
+                                <a href="http://cssl.cbs.dk" id="A_9">
+                                    <img src="http://cssl.cbs.dk/wp-content/uploads/2013/04/CSSL-Logo-3.11.png" alt="CSSL@ITM, CBS" id="IMG_10" /></a>
+                            </div>
+                        </div>
+                        <div id="DIV_11">
+                            <div id="DIV_12">
+                                <div id="DIV_13">
+                                    <div id="DIV_14">
+                                        <a href="#" id="A_15">Pages Navigation Menu<span id="SPAN_16"></span></a>
+                                        <ul id="UL_17">
+                                            <li id="LI_18">
+                                                <a href="http://cssl.cbs.dk/" id="A_19">Home</a>
+                                            </li>
+                                            <li id="LI_20">
+                                                <a href="http://cssl.cbs.dk/?page_id=2" id="A_21">About CSSL<span id="SPAN_22"></span></a>
+                                                <ul id="UL_23">
+                                                    <li id="LI_24">
+                                                        <a href="http://cssl.cbs.dk/?page_id=8" id="A_25">Contact Us</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div id="DIV_26">
+                                            <ul id="UL_27">
+                                                <li id="LI_28">
+                                                    <a href="http://cssl.cbs.dk/" id="A_29">Home</a>
+                                                </li>
+                                                <li id="LI_30">
+                                                    <a href="http://cssl.cbs.dk/?page_id=2" id="A_31">About CSSL<span id="SPAN_32"></span></a>
+                                                    <ul id="UL_33">
+                                                        <li id="LI_34">
+                                                            <a href="http://cssl.cbs.dk/?page_id=8" id="A_35">Contact Us</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="DIV_36">
+                </div>
+            </div>
+        </div>
+        <div id="DIV_37">
+            <div id="DIV_38">
+                <div id="DIV_39">
+                    <div id="DIV_40">
+                        <div id="DIV_41">
+                            <h1 id="H1_42">
+                                Social influence field experiment
+                            </h1>
+                            <p id="P_71">
+                                This survey is about testing behaviour.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="DIV_79">
+                </div>
+            </div>
+        </div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:contentplaceholder>
+        <div id="DIV_233" style="height:50px;">
+	
+</div>
+<div id="DIV_301">
+	<div id="DIV_302">
+		<div id="DIV_303">
+			<div id="DIV_304">
+				<div id="DIV_305">
+					 <a href="http://cssl.cbs.dk" id="A_306">CSSL@ITM, CBS - Computational Social Science Laboratory @ITM, CBS</a>
+					<ul id="UL_307">
+						<li id="LI_308">
+							<a href="#" title="Facebook" id="A_309"><img src="http://cssl.cbs.dk/wp-content/themes/poloray/images/facebook.png" alt="Facebook" id="IMG_310" /></a>
+						</li>
+						<li id="LI_311">
+							<a href="#" title="Twitter" id="A_312"><img src="http://cssl.cbs.dk/wp-content/themes/poloray/images/twitter.png" alt="Twitter" id="IMG_313" /></a>
+						</li>
+						<li id="LI_314">
+							<a href="#" title="Yahoo" id="A_315"><img src="http://cssl.cbs.dk/wp-content/themes/poloray/images/yahoo.png" alt="Yahoo" id="IMG_316" /></a>
+						</li>
+						<li id="LI_317">
+							<a href="#" title="Rss Feed" id="A_318"><img src="http://cssl.cbs.dk/wp-content/themes/poloray/images/rss.png" alt="Digg Icon" id="IMG_319" /></a>
+						</li>
+						<li id="LI_320">
+							<a href="#" title="Digg" id="A_321"><img src="http://cssl.cbs.dk/wp-content/themes/poloray/images/digg.png" alt="Digg icon" id="IMG_322" /></a>
+						</li>
+						<li id="LI_323">
+							<a href="#" title="Pinterest" id="A_324"><img src="http://cssl.cbs.dk/wp-content/themes/poloray/images/pinterest.png" alt="Pinterest icon" id="IMG_325" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>			
+		</div>
+		<div id="DIV_330">
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" id="SCRIPT_332">/* <![CDATA[ */
+    var _wpcf7 = { "loaderUrl": "http:\/\/cssl.cbs.dk\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "sending": "Sending ..." };
+    /* ]]> */
+	</script>
+    </div>
+    </form>
+</body>
+</html>

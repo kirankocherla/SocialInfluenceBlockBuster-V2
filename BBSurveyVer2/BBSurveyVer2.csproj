@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC749343-108B-4257-AFFD-277D8A5659EF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BBSurveyVer2</RootNamespace>
+    <AssemblyName>BBSurveyVer2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BBAbout.aspx" />
+    <Content Include="BBCategory.aspx" />
+    <Content Include="BBHome.aspx" />
+    <Content Include="BBInspiration.aspx" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\customfont.css" />
+    <Content Include="css\fonts\AvenirNextLTPro-BoldCn.svg" />
+    <Content Include="css\fonts\AvenirNextLTPro-BoldCnIt.svg" />
+    <Content Include="css\fonts\AvenirNextLTPro-DemiCn.svg" />
+    <Content Include="css\fonts\AvenirNextLTPro-Regular.svg" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\Footer.css" />
+    <Content Include="css\half-slider.css" />
+    <Content Include="fonts\AvenirNextLTPro-BoldCn.svg" />
+    <Content Include="fonts\AvenirNextLTPro-BoldCnIt.svg" />
+    <Content Include="fonts\AvenirNextLTPro-DemiCn.svg" />
+    <Content Include="fonts\AvenirNextLTPro-Regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\bb-icon__computer.png" />
+    <Content Include="images\bb-icon__console.png" />
+    <Content Include="images\bb-icon__phone.png" />
+    <Content Include="images\bb-icon__tablet.png" />
+    <Content Include="images\bb-icon__television.png" />
+    <Content Include="images\cbs.png" />
+    <Content Include="images\FbIcon.png" />
+    <Content Include="images\taken-3W292X425.jpg" />
+    <Content Include="Js\bootstrap.js" />
+    <Content Include="Js\bootstrap.min.js" />
+    <Content Include="Js\jquery.js" />
+    <Content Include="StartSurvey.aspx" />
+    <Content Include="T.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Index.aspx" />
+    <Content Include="PreviousService.aspx" />
+    <Content Include="BasicData.aspx" />
+    <Content Include="FilmWatchPref.aspx" />
+    <Content Include="FilmTypePref.aspx" />
+    <Content Include="FilmPaymentPref.aspx" />
+    <Content Include="FacebookLogin.aspx" />
+    <Content Include="FriendsInspireRate.aspx" />
+    <Content Include="BBLauncher.aspx" />
+    <Content Include="BBConsider.aspx" />
+    <Content Include="UsageChances.aspx" />
+    <Content Include="FriendsDetails.aspx" />
+    <Content Include="PrizeAndContact.aspx" />
+    <Content Include="ImportantInfo.aspx" />
+    <Content Include="ThankYou.aspx" />
+    <Content Include="WebsiteFeedBack.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBAbout.aspx.cs">
+      <DependentUpon>BBAbout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBAbout.aspx.designer.cs">
+      <DependentUpon>BBAbout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BBCategory.aspx.cs">
+      <DependentUpon>BBCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBCategory.aspx.designer.cs">
+      <DependentUpon>BBCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BBHome.aspx.cs">
+      <DependentUpon>BBHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBHome.aspx.designer.cs">
+      <DependentUpon>BBHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BBInspiration.aspx.cs">
+      <DependentUpon>BBInspiration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBInspiration.aspx.designer.cs">
+      <DependentUpon>BBInspiration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExperimentData.cs">
+      <DependentUpon>SIModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExperimentDefData.cs">
+      <DependentUpon>SIModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExperimentFriendsShown.cs">
+      <DependentUpon>SIModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExperimentPageVisitLog.cs">
+      <DependentUpon>SIModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExperimentServiceInfo.cs">
+      <DependentUpon>SIModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="FacebookFriend.cs">
+      <DependentUpon>SIModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FacebookUserData.cs">
+      <DependentUpon>SIModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FriendsPreChosen.cs">
+      <DependentUpon>SIModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseItem.cs">
+      <DependentUpon>SIModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SIModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SIModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SIModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SIModelDS.cs" />
+    <Compile Include="StartSurvey.aspx.cs">
+      <DependentUpon>StartSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StartSurvey.aspx.designer.cs">
+      <DependentUpon>StartSurvey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyMaster.Master.cs">
+      <DependentUpon>SurveyMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SurveyMaster.Master.designer.cs">
+      <DependentUpon>SurveyMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="T.aspx.cs">
+      <DependentUpon>T.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="T.aspx.designer.cs">
+      <DependentUpon>T.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreviousService.aspx.cs">
+      <DependentUpon>PreviousService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreviousService.aspx.designer.cs">
+      <DependentUpon>PreviousService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasicData.aspx.cs">
+      <DependentUpon>BasicData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasicData.aspx.designer.cs">
+      <DependentUpon>BasicData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FilmWatchPref.aspx.cs">
+      <DependentUpon>FilmWatchPref.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FilmWatchPref.aspx.designer.cs">
+      <DependentUpon>FilmWatchPref.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FilmTypePref.aspx.cs">
+      <DependentUpon>FilmTypePref.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FilmTypePref.aspx.designer.cs">
+      <DependentUpon>FilmTypePref.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FilmPaymentPref.aspx.cs">
+      <DependentUpon>FilmPaymentPref.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FilmPaymentPref.aspx.designer.cs">
+      <DependentUpon>FilmPaymentPref.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FacebookLogin.aspx.cs">
+      <DependentUpon>FacebookLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacebookLogin.aspx.designer.cs">
+      <DependentUpon>FacebookLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FriendsInspireRate.aspx.cs">
+      <DependentUpon>FriendsInspireRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FriendsInspireRate.aspx.designer.cs">
+      <DependentUpon>FriendsInspireRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BBLauncher.aspx.cs">
+      <DependentUpon>BBLauncher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBLauncher.aspx.designer.cs">
+      <DependentUpon>BBLauncher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BBConsider.aspx.cs">
+      <DependentUpon>BBConsider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBConsider.aspx.designer.cs">
+      <DependentUpon>BBConsider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsageChances.aspx.cs">
+      <DependentUpon>UsageChances.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsageChances.aspx.designer.cs">
+      <DependentUpon>UsageChances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FriendsDetails.aspx.cs">
+      <DependentUpon>FriendsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FriendsDetails.aspx.designer.cs">
+      <DependentUpon>FriendsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrizeAndContact.aspx.cs">
+      <DependentUpon>PrizeAndContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrizeAndContact.aspx.designer.cs">
+      <DependentUpon>PrizeAndContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImportantInfo.aspx.cs">
+      <DependentUpon>ImportantInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImportantInfo.aspx.designer.cs">
+      <DependentUpon>ImportantInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebsiteFeedBack.aspx.cs">
+      <DependentUpon>WebsiteFeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebsiteFeedBack.aspx.designer.cs">
+      <DependentUpon>WebsiteFeedBack.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\AvenirNextLTPro-BoldCn.eot" />
+    <Content Include="fonts\AvenirNextLTPro-BoldCn.ttf" />
+    <Content Include="fonts\AvenirNextLTPro-BoldCn.woff" />
+    <Content Include="fonts\AvenirNextLTPro-BoldCnIt.eot" />
+    <Content Include="fonts\AvenirNextLTPro-BoldCnIt.ttf" />
+    <Content Include="fonts\AvenirNextLTPro-BoldCnIt.woff" />
+    <Content Include="fonts\AvenirNextLTPro-DemiCn.eot" />
+    <Content Include="fonts\AvenirNextLTPro-DemiCn.ttf" />
+    <Content Include="fonts\AvenirNextLTPro-DemiCn.woff" />
+    <Content Include="fonts\AvenirNextLTPro-Regular.eot" />
+    <Content Include="fonts\AvenirNextLTPro-Regular.ttf" />
+    <Content Include="fonts\AvenirNextLTPro-Regular.woff" />
+    <Content Include="css\fonts\AvenirNextLTPro-BoldCn.eot" />
+    <Content Include="css\fonts\AvenirNextLTPro-BoldCn.ttf" />
+    <Content Include="css\fonts\AvenirNextLTPro-BoldCn.woff" />
+    <Content Include="css\fonts\AvenirNextLTPro-BoldCnIt.eot" />
+    <Content Include="css\fonts\AvenirNextLTPro-BoldCnIt.ttf" />
+    <Content Include="css\fonts\AvenirNextLTPro-BoldCnIt.woff" />
+    <Content Include="css\fonts\AvenirNextLTPro-DemiCn.eot" />
+    <Content Include="css\fonts\AvenirNextLTPro-DemiCn.ttf" />
+    <Content Include="css\fonts\AvenirNextLTPro-DemiCn.woff" />
+    <Content Include="css\fonts\AvenirNextLTPro-Regular.eot" />
+    <Content Include="css\fonts\AvenirNextLTPro-Regular.ttf" />
+    <Content Include="css\fonts\AvenirNextLTPro-Regular.woff" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="SurveyMaster.Master" />
+    <EntityDeploy Include="SIModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SIModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="packages.config" />
+    <Content Include="SIModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SIModel.edmx</DependentUpon>
+      <LastGenOutput>SIModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SIModel.edmx.diagram">
+      <DependentUpon>SIModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="SIModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SIModel.edmx</DependentUpon>
+      <LastGenOutput>SIModel.cs</LastGenOutput>
+    </Content>
+    <None Include="Properties\PublishProfiles\LocalVer2.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>18632</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1030/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

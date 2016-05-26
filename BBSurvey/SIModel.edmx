@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SocialInfluenceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="SocialInfluenceModelStoreContainer">
+          <EntitySet Name="ExperimentData" EntityType="SocialInfluenceModel.Store.ExperimentData" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ExperimentDefData" EntityType="SocialInfluenceModel.Store.ExperimentDefData" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ExperimentFriendsShown" EntityType="SocialInfluenceModel.Store.ExperimentFriendsShown" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ExperimentPageVisitLog" EntityType="SocialInfluenceModel.Store.ExperimentPageVisitLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ExperimentServiceInfo" EntityType="SocialInfluenceModel.Store.ExperimentServiceInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FacebookFriend" EntityType="SocialInfluenceModel.Store.FacebookFriend" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FacebookUserData" EntityType="SocialInfluenceModel.Store.FacebookUserData" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ResponseItem" EntityType="SocialInfluenceModel.Store.ResponseItem" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_ExperimentData_ResponseItem" Association="SocialInfluenceModel.Store.FK_ExperimentData_ResponseItem">
+            <End Role="ResponseItem" EntitySet="ResponseItem" />
+            <End Role="ExperimentData" EntitySet="ExperimentData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ExperimentFriendsShown_ResponseItem" Association="SocialInfluenceModel.Store.FK_ExperimentFriendsShown_ResponseItem">
+            <End Role="ResponseItem" EntitySet="ResponseItem" />
+            <End Role="ExperimentFriendsShown" EntitySet="ExperimentFriendsShown" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FacebookFriend_FacebookUserData" Association="SocialInfluenceModel.Store.FK_FacebookFriend_FacebookUserData">
+            <End Role="FacebookUserData" EntitySet="FacebookUserData" />
+            <End Role="FacebookFriend" EntitySet="FacebookFriend" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FacebookUserData_ResponseItem" Association="SocialInfluenceModel.Store.FK_FacebookUserData_ResponseItem">
+            <End Role="ResponseItem" EntitySet="ResponseItem" />
+            <End Role="FacebookUserData" EntitySet="FacebookUserData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResponseItem_ResponseItem" Association="SocialInfluenceModel.Store.FK_ResponseItem_ResponseItem">
+            <End Role="ResponseItem" EntitySet="ResponseItem" />
+            <End Role="ResponseItem1" EntitySet="ResponseItem" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ExperimentData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ResponseId" Type="int" />
+          <Property Name="PreviousService" Type="varchar" MaxLength="200" />
+          <Property Name="StructureOfSite" Type="varchar" MaxLength="200" />
+          <Property Name="FilmSelectionSite" Type="varchar" MaxLength="200" />
+          <Property Name="InspiringSite" Type="varchar" MaxLength="200" />
+          <Property Name="OverallEvaluationSite" Type="varchar" MaxLength="200" />
+          <Property Name="OpenAnswerSite" Type="varchar(max)" />
+          <Property Name="Age" Type="varchar" MaxLength="50" />
+          <Property Name="Gender" Type="varchar" MaxLength="250" />
+          <Property Name="MaritalStatus" Type="varchar" MaxLength="250" />
+          <Property Name="ChildrenCount" Type="int" />
+          <Property Name="AgeChild1" Type="varchar" MaxLength="250" />
+          <Property Name="AgeChild2" Type="varchar" MaxLength="250" />
+          <Property Name="AgeChild3" Type="varchar" MaxLength="250" />
+          <Property Name="AgeChild4" Type="varchar" MaxLength="250" />
+          <Property Name="Email" Type="varchar" MaxLength="500" />
+          <Property Name="GiftChoice" Type="varchar" MaxLength="500" />
+          <Property Name="DontContact" Type="int" />
+          <Property Name="Package" Type="varchar" MaxLength="500" />
+          <Property Name="PaymentType" Type="varchar" MaxLength="500" />
+          <Property Name="AdoptService" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ExperimentDefData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GroupId" Type="int" />
+          <Property Name="PageName" Type="varchar" MaxLength="100" />
+          <Property Name="NumberOfFriends" Type="int" />
+          <Property Name="LabelForFriends" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="ExperimentFriendsShown">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ResponseId" Type="int" />
+          <Property Name="ExperimentGroup" Type="int" />
+          <Property Name="FriendId" Type="int" />
+          <Property Name="Orderid" Type="int" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="ClosenessLevel" Type="varchar" MaxLength="500" />
+          <Property Name="Location" Type="varchar" MaxLength="500" />
+          <Property Name="InterestInCommon" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="ExperimentPageVisitLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ResponseId" Type="int" />
+          <Property Name="PageVisited" Type="varchar" MaxLength="500" />
+          <Property Name="CreatedAt" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ExperimentServiceInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="ExperimentId" Type="int" />
+          <Property Name="ServiceKey" Type="varchar" MaxLength="500" />
+          <Property Name="KeyValue" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="FacebookFriend">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="FBID" Type="varchar" MaxLength="20" />
+          <Property Name="Name" Type="varchar" MaxLength="500" />
+          <Property Name="ImageUrl" Type="varchar(max)" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="Age" Type="varchar" MaxLength="50" />
+          <Property Name="Location" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="FacebookUserData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ResponseId" Type="int" />
+          <Property Name="Name" Type="varchar" MaxLength="250" />
+          <Property Name="ImageUrl" Type="varchar" MaxLength="2000" />
+          <Property Name="Username" Type="varchar" MaxLength="250" />
+          <Property Name="Gender" Type="varchar" MaxLength="250" />
+          <Property Name="Location" Type="varchar(max)" />
+          <Property Name="Age" Type="varchar" MaxLength="250" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="AuthToken" Type="varchar(max)" />
+          <Property Name="SecurityKey1" Type="varchar" MaxLength="3000" />
+          <Property Name="SecurityKey2" Type="varchar" MaxLength="3000" />
+          <Property Name="RawResponse" Type="text" />
+        </EntityType>
+        <EntityType Name="ResponseItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ExperimentId" Type="int" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="FinishTime" Type="datetime" />
+          <Property Name="IPAddress" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_ExperimentData_ResponseItem">
+          <End Role="ResponseItem" Type="SocialInfluenceModel.Store.ResponseItem" Multiplicity="0..1" />
+          <End Role="ExperimentData" Type="SocialInfluenceModel.Store.ExperimentData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResponseItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ExperimentData">
+              <PropertyRef Name="ResponseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ExperimentFriendsShown_ResponseItem">
+          <End Role="ResponseItem" Type="SocialInfluenceModel.Store.ResponseItem" Multiplicity="0..1" />
+          <End Role="ExperimentFriendsShown" Type="SocialInfluenceModel.Store.ExperimentFriendsShown" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResponseItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ExperimentFriendsShown">
+              <PropertyRef Name="ResponseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FacebookFriend_FacebookUserData">
+          <End Role="FacebookUserData" Type="SocialInfluenceModel.Store.FacebookUserData" Multiplicity="0..1" />
+          <End Role="FacebookFriend" Type="SocialInfluenceModel.Store.FacebookFriend" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FacebookUserData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FacebookFriend">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FacebookUserData_ResponseItem">
+          <End Role="ResponseItem" Type="SocialInfluenceModel.Store.ResponseItem" Multiplicity="0..1" />
+          <End Role="FacebookUserData" Type="SocialInfluenceModel.Store.FacebookUserData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResponseItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FacebookUserData">
+              <PropertyRef Name="ResponseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResponseItem_ResponseItem">
+          <End Role="ResponseItem" Type="SocialInfluenceModel.Store.ResponseItem" Multiplicity="1" />
+          <End Role="ResponseItem1" Type="SocialInfluenceModel.Store.ResponseItem" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="ResponseItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ResponseItem1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SocialInfluenceModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="SocialInfluenceEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="ExperimentData" EntityType="SocialInfluenceModel.ExperimentData" />
+          <EntitySet Name="ExperimentDefData" EntityType="SocialInfluenceModel.ExperimentDefData" />
+          <EntitySet Name="ExperimentFriendsShown" EntityType="SocialInfluenceModel.ExperimentFriendsShown" />
+          <EntitySet Name="ExperimentPageVisitLog" EntityType="SocialInfluenceModel.ExperimentPageVisitLog" />
+          <EntitySet Name="ExperimentServiceInfo" EntityType="SocialInfluenceModel.ExperimentServiceInfo" />
+          <EntitySet Name="FacebookFriend" EntityType="SocialInfluenceModel.FacebookFriend" />
+          <EntitySet Name="FacebookUserData" EntityType="SocialInfluenceModel.FacebookUserData" />
+          <EntitySet Name="ResponseItem" EntityType="SocialInfluenceModel.ResponseItem" />
+          <AssociationSet Name="FK_ExperimentData_ResponseItem" Association="SocialInfluenceModel.FK_ExperimentData_ResponseItem">
+            <End Role="ResponseItem" EntitySet="ResponseItem" />
+            <End Role="ExperimentData" EntitySet="ExperimentData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ExperimentFriendsShown_ResponseItem" Association="SocialInfluenceModel.FK_ExperimentFriendsShown_ResponseItem">
+            <End Role="ResponseItem" EntitySet="ResponseItem" />
+            <End Role="ExperimentFriendsShown" EntitySet="ExperimentFriendsShown" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FacebookFriend_FacebookUserData" Association="SocialInfluenceModel.FK_FacebookFriend_FacebookUserData">
+            <End Role="FacebookUserData" EntitySet="FacebookUserData" />
+            <End Role="FacebookFriend" EntitySet="FacebookFriend" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FacebookUserData_ResponseItem" Association="SocialInfluenceModel.FK_FacebookUserData_ResponseItem">
+            <End Role="ResponseItem" EntitySet="ResponseItem" />
+            <End Role="FacebookUserData" EntitySet="FacebookUserData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResponseItem_ResponseItem" Association="SocialInfluenceModel.FK_ResponseItem_ResponseItem">
+            <End Role="ResponseItem" EntitySet="ResponseItem" />
+            <End Role="ResponseItem1" EntitySet="ResponseItem" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ExperimentData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ResponseId" Type="Int32" />
+          <Property Name="PreviousService" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="StructureOfSite" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="FilmSelectionSite" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="InspiringSite" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="OverallEvaluationSite" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="OpenAnswerSite" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Age" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Gender" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="MaritalStatus" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="ChildrenCount" Type="Int32" />
+          <Property Name="AgeChild1" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="AgeChild2" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="AgeChild3" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="AgeChild4" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="GiftChoice" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="DontContact" Type="Int32" />
+          <Property Name="Package" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentType" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="ResponseItem" Relationship="SocialInfluenceModel.FK_ExperimentData_ResponseItem" FromRole="ExperimentData" ToRole="ResponseItem" />
+          <Property Type="String" Name="AdoptService" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ExperimentDefData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="GroupId" Type="Int32" />
+          <Property Name="PageName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="NumberOfFriends" Type="Int32" />
+          <Property Name="LabelForFriends" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ExperimentFriendsShown">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ResponseId" Type="Int32" />
+          <Property Name="ExperimentGroup" Type="Int32" />
+          <Property Name="FriendId" Type="Int32" />
+          <Property Name="Orderid" Type="Int32" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="ClosenessLevel" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Location" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="InterestInCommon" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="ResponseItem" Relationship="SocialInfluenceModel.FK_ExperimentFriendsShown_ResponseItem" FromRole="ExperimentFriendsShown" ToRole="ResponseItem" />
+        </EntityType>
+        <EntityType Name="ExperimentPageVisitLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ResponseId" Type="Int32" />
+          <Property Name="PageVisited" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="ExperimentServiceInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="ExperimentId" Type="Int32" />
+          <Property Name="ServiceKey" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="KeyValue" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="FacebookFriend">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="FBID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="Age" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Location" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="FacebookUserData" Relationship="SocialInfluenceModel.FK_FacebookFriend_FacebookUserData" FromRole="FacebookFriend" ToRole="FacebookUserData" />
+        </EntityType>
+        <EntityType Name="FacebookUserData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ResponseId" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+          <Property Name="Username" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Gender" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Location" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Age" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="AuthToken" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="SecurityKey1" Type="String" MaxLength="3000" Unicode="false" FixedLength="false" />
+          <Property Name="SecurityKey2" Type="String" MaxLength="3000" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="FacebookFriend" Relationship="SocialInfluenceModel.FK_FacebookFriend_FacebookUserData" FromRole="FacebookUserData" ToRole="FacebookFriend" />
+          <NavigationProperty Name="ResponseItem" Relationship="SocialInfluenceModel.FK_FacebookUserData_ResponseItem" FromRole="FacebookUserData" ToRole="ResponseItem" />
+          <Property Type="String" Name="RawResponse" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ResponseItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ExperimentId" Type="Int32" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" />
+          <Property Name="FinishTime" Type="DateTime" Precision="3" />
+          <Property Name="IPAddress" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="ExperimentData" Relationship="SocialInfluenceModel.FK_ExperimentData_ResponseItem" FromRole="ResponseItem" ToRole="ExperimentData" />
+          <NavigationProperty Name="ExperimentFriendsShown" Relationship="SocialInfluenceModel.FK_ExperimentFriendsShown_ResponseItem" FromRole="ResponseItem" ToRole="ExperimentFriendsShown" />
+          <NavigationProperty Name="FacebookUserData" Relationship="SocialInfluenceModel.FK_FacebookUserData_ResponseItem" FromRole="ResponseItem" ToRole="FacebookUserData" />
+          <NavigationProperty Name="ResponseItem1" Relationship="SocialInfluenceModel.FK_ResponseItem_ResponseItem" FromRole="ResponseItem" ToRole="ResponseItem1" />
+          <NavigationProperty Name="ResponseItem2" Relationship="SocialInfluenceModel.FK_ResponseItem_ResponseItem" FromRole="ResponseItem1" ToRole="ResponseItem" />
+        </EntityType>
+        <Association Name="FK_ExperimentData_ResponseItem">
+          <End Role="ResponseItem" Type="SocialInfluenceModel.ResponseItem" Multiplicity="0..1" />
+          <End Role="ExperimentData" Type="SocialInfluenceModel.ExperimentData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResponseItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ExperimentData">
+              <PropertyRef Name="ResponseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ExperimentFriendsShown_ResponseItem">
+          <End Role="ResponseItem" Type="SocialInfluenceModel.ResponseItem" Multiplicity="0..1" />
+          <End Role="ExperimentFriendsShown" Type="SocialInfluenceModel.ExperimentFriendsShown" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResponseItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ExperimentFriendsShown">
+              <PropertyRef Name="ResponseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FacebookFriend_FacebookUserData">
+          <End Role="FacebookUserData" Type="SocialInfluenceModel.FacebookUserData" Multiplicity="0..1" />
+          <End Role="FacebookFriend" Type="SocialInfluenceModel.FacebookFriend" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FacebookUserData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FacebookFriend">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FacebookUserData_ResponseItem">
+          <End Role="ResponseItem" Type="SocialInfluenceModel.ResponseItem" Multiplicity="0..1" />
+          <End Role="FacebookUserData" Type="SocialInfluenceModel.FacebookUserData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResponseItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FacebookUserData">
+              <PropertyRef Name="ResponseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResponseItem_ResponseItem">
+          <End Role="ResponseItem" Type="SocialInfluenceModel.ResponseItem" Multiplicity="1" />
+          <End Role="ResponseItem1" Type="SocialInfluenceModel.ResponseItem" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="ResponseItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ResponseItem1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SocialInfluenceModelStoreContainer" CdmEntityContainer="SocialInfluenceEntities">
+          <EntitySetMapping Name="ExperimentData">
+            <EntityTypeMapping TypeName="SocialInfluenceModel.ExperimentData">
+              <MappingFragment StoreEntitySet="ExperimentData">
+                <ScalarProperty Name="AdoptService" ColumnName="AdoptService" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ResponseId" ColumnName="ResponseId" />
+                <ScalarProperty Name="PreviousService" ColumnName="PreviousService" />
+                <ScalarProperty Name="StructureOfSite" ColumnName="StructureOfSite" />
+                <ScalarProperty Name="FilmSelectionSite" ColumnName="FilmSelectionSite" />
+                <ScalarProperty Name="InspiringSite" ColumnName="InspiringSite" />
+                <ScalarProperty Name="OverallEvaluationSite" ColumnName="OverallEvaluationSite" />
+                <ScalarProperty Name="OpenAnswerSite" ColumnName="OpenAnswerSite" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+                <ScalarProperty Name="ChildrenCount" ColumnName="ChildrenCount" />
+                <ScalarProperty Name="AgeChild1" ColumnName="AgeChild1" />
+                <ScalarProperty Name="AgeChild2" ColumnName="AgeChild2" />
+                <ScalarProperty Name="AgeChild3" ColumnName="AgeChild3" />
+                <ScalarProperty Name="AgeChild4" ColumnName="AgeChild4" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="GiftChoice" ColumnName="GiftChoice" />
+                <ScalarProperty Name="DontContact" ColumnName="DontContact" />
+                <ScalarProperty Name="Package" ColumnName="Package" />
+                <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExperimentDefData">
+            <EntityTypeMapping TypeName="SocialInfluenceModel.ExperimentDefData">
+              <MappingFragment StoreEntitySet="ExperimentDefData">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="PageName" ColumnName="PageName" />
+                <ScalarProperty Name="NumberOfFriends" ColumnName="NumberOfFriends" />
+                <ScalarProperty Name="LabelForFriends" ColumnName="LabelForFriends" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExperimentFriendsShown">
+            <EntityTypeMapping TypeName="SocialInfluenceModel.ExperimentFriendsShown">
+              <MappingFragment StoreEntitySet="ExperimentFriendsShown">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ResponseId" ColumnName="ResponseId" />
+                <ScalarProperty Name="ExperimentGroup" ColumnName="ExperimentGroup" />
+                <ScalarProperty Name="FriendId" ColumnName="FriendId" />
+                <ScalarProperty Name="Orderid" ColumnName="Orderid" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="ClosenessLevel" ColumnName="ClosenessLevel" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="InterestInCommon" ColumnName="InterestInCommon" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExperimentPageVisitLog">
+            <EntityTypeMapping TypeName="SocialInfluenceModel.ExperimentPageVisitLog">
+              <MappingFragment StoreEntitySet="ExperimentPageVisitLog">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ResponseId" ColumnName="ResponseId" />
+                <ScalarProperty Name="PageVisited" ColumnName="PageVisited" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExperimentServiceInfo">
+            <EntityTypeMapping TypeName="SocialInfluenceModel.ExperimentServiceInfo">
+              <MappingFragment StoreEntitySet="ExperimentServiceInfo">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ExperimentId" ColumnName="ExperimentId" />
+                <ScalarProperty Name="ServiceKey" ColumnName="ServiceKey" />
+                <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FacebookFriend">
+            <EntityTypeMapping TypeName="SocialInfluenceModel.FacebookFriend">
+              <MappingFragment StoreEntitySet="FacebookFriend">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="FBID" ColumnName="FBID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FacebookUserData">
+            <EntityTypeMapping TypeName="SocialInfluenceModel.FacebookUserData">
+              <MappingFragment StoreEntitySet="FacebookUserData">
+                <ScalarProperty Name="RawResponse" ColumnName="RawResponse" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ResponseId" ColumnName="ResponseId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="AuthToken" ColumnName="AuthToken" />
+                <ScalarProperty Name="SecurityKey1" ColumnName="SecurityKey1" />
+                <ScalarProperty Name="SecurityKey2" ColumnName="SecurityKey2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ResponseItem">
+            <EntityTypeMapping TypeName="SocialInfluenceModel.ResponseItem">
+              <MappingFragment StoreEntitySet="ResponseItem">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ExperimentId" ColumnName="ExperimentId" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="FinishTime" ColumnName="FinishTime" />
+                <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
