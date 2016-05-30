@@ -32,8 +32,8 @@
                     </div>
                     <div class="col-lg-6" style="padding-left: 15px;">
                         <a class="navbar-brand" target="_blank" href="BBHome.aspx?ResponseId=<%=ResponseId.Value %>" style="float:none;color: #1E4797 !important;text-decoration:underline !important;">BLOCKBUSTER</a>
-                        <%--<asp:button runat="server" text="Blockbuster.dk" onclick="OnBBClick" id="cmdBB" width="150" />--%>
-                    </div>
+                        <%--<asp:button runat="server" text="Blockbuster.dk" onclick="OnBBClick" id="cmdBB" width="150" />
+                    </div>--%>
                 </div>
 
                 <div class="row">

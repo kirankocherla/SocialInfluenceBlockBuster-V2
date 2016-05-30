@@ -220,7 +220,7 @@
                     <img src="//images.blockbuster.dk/movie/boost?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/boost?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/swelter?width=141&height=207" />                     
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="//images.blockbuster.dk/movie/queen-of-the-desert?width=141&height=207" /> 

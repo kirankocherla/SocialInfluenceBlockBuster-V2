@@ -24,7 +24,7 @@
                     Skulle du have nogen spørgsmål til undersøgelsen, er du meget velkommen til at skrive til os på <a href="mailto:kalk.itm@cbs.dk">kalk.itm@cbs.dk </a>
                 </p>
                 <p>
-                    Klar til at starte undersøgelsen?
+                   Klar til at starte undersøgelsen?
                 </p>
                 <div class="row">
                     <div class="col-lg-6 text-right">

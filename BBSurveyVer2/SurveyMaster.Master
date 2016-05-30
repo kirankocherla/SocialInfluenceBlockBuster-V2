@@ -68,7 +68,28 @@
                 event.style.backgroundColor = 'lightgray';                
                 checkBoxControl.checked = true;
             }
-        }  
+        }
+        $(document).ready(function () {
+            $('#ContentPlaceHolder1_rdFilmInspiration input:checkbox').click(function () {
+                var $selectedInput = $(this);
+                if ($selectedInput.val() == 'Do not know' && $selectedInput.prop('checked') == true)
+                {
+                    $.each($('#ContentPlaceHolder1_rdFilmInspiration input:checkbox'), function (index, input) {
+                        if($(input).val() != $selectedInput.val())
+                        {
+                            $(input).prop('checked', false);
+                        }
+                    });
+                }
+                else {
+                    $.each($('#ContentPlaceHolder1_rdFilmInspiration input:checkbox'), function (index, input) {
+                        if ($(input).val() == 'Do not know') {
+                            $(input).prop('checked', false);
+                        }
+                    });
+                }
+        });
+        });
     </script>    
 
     </form>

@@ -384,7 +384,7 @@
                     <img src="//images.blockbuster.dk/movie/hotel-transylvania-2-orig?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/hotel-transylvania-2?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/villads-fra-valby?width=141&height=207" />                     
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="//images.blockbuster.dk/movie/trenk---den-lille-ridder?width=141&height=207" /> 
@@ -724,18 +724,20 @@
                     <img src="http://images.blockbuster.dk/movie/lille-spejl-paa-vaeggen-der-orig?width=141&height=207" />  
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/lille-spejl-paa-vaeggen-der?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/jack-the-giant-slayer?width=141&height=207" /> 
+                   
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/harry-potter-og-doedsregalierne-del-2?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/tintin-enhjoerningens-hemmelighed?width=141&height=207" /> 
+
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/tintin-enhjoerningens-hemmelighed-orig?width=141&height=207" />  
+                    <img src="http://images.blockbuster.dk/movie/avril-and-the-extraordinary-world?width=141&height=207" />                     
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/jabberwock-dragon-siege?width=141&height=207" />  
@@ -1075,7 +1077,7 @@
                     <img src="http://images.blockbuster.dk/movie/turbo-kid?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/turbo-kid?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/synchronicity?width=141&height=207" />                    
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/road-wars?width=141&height=207" /> 

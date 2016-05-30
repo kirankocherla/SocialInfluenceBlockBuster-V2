@@ -205,21 +205,24 @@
                     <img src="http://images.blockbuster.dk/movie/fight-club?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/en-verden-udenfor?width=141&height=207" />
+                    <img src="http://images.blockbuster.dk/movie/vredens-druer?width=141&height=207" />
+                    
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/doedens-gab?width=141&height=207" />
+                    <img src="http://images.blockbuster.dk/movie/affair-to-remember-an?width=141&height=207" />                  
+                    
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/goodfellas?width=141&height=207" />
+                    <img src="http://images.blockbuster.dk/movie/apartment-the?width=141&height=207" />                   
+
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/robin-hood-1938?width=141&height=207" />
+                    <img src="http://images.blockbuster.dk/movie/chinatown?width=141&height=207" />                  
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/festen?width=141&height=207" />
+                    <img src="http://images.blockbuster.dk/movie/gentlemen-foretraekker-blondiner?width=141&amp;height=207" />                    
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/singing-in-the-rain?width=141&height=207" />
@@ -395,10 +398,10 @@
                     <img src="http://images.blockbuster.dk/movie/tilbage-til-fremtiden?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/tilbage-til-fremtiden-ii?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/timecrimes?width=141&height=207" />                     
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/tilbage-til-fremtiden-iii?width=141&height=207" />
+                    <img src="http://images.blockbuster.dk/movie/looper?width=141&height=207" />                    
                 </div>
             </div>
         </div>
@@ -419,10 +422,10 @@
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/safety-not-guaranteed?width=141&height=207" />
+                    <img src="http://images.blockbuster.dk/movie/jumper?width=141&height=207" />                    
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/deja-vu?width=141&height=207" />
+                    <img src="http://images.blockbuster.dk/movie/army-of-darkness?width=141&height=207" />                    
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/bagstiv-i-boblebadet?width=141&height=207" />
