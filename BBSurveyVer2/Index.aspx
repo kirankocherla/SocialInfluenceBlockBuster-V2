@@ -6,7 +6,8 @@
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-lg-12" style="height: 30px;">
-                <h3>Velkommen</h3> 
+                <asp:Literal runat="server" ID="cmdLiteral"></asp:Literal>
+                <%--<h3>Velkommen</h3> 
                 <p>
                    Tak fordi du vil deltage i vores undersøgelse om den nye film streaming-service Blockbuster. Blockbuster var tidligere en kæde af fysiske butikker, hvor man kunne leje film. I dag er Blockbuster i Danmark udelukkende en digital tjeneste, som kan bruges på f.eks. computer, tablet og smart tv.  
                 </p>
@@ -25,7 +26,7 @@
                 </p>
                 <p>
                    Klar til at starte undersøgelsen?
-                </p>
+                </p>--%>
                 <div class="row">
                     <div class="col-lg-6 text-right">
                         

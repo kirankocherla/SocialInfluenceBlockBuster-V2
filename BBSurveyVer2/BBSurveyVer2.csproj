@@ -119,6 +119,8 @@
     <Content Include="PrizeAndContact.aspx" />
     <Content Include="ImportantInfo.aspx" />
     <Content Include="ThankYou.aspx" />
+    <Content Include="RememberFriends.aspx" />
+    <Content Include="RememberFriendsNames.aspx" />
     <Content Include="WebsiteFeedBack.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -324,6 +326,20 @@
     <Compile Include="ThankYou.aspx.designer.cs">
       <DependentUpon>ThankYou.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RememberFriends.aspx.cs">
+      <DependentUpon>RememberFriends.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RememberFriends.aspx.designer.cs">
+      <DependentUpon>RememberFriends.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RememberFriendsNames.aspx.cs">
+      <DependentUpon>RememberFriendsNames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RememberFriendsNames.aspx.designer.cs">
+      <DependentUpon>RememberFriendsNames.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebsiteFeedBack.aspx.cs">
       <DependentUpon>WebsiteFeedBack.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -410,7 +426,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>18632</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1030/</IISUrl>
+          <IISUrl>http://localhost:19814/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

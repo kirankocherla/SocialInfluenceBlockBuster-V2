@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\home\GitRepo\SocialInfluence\Head\SocialInfluence\BBSurvey\BBSurveyVer2\SIModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\home\GitRepo\SocialInfluenceV2\SocialInfluenceBlockBuster-V2\BBSurveyVer2\SIModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

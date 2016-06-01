@@ -142,7 +142,7 @@ namespace BBSurveyVer2 {
          if (ConfigurationManager.AppSettings["SurveyMode"] != "pre")
             Response.Redirect(string.Format("FriendsDetails.aspx?Responseid={0}", ResponseId));
          else {
-            Response.Redirect(string.Format("PrizeAndContact.aspx?Responseid={0}", ResponseId));
+            Response.Redirect(string.Format("RememberFriends.aspx?Responseid={0}", ResponseId));
          }
 
       }

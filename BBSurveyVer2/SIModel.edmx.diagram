@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="c51c89cb76a14492a8101dd79354f3ae" Name="Diagram1" ZoomLevel="80">
-        <EntityTypeShape EntityType="SocialInfluenceModel.ExperimentData" Width="1.5" PointX="9.875" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialInfluenceModel.ExperimentData" Width="1.5" PointX="9.875" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SocialInfluenceModel.ExperimentDefData" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SocialInfluenceModel.ExperimentFriendsShown" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SocialInfluenceModel.ExperimentPageVisitLog" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />

@@ -54,6 +54,9 @@ namespace BBSurveyVer2
         public Nullable<int> GroupType { get; set; }
         public Nullable<int> ExperimentFinished { get; set; }
         public string UseFilmTvSerial { get; set; }
+        public string WereFriendsPics { get; set; }
+        public string RememberFriendsName { get; set; }
+        public string FriendsName { get; set; }
     
         public virtual ResponseItem ResponseItem { get; set; }
     }

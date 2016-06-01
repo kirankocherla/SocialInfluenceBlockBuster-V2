@@ -49,6 +49,9 @@
           <Property Name="GroupType" Type="int" />
           <Property Name="ExperimentFinished" Type="int" />
           <Property Name="UseFilmTvSerial" Type="varchar" MaxLength="50" />
+          <Property Name="WereFriendsPics" Type="varchar" MaxLength="50" />
+          <Property Name="RememberFriendsName" Type="varchar" MaxLength="50" />
+          <Property Name="FriendsName" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="ExperimentDefData">
           <Key>
@@ -131,6 +134,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ResponseId" Type="int" />
           <Property Name="FriendId" Type="int" />
+          <Property Name="IndexOfDisplay" Type="int" />
         </EntityType>
         <EntityType Name="ResponseItem">
           <Key>
@@ -353,6 +357,9 @@
           <Property Type="Int32" Name="GroupType" />
           <Property Type="Int32" Name="ExperimentFinished" />
           <Property Name="UseFilmTvSerial" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WereFriendsPics" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RememberFriendsName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FriendsName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="ExperimentDefData">
           <Key>
@@ -518,6 +525,7 @@
           <Property Type="Int32" Name="FriendId" />
           <NavigationProperty Name="FacebookFriend" Relationship="SocialInfluenceModel.FK_FriendsPreChosen_FacebookFriend" FromRole="FriendsPreChosen" ToRole="FacebookFriend" />
           <NavigationProperty Name="ResponseItem" Relationship="SocialInfluenceModel.FK_FriendsPreChosen_ResponseItem" FromRole="FriendsPreChosen" ToRole="ResponseItem" />
+          <Property Name="IndexOfDisplay" Type="Int32" />
         </EntityType>
         <Association Name="FK_FriendsPreChosen_FacebookFriend">
           <End Type="SocialInfluenceModel.FacebookFriend" Role="FacebookFriend" Multiplicity="0..1" />
@@ -552,6 +560,9 @@
           <EntitySetMapping Name="ExperimentData">
             <EntityTypeMapping TypeName="SocialInfluenceModel.ExperimentData">
               <MappingFragment StoreEntitySet="ExperimentData">
+                <ScalarProperty Name="FriendsName" ColumnName="FriendsName" />
+                <ScalarProperty Name="RememberFriendsName" ColumnName="RememberFriendsName" />
+                <ScalarProperty Name="WereFriendsPics" ColumnName="WereFriendsPics" />
                 <ScalarProperty Name="UseFilmTvSerial" ColumnName="UseFilmTvSerial" />
                 <ScalarProperty Name="ExperimentFinished" ColumnName="ExperimentFinished" />
                 <ScalarProperty Name="GroupType" ColumnName="GroupType" />
@@ -689,6 +700,7 @@
           <EntitySetMapping Name="FriendsPreChosen">
             <EntityTypeMapping TypeName="SocialInfluenceModel.FriendsPreChosen">
               <MappingFragment StoreEntitySet="FriendsPreChosen">
+                <ScalarProperty Name="IndexOfDisplay" ColumnName="IndexOfDisplay" />
                 <ScalarProperty Name="FriendId" ColumnName="FriendId" />
                 <ScalarProperty Name="ResponseId" ColumnName="ResponseId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />

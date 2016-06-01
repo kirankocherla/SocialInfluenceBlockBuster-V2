@@ -59,7 +59,9 @@ namespace BBSurveyVer2 {
 
       protected void OnNextClick(object sender, EventArgs e) {
 
+         var friendsDic = new Dictionary<int,int>();
          var friends = new List<int>();
+         int indx = 0;
 
          foreach (
             var repeaterItem in
@@ -73,28 +75,31 @@ namespace BBSurveyVer2 {
             var friendChosen = (CheckBox) repeaterItem.FindControl("checkChooseFriend");
 
             if (friendChosen.Checked)
-               friends.Add(id);
+               friendsDic.Add(id, indx);
+            
+            indx++;
          }
 
-         if (friends.Count() >= 10) {
-            foreach (var friend in friends) {
-               Model.SaveFriendPreChosen(ResponseId.Value, friend);
+         if (friendsDic.Count() >= 10) {
+            foreach (var friend in friendsDic) {
+               Model.SaveFriendPreChosen(ResponseId.Value, friend.Key, friend.Value);
+               friends.Add(friend.Key);
             }
 
             //Choose category etc and go next
-            int experimentGroup = 0;
-            experimentGroup = Convert.ToInt32(Model.GetServiceInfoByName("LastExperimentGroup"));
-            if (experimentGroup < 9) {
-               experimentGroup++;
-            }
-            else {
-               experimentGroup = 1;
-            }
+            int experimentGroup = Model.GetExperimentDataByResponseId(ResponseId.Value).GroupType.Value;
+            //experimentGroup = Convert.ToInt32(Model.GetServiceInfoByName("LastExperimentGroup"));
+            //if (experimentGroup < 9) {
+            //   experimentGroup++;
+            //}
+            //else {
+            //   experimentGroup = 1;
+            //}
 
 
-            Model.UpdateServiceInfoByName("LastExperimentGroup", experimentGroup.ToString());
+            //Model.UpdateServiceInfoByName("LastExperimentGroup", experimentGroup.ToString());
 
-            Model.UpdateExperimentTypeAndGroup(ResponseId.Value, "pre", experimentGroup);
+            //Model.UpdateExperimentTypeAndGroup(ResponseId.Value, "pre", experimentGroup);
 
 
             var experimentDataDefinition = Model.GetExperimentDataDefinition();

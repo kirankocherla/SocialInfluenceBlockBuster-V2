@@ -31,6 +31,12 @@ namespace BBSurveyVer2 {
       [WebMethod(EnableSession = true)]
       public static int PostAuthToken(string authToken, string fbUserId, int responseId, string expType) {
          var model = new SIModelDS();
+
+         //for the bug as javascript called this function twice resulting in dounble friends
+         if (model.GetExperimentShownByResponseid(responseId).Count() > 0)
+            return responseId;
+
+         var friendIds = new List<int>();
          try {
             if (string.IsNullOrEmpty(authToken))
                throw new Exception("AuthToken is null");
@@ -86,31 +92,32 @@ namespace BBSurveyVer2 {
 
             //Decide group 
 
-            if (expType == "pre")
-               return responseId;
+            var experimentData = model.GetExperimentDataByResponseId(responseId);
 
-            var friendIds = model.GetFriendIdsByUserId(userId).ToList();
 
-            int experimentGroup = 0;
-            experimentGroup = Convert.ToInt32(model.GetServiceInfoByName("LastExperimentGroup"));
-            if (experimentGroup < 5) {
-               experimentGroup++;
-            }
-            else {
-               experimentGroup = 1;
-            }
+            //////
+            
 
-            model.UpdateServiceInfoByName("", experimentGroup.ToString());
-            model.UpdateExperimentTypeAndGroup(responseId, "post", experimentGroup);
+            //Choose category etc and go next
+            int experimentGroup = experimentData.GroupType.Value;
+            
 
             var experimentDataDefinition = model.GetExperimentDataDefinition();
-            var experimentDataDefForType = experimentDataDefinition.First(d => d.GroupId == experimentGroup && d.ExperimentType == "post");
+            var experimentDataDefForType = experimentDataDefinition.First(d => d.GroupId == experimentGroup && d.ExperimentType == "pre");
 
-            var rnd = new Random();            
+            var rnd = new Random();
 
             var includeList = new List<int>();
             var includeFriendList = new List<int>();
 
+            userId = model.GerUserIdByResponseId(responseId);
+
+            //for these types it should be random friends instead of influential ones
+            if (experimentGroup == 2 || experimentGroup == 4 || experimentGroup == 6 || experimentGroup == 8)
+               friendIds = model.GetFriendIdsByUserId(userId).ToList();
+            else {
+               return responseId;
+            }
 
             if (experimentDataDefForType.NumberOfFriends == 2) {
                includeList.Add(rnd.Next(0, friendIds.Count - 1));
@@ -145,7 +152,6 @@ namespace BBSurveyVer2 {
                foreach (var i1 in includeList) {
                   includeFriendList.Add(friendIds[i1]);
                }
-
             }
 
 
@@ -158,11 +164,95 @@ namespace BBSurveyVer2 {
                   ResponseId = responseId,
                   FriendId = includeFriendList[i],
                   Orderid = i++,
-
                });
             }
 
             model.SaveFriendsShown(friendsShown, responseId);
+
+            //Response.Redirect(string.Format("BBLauncher.aspx?Responseid={0}", ResponseId)); 
+             
+            //////
+
+
+
+
+            if (expType == "pre")
+               return responseId;
+
+            //var friendIds = model.GetFriendIdsByUserId(userId).ToList();
+
+            //int experimentGroup = 0;
+            //experimentGroup = Convert.ToInt32(model.GetServiceInfoByName("LastExperimentGroup"));
+            //if (experimentGroup < 5) {
+            //   experimentGroup++;
+            //}
+            //else {
+            //   experimentGroup = 1;
+            //}
+
+            //model.UpdateServiceInfoByName("", experimentGroup.ToString());
+            //model.UpdateExperimentTypeAndGroup(responseId, "post", experimentGroup);
+
+            //var experimentDataDefinition = model.GetExperimentDataDefinition();
+            //var experimentDataDefForType = experimentDataDefinition.First(d => d.GroupId == experimentGroup && d.ExperimentType == "post");
+
+            //var rnd = new Random();            
+
+            //var includeList = new List<int>();
+            //var includeFriendList = new List<int>();
+
+
+            //if (experimentDataDefForType.NumberOfFriends == 2) {
+            //   includeList.Add(rnd.Next(0, friendIds.Count - 1));
+
+            //   includeList.Add(GetRandomExcluding(0, friendIds.Count - 1, includeList.ToArray()));
+
+            //   foreach (var i1 in includeList) {
+            //      includeFriendList.Add(friendIds[i1]);
+            //   }
+            //}
+
+            //if (experimentDataDefForType.NumberOfFriends == 8) {
+
+            //   includeList.Add(rnd.Next(0, friendIds.Count - 1));
+
+            //   includeList.Add(GetRandomExcluding(0, friendIds.Count - 1, includeList.ToArray()));
+
+            //   includeList.Add(GetRandomExcluding(0, friendIds.Count - 1, includeList.ToArray()));
+
+            //   includeList.Add(GetRandomExcluding(0, friendIds.Count - 1, includeList.ToArray()));
+
+            //   includeList.Add(GetRandomExcluding(0, friendIds.Count - 1, includeList.ToArray()));
+
+            //   includeList.Add(GetRandomExcluding(0, friendIds.Count - 1, includeList.ToArray()));
+
+            //   includeList.Add(GetRandomExcluding(0, friendIds.Count - 1, includeList.ToArray()));
+
+            //   includeList.Add(GetRandomExcluding(0, friendIds.Count - 1, includeList.ToArray()));
+
+
+
+            //   foreach (var i1 in includeList) {
+            //      includeFriendList.Add(friendIds[i1]);
+            //   }
+
+            //}
+
+
+            //var friendsShown = new List<ExperimentFriendsShown>();
+            //int i = 0;
+            //for (int j = 0; j < experimentDataDefForType.NumberOfFriends; j++) {
+            //   friendsShown.Add(new ExperimentFriendsShown() {
+            //      CreatedAt = DateTime.Now,
+            //      ExperimentGroup = experimentGroup,
+            //      ResponseId = responseId,
+            //      FriendId = includeFriendList[i],
+            //      Orderid = i++,
+
+            //   });
+            //}
+
+            //model.SaveFriendsShown(friendsShown, responseId);
 
             return responseId;
          }
