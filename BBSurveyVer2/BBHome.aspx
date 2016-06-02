@@ -62,9 +62,16 @@
         <!-- /.container -->
     </nav>
 
+
+     <%--   <style>
+	body{ padding:0px; margin:0px;}
+    	.bannerimage{ background:url(banner-img.jpg) no-repeat top center; width:100%; min-height:300px; display:block;} 
+		.container{width:1200px; margin:auto; min-height:300px; display:block; cursor:pointer;}
+    </style>--%>
+
     <div style="position: relative; width: 100%; background-color: #000;">
         <div class="row">
-            <div class="col-lg-12 text-center" style="height: 500px; opacity: 1; background-image: url(https://images.blockbuster.dk/web?url=http%3A%2F%2Fdk.blockbuster.bbking.s3.amazonaws.com%2Fuploads%2F1459224651625_spionernesbro_banner.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+            <div class="col-lg-12 text-center" style="height:300px; opacity: 1; background-image: url('images/banner-img.jpg'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
