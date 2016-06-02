@@ -41,6 +41,12 @@ namespace BBSurveyVer2 {
          }
       }
 
+      protected int? ExperimentGroup {
+         get{
+            return Model.GetExperimentDataByResponseId(ResponseId.Value).GroupType;
+         }         
+      }
+
       private FacebookUserData _fbUserData;
       protected FacebookUserData UserId {
          get {

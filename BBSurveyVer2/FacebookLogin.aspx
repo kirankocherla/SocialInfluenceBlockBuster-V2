@@ -18,6 +18,7 @@
                 //alert(response.authResponse.accessToken);
                 var resId = <% =ResponseId %>;
                 var surveyType = "<%= SurveyMode %>";
+                var groupType = "<%= ExperimentGroup.Value %>";
                 $.ajax({
                     method: "POST",
                     url: "FacebookLogin.aspx/PostAuthToken",
@@ -25,7 +26,7 @@
                     data: JSON.stringify({ authToken: response.authResponse.accessToken, fbUserId: response.authResponse.userID, responseId: resId, expType: surveyType }),
                     success: function (data) {
                         
-                        if (surveyType == "pre") {
+                        if (surveyType == "pre" && ((groupType == 3) || (groupType == 5) || (groupType == 7) || (groupType == 9))) {
                             window.location.href = "FriendsInspireRate.aspx?ResponseId=" + resId;
                         } else {
                             window.location.href = "BBLauncher.aspx?ResponseId=" + resId;
@@ -67,13 +68,15 @@
 
         window.fbAsyncInit = function () {
             FB.init({
-                appId: '1457075121275282', 
+                appId: '1626818734231157', 
                 cookie: true,  // enable cookies to allow the server to access 
                 // the session
                 xfbml: true,  // parse social plugins on this page
                 version: 'v2.2' // use version 2.2
             });
 
+            //1457075121275282
+            //1626818734231157
             // Now that we've initialized the JavaScript SDK, we call 
             // FB.getLoginStatus().  This function gets the state of the
             // person visiting this page and can return one of three states to

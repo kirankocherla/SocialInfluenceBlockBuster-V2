@@ -390,11 +390,11 @@ namespace BBSurveyVer2 {
       } 
       
 
-      public int SaveFriendPreChosen(int responseId, int friendId) {
+      public int SaveFriendPreChosen(int responseId, int friendId, int indexOfDisplay) {
          using (var context = new SocialInfluenceEntities()) {
             var friend = new FriendsPreChosen()
                {
-                  FriendId = friendId, ResponseId = responseId
+                  FriendId = friendId, ResponseId = responseId, IndexOfDisplay = indexOfDisplay
                };
 
             context.FriendsPreChosen.Add(friend);
@@ -469,7 +469,22 @@ namespace BBSurveyVer2 {
       }
 
 
+      public void UpdateRememberFriends(int responseId, string val) {
+         using (var context = new SocialInfluenceEntities()) {
+            ExperimentData experimentData = context.ExperimentData.Single(s => s.ResponseId == responseId);
+            experimentData.WereFriendsPics = val;
+            context.SaveChanges();
+         }
+      }
 
+      public void UpdateRememberFriendsNames(int responseId, string val, string names) {
+         using (var context = new SocialInfluenceEntities()) {
+            ExperimentData experimentData = context.ExperimentData.Single(s => s.ResponseId == responseId);
+            experimentData.RememberFriendsName = val;
+            experimentData.FriendsName = names;
+            context.SaveChanges();
+         }
+      }
 
 
       

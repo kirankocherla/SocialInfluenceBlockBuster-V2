@@ -17,6 +17,7 @@ namespace BBSurveyVer2
         public int Id { get; set; }
         public Nullable<int> ResponseId { get; set; }
         public Nullable<int> FriendId { get; set; }
+        public Nullable<int> IndexOfDisplay { get; set; }
     
         public virtual FacebookFriend FacebookFriend { get; set; }
         public virtual ResponseItem ResponseItem { get; set; }
