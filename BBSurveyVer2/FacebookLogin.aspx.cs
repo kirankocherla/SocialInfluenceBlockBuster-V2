@@ -49,6 +49,7 @@ namespace BBSurveyVer2 {
             //if (HttpContext.Current.Session["RESPONSEID"] == null) {
             //   sessionId = model.CreateNewSession("");
             //   HttpContext.Current.Session["RESPONSEID"] = sessionId;
+             
             //}
             //else {
             //   sessionId = int.Parse(HttpContext.Current.Session["RESPONSEID"].ToString());

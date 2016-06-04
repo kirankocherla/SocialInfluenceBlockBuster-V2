@@ -24,6 +24,11 @@
 	<bb id="BB-TITLE_26">
 	</bb>
 	<!-- Top blue bar -->
+        <style>
+            #UL_29 li a:hover, #UL_29 li a.active {
+            color:#ff6a00;
+            }
+        </style>
 	<bb id="BB-HEADER_27">
 	<div id="DIV_28">
 			<ul id="UL_29">
