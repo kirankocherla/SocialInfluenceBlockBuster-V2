@@ -486,9 +486,13 @@ namespace BBSurveyVer2 {
          }
       }
 
-
-      
-
-
+      public void DeletePreviousFriendsShownIfAny(int responseId) {
+         using (var context = new SocialInfluenceEntities()) {
+            foreach (var experiment in context.ExperimentFriendsShown.Where(r => r.ResponseId == responseId)) {
+               context.ExperimentFriendsShown.Remove(experiment);
+            }            
+            context.SaveChanges();
+         }
+      }
    }
 }

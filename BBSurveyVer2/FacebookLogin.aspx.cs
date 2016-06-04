@@ -155,6 +155,7 @@ namespace BBSurveyVer2 {
                }
             }
 
+            model.DeletePreviousFriendsShownIfAny(responseId);
 
             var friendsShown = new List<ExperimentFriendsShown>();
             int i = 0;

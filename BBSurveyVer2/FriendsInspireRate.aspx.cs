@@ -81,6 +81,9 @@ namespace BBSurveyVer2 {
          }
 
          if (friendsDic.Count() >= 10) {
+
+            Model.DeletePreviousFriendsShownIfAny(ResponseId.Value);
+
             foreach (var friend in friendsDic) {
                Model.SaveFriendPreChosen(ResponseId.Value, friend.Key, friend.Value);
                friends.Add(friend.Key);
