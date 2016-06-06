@@ -35,6 +35,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                    <li style="border-left: 1px solid rgba(255, 255, 255, 0.28); border-right: 1px solid rgba(255, 255, 255, 0.28);">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -42,6 +44,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="BBHome.aspx">BLOCKBUSTER</a>
+                </li>                 
+                </ul>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -380,7 +384,18 @@ Er der film og tv-serier du er ekstra glad for, kan du købe dem og have dem til
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-
+     <script>
+         $(document).ready(function () {
+             $.each($('#bs-example-navbar-collapse-1').find('a'), function (index, aItem) {
+                 if (window.location.href.indexOf($(aItem).attr('href')) >= 0) {
+                     $(aItem).css('color', '#ffc429');
+                 }
+                 else {
+                     $(aItem).css('color', '#FFFFFF');
+                 }
+             });
+         });
+    </script>
     <!-- /.container -->
     </form>
 </body>

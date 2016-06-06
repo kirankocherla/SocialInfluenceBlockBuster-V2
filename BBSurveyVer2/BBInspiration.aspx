@@ -35,6 +35,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+           <ul class="nav navbar-nav">
+                    <li style="border-left: 1px solid rgba(255, 255, 255, 0.28); border-right: 1px solid rgba(255, 255, 255, 0.28);">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -42,6 +44,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="BBHome.aspx">BLOCKBUSTER</a>
+                 </li>                 
+                </ul>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -79,7 +83,7 @@
                             <headertemplate>
                                 <tr>
                                     <td style="wrap: no-wrap; text-wrap: none; text-align: left; padding-right: 0px; font-size: 18px; font-weight: bold; vertical-align: middle; color: #000; font-family: Conv_AvenirNextLTPro-DemiCn;">
-                                        <asp:literal runat="server" id="textForFriend" text="Disse venner bruger allerede Blockbuster:" />
+                                        <h1><b><asp:literal runat="server" id="textForFriend" text="Disse venner bruger allerede Blockbuster:" /></b></h1>
                                     </td>
                                     <td style="text-align: center; padding-left: 5px; font-size: 14px; font-weight: bold;">
                                         <img src="images/FbIcon.png" style="height: 50px; width: 50px;" />
@@ -879,7 +883,18 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-
+     <script>
+         $(document).ready(function () {
+             $.each($('#bs-example-navbar-collapse-1').find('a'), function (index, aItem) {
+                 if (window.location.href.indexOf($(aItem).attr('href')) >= 0) {
+                     $(aItem).css('color', '#ffc429');
+                 }
+                 else {
+                     $(aItem).css('color', '#FFFFFF');
+                 }
+             });
+         });
+    </script>
     <!-- /.container -->
     </form>
 </body>

@@ -1,7 +1,6 @@
-﻿<%@ page language="C#" autoeventwireup="true" codebehind="BBHome.aspx.cs" inherits="BBSurveyVer2.BBHome" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BBHome.aspx.cs" Inherits="BBSurveyVer2.BBHome" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8" />
@@ -11,37 +10,36 @@
     <meta name="author" content="" />
     <link href="css/customfont.css" rel="stylesheet" />
     <title></title>
-
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet" />
     <link href="css/Footer.css" rel="stylesheet" />
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
 </head>
-<body>
+<body style="padding: 0px; margin: 0px;">
     <form id="form1" runat="server">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container" >
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                    <li style="border-left: 1px solid rgba(255, 255, 255, 0.28); border-right: 1px solid rgba(255, 255, 255, 0.28);">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+                </button>                
                 <a class="navbar-brand" href="BBHome.aspx">BLOCKBUSTER</a>
+                </li>                 
+                </ul>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -61,43 +59,43 @@
         </div>
         <!-- /.container -->
     </nav>
-
-
-     <%--   <style>
+    <%-- <style>
 	body{ padding:0px; margin:0px;}
-    	.bannerimage{ background:url(banner-img.jpg) no-repeat top center; width:100%; min-height:300px; display:block;} 
+    	.bannerimage{ background:url('images/1188x270_Everest_03.png') no-repeat top center; width:100%; min-height:300px; display:block;} 
 		.container{width:1200px; margin:auto; min-height:300px; display:block; cursor:pointer;}
     </style>--%>
-
-    <div style="position: relative; width: 100%; background-color: #000;">
+    <div style="min-height: 300px; top: 51px; position:relative; padding: 0px; width: 100%;
+        background-image: url(images/banner-img.jpg); background-position: center top;
+        background-repeat: no-repeat;">
         <div class="row">
-            <div class="col-lg-12 text-center" style="height:300px; opacity: 1; background-image: url('images/banner-img.jpg'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+            <div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div style="visible: true; padding-top: 250px;">
+                            <div style="visible: true; padding-left:1%;padding-top: 9%;">
                                 <div class="row" id="divTableWrapper" runat="server">
                                     <div class="col-lg-12 text-center">
-                                        <table style="margin-top: 15px;">
-                                            <asp:repeater runat="server" id="rptFriends" onitemdatabound="rptFriends_OnItemDataBound">
-                                                <headertemplate>
+                                        <table style="margin-top: 8%;">
+                                            <asp:Repeater runat="server" ID="rptFriends" OnItemDataBound="rptFriends_OnItemDataBound">
+                                                <HeaderTemplate>
                                                     <tr>
-                                                        <td style="wrap: no-wrap; text-wrap: none; text-align: left; padding-right: 0px; font-size: 18px; font-weight: bold; vertical-align: middle; color: #ffc429; font-family: Conv_AvenirNextLTPro-DemiCn;">
-                                                            <asp:literal runat="server" id="textForFriend" text="Disse venner bruger allerede Blockbuster:" />
+                                                        <td style="wrap: no-wrap; text-wrap: none; text-align: left; padding-right: 0px;
+                                                            font-size: 18px; font-weight: bold; vertical-align: middle; color: #ffc429; font-family: Conv_AvenirNextLTPro-DemiCn;">
+                                                            <asp:Literal runat="server" ID="textForFriend" Text="Disse venner bruger allerede Blockbuster:" />
                                                         </td>
                                                         <td style="text-align: center; padding-left: 5px; font-size: 14px; font-weight: bold;">
                                                             <img src="images/FbIcon.png" style="height: 50px; width: 50px;" />
                                                         </td>
-                                                </headertemplate>
-                                                <itemtemplate>
+                                                </HeaderTemplate>
+                                                <ItemTemplate>
                                                     <td style="text-align: center; padding-left: 5px; font-size: 14px; font-weight: bold;">
-                                                        <asp:image runat="server" id="img" width="50" height="50" />
+                                                        <asp:Image runat="server" ID="img" Width="50" Height="50" />
                                                     </td>
-                                                </itemtemplate>
-                                                <footertemplate>
-                                                    </tr>            
-                                                </footertemplate>
-                                            </asp:repeater>
+                                                </ItemTemplate>
+                                                <FooterTemplate>
+                                                    </tr>
+                                                </FooterTemplate>
+                                            </asp:Repeater>
                                         </table>
                                     </div>
                                 </div>
@@ -108,49 +106,44 @@
             </div>
         </div>
     </div>
-
     <!-- Page Content -->
     <div class="container">
-
         <div class="row">
-            <div class="col-lg-12" style="height: 30px;">
+            <div class="col-lg-12" style="">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12" style="">
-                <h1 style="margin-left: 0; padding-left: 0;"><b>PREMIEREFILM</b></h1>
+            <div class="col-lg-12" style="margin-top: 60px;">
+                <h1 style="margin-left: 0; padding-left: 0;">
+                    <b>PREMIEREFILM</b></h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-3" style="">
                 <!-- <img src="//images.blockbuster.dk/movie/big-hero-6?width=292&amp;height=425" />-->
-               <%-- <img src=" http://images.blockbuster.dk/movie/007---spectre?width=292&height=425" />--%>
-
-                <img src="//images.blockbuster.dk/movie/007---spectre?width=292&height=425" />               
-
+                <%-- <img src=" http://images.blockbuster.dk/movie/007---spectre?width=292&height=425" />--%>
+                <img src="//images.blockbuster.dk/movie/007---spectre?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
                 <!--<img src="//images.blockbuster.dk/movie/min-soesters-boern-og-guldgraverne??width=292&amp;height=425" />-->
-                <img src="//images.blockbuster.dk/movie/sicario?width=292&height=425" />                
-
+                <img src="//images.blockbuster.dk/movie/sicario?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
                 <%--<img src="//images.blockbuster.dk/movie/nat-paa-museet-3?width=292&height=425" />--%>
                 <img src="//images.blockbuster.dk/movie/noegle-hus-spejl?width=292&height=425" />
-                
             </div>
             <div class="col-lg-3" style="">
-                  <!--<img src="//images.blockbuster.dk/movie/maend-hoens?width=292&height=425" />-->
-                  <img src="//images.blockbuster.dk/movie/emma--julemanden?width=292&height=425" />               
+                <!--<img src="//images.blockbuster.dk/movie/maend-hoens?width=292&height=425" />-->
+                <img src="//images.blockbuster.dk/movie/emma--julemanden?width=292&height=425" />
             </div>
         </div>
-        <div class="row" style="margin-top: 80px;">
+        <div class="row" style="margin-top: 60px;">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
                     <img src="//images.blockbuster.dk/movie/green-inferno-the?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/99-homes?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/99-homes?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="//images.blockbuster.dk/movie/our-brand-is-crisis?width=141&height=207" />
@@ -171,13 +164,13 @@
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="//images.blockbuster.dk/movie/pan?width=141&height=207" />
-                </div>    
+                </div>
             </div>
         </div>
         <div class="row" style="margin-top: 15px;">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/black-mass?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/black-mass?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="//images.blockbuster.dk/movie/beyond-the-mask?width=141&height=207" />
@@ -191,7 +184,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/riot?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/riot?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="//images.blockbuster.dk/movie/arthur--merlin?width=141&height=207" />
@@ -207,60 +200,58 @@
         <div class="row" style="margin-top: 15px;">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/far-til-fires-vilde-ferie?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/far-til-fires-vilde-ferie?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/crimson-peak?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/crimson-peak?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="//images.blockbuster.dk/movie/asylum-the?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/playing-with-dolls?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/playing-with-dolls?width=141&height=207" />
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/strangerland?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/strangerland?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/boost?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/boost?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/swelter?width=141&height=207" />                     
+                    <img src="//images.blockbuster.dk/movie/swelter?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/queen-of-the-desert?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/queen-of-the-desert?width=141&height=207" />
                 </div>
             </div>
         </div>
-
-
         <%--digital premier--%>
         <div class="row">
             <div class="col-lg-12" style="margin-top: 60px;">
-                <h1 style="margin-left: 0; padding-left: 0;"><b>DIGITALE FORPREMIERER</b></h1>
+                <h1 style="margin-left: 0; padding-left: 0;">
+                    <b>DIGITALE FORPREMIERER</b></h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/boelgen?width=292&height=425" /> 
+                <img src="//images.blockbuster.dk/movie/boelgen?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
                 <img src="//images.blockbuster.dk/movie/paranormal-activity---the-ghost-dimension?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/digging-for-fire?width=292&height=425" /> 
+                <img src="//images.blockbuster.dk/movie/digging-for-fire?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
             </div>
         </div>
-
-
         <%--mest populere--%>
         <div class="row">
             <div class="col-lg-12" style="margin-top: 60px;">
-                <h1 style="margin-left: 0; padding-left: 0;"><b>MEST POPULÆRE</b></h1>
+                <h1 style="margin-left: 0; padding-left: 0;">
+                    <b>MEST POPULÆRE</b></h1>
             </div>
         </div>
         <div class="row">
@@ -268,10 +259,10 @@
                 <img src="//images.blockbuster.dk/movie/007---spectre?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/martian-the?width=292&height=425" /> 
+                <img src="//images.blockbuster.dk/movie/martian-the?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/hotel-transylvania-2?width=292&height=425" /> 
+                <img src="//images.blockbuster.dk/movie/hotel-transylvania-2?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
                 <img src="//images.blockbuster.dk/movie/praktikanten?width=292&height=425" />
@@ -279,34 +270,33 @@
         </div>
         <div class="row" style="margin-top: 15px;">
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/far-til-fires-vilde-ferie?width=292&height=425" />  
+                <img src="//images.blockbuster.dk/movie/far-til-fires-vilde-ferie?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/sicario?width=292&height=425" /> 
+                <img src="//images.blockbuster.dk/movie/sicario?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/klovn-forever?width=292&height=425" /> 
+                <img src="//images.blockbuster.dk/movie/klovn-forever?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/krigen?width=292&height=425" />  
+                <img src="//images.blockbuster.dk/movie/krigen?width=292&height=425" />
             </div>
         </div>
         <div class="row" style="margin-top: 15px;">
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/fasandraeberne?width=292&height=425" />  
+                <img src="//images.blockbuster.dk/movie/fasandraeberne?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/black-mass?width=292&height=425" />  
+                <img src="//images.blockbuster.dk/movie/black-mass?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/everest?width=292&height=425" />  
+                <img src="//images.blockbuster.dk/movie/everest?width=292&height=425" />
             </div>
             <div class="col-lg-3" style="">
-                <img src="//images.blockbuster.dk/movie/transporter---refueled?width=292&height=425" /> 
+                <img src="//images.blockbuster.dk/movie/transporter---refueled?width=292&height=425" />
             </div>
         </div>
     </div>
-
     <%--<div style="position: relative; width: 100%; background-color: #000; margin-top: 40px;">
         <div class="container">
             <div class="row" style="padding-top: 60px; padding-bottom: 60px;">
@@ -388,18 +378,18 @@
             </div>
         </div>
     </div>--%>
-
     <div class="container">
         <%--Susanne bier--%>
         <div class="row">
             <div class="col-lg-12" style="margin-top: 60px;">
-                <h1 style="margin-left: 0; padding-left: 0;"><b>SUSANNE BIER</b></h1>
+                <h1 style="margin-left: 0; padding-left: 0;">
+                    <b>SUSANNE BIER</b></h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/en-chance-til?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/en-chance-til?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="//images.blockbuster.dk/movie/den-skaldede-frisoer?width=141&height=207" />
@@ -426,12 +416,11 @@
                 </div>
             </div>
         </div>
-
-
         <%--redaktionens favoritter--%>
         <div class="row">
             <div class="col-lg-12" style="margin-top: 60px;">
-                <h1 style="margin-left: 0; padding-left: 0;"><b>REDAKTIONENS FAVORITTER</b></h1>
+                <h1 style="margin-left: 0; padding-left: 0;">
+                    <b>REDAKTIONENS FAVORITTER</b></h1>
             </div>
         </div>
         <div class="row">
@@ -494,22 +483,14 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
-
-
-
     <div class="row">
         <div class="col-lg-12>" style="height: 100px;">
         </div>
     </div>
-
-
-    <div class="container text-center" style="background-color: #192236; width: 100%; text-align: center !important; margin: 0px-auto;">
+    <div class="container text-center" style="background-color: #192236; width: 100%;
+        text-align: center !important; margin: 0px-auto;">
         <div class="container">
-
             <bb id="BB-FOOTER_2392">
 	<div id="DIV_2393">
 		<h2 id="H2_2394">
@@ -695,16 +676,10 @@
 	</bb>
         </div>
     </div>
-
-
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-
     <!-- /.container -->
     </form>
 </body>

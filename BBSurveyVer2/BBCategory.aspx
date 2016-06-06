@@ -35,6 +35,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                    <li style="border-left: 1px solid rgba(255, 255, 255, 0.28); border-right: 1px solid rgba(255, 255, 255, 0.28);">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -42,6 +44,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="BBHome.aspx">BLOCKBUSTER</a>
+                </li>                 
+                </ul>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -193,7 +197,7 @@
                             <headertemplate>
                                 <tr>
                                     <td style="wrap: no-wrap; text-wrap: none; text-align: left; padding-right: 0px; font-size: 18px; font-weight: bold; vertical-align: middle; color: #000; font-family: Conv_AvenirNextLTPro-DemiCn;">
-                                        <asp:literal runat="server" id="textForFriend" text="Disse venner bruger allerede Blockbuster:" />
+                                       <h1><b><asp:literal runat="server" id="textForFriend" text="Disse venner bruger allerede Blockbuster:" /></b></h1>
                                     </td>
                                     <td style="text-align: center; padding-left: 5px; font-size: 14px; font-weight: bold;">
                                         <img src="images/FbIcon.png" style="height: 50px; width: 50px;" />
@@ -219,60 +223,60 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/jarhead---the-siege?width=141&height=207" />  
+                    <img src="//images.blockbuster.dk/movie/kollektivet?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/boelgen?width=141&height=207" />  
+                    <img src="//images.blockbuster.dk/movie/alice---the-darker-side-of-the-mirror?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/riot?width=141&height=207" />  
+                     <img src="//images.blockbuster.dk/movie/pel---birth-of-a-legend?width=141&height=207" />  
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/arthur--merlin?width=141&height=207" /> 
+                  <img src="//images.blockbuster.dk/movie/grease-live?width=141&height=207" />  
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/beyond-the-mask?width=141&height=207" />  
+                   <img src="//images.blockbuster.dk/movie/steve-jobs?width=141&height=207" />   
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/boost?width=141&height=207" />
+                   <img src="//images.blockbuster.dk/movie/benefactor-the?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/sicario?width=141&height=207" /> 
+                     <img src="//images.blockbuster.dk/movie/macbeth?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/007---spectre?width=141&height=207" />  
+                    <img src="//images.blockbuster.dk/movie/creed?width=141&height=207" />
                 </div>
             </div>
         </div>
         <div class="row" style="margin-top: 15px;">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/lost-in-the-sun?width=141&height=207" />  
+                    <img src="//images.blockbuster.dk/movie/hyena-road?width=141&height=207" />  
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/he-never-died?width=141&height=207" />  
+                    <img src="//images.blockbuster.dk/movie/fear-the?width=141&height=207" />  
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/snigskytten?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/krop-og-sjael?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/transporter---refueled?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/big-short-the?width=141&height=207" /> 
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/last-witch-hunter-the?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/driftless-area-the?width=141&height=207" /> 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/american-ultra?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/revenant-the?width=141&height=207" /> 
                 </div> 
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/no-escape?width=141&height=207" />  
+                    <img src="//images.blockbuster.dk/movie/el-club?width=141&height=207" />  
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="//images.blockbuster.dk/movie/maze-runner-2---infernoet?width=141&height=207" /> 
+                    <img src="//images.blockbuster.dk/movie/colonia?width=141&height=207" /> 
                 </div>
             </div>
         </div>
@@ -1424,7 +1428,18 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-
+    <script>
+        $(document).ready(function () {
+            $.each($('#bs-example-navbar-collapse-1').find('a'), function (index, aItem) {
+                if (window.location.href.indexOf($(aItem).attr('href')) >= 0) {
+                    $(aItem).css('color', '#ffc429');
+                }
+                else {
+                    $(aItem).css('color', '#FFFFFF');
+                }
+            });
+        });
+    </script>    
     <!-- /.container -->
     </form>
 </body>
