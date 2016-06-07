@@ -17,7 +17,7 @@
                         <td></td>
                         <td class="text-center" style="padding: 10px;">Fuldstændig uenig</td>
                         <td class="text-center" style="padding: 10px;">Uenig</td>
-                        <td class="text-center" style="padding: 10px;">Til dels uening</td>
+                        <td class="text-center" style="padding: 10px;">Til dels uenig</td>
                         <td class="text-center" style="padding: 10px;">Hverken enig eller uenig</td>
                         <td class="text-center" style="padding: 10px;">Til dels enig</td>
                         <td class="text-center" style="padding: 10px;">Enig</td>

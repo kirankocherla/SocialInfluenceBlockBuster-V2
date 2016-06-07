@@ -10,7 +10,7 @@
             width: 800px;
             height: 22px;
             border: 1px solid #111;
-            background-color: #ffe4e1;
+            background-color: #fff;
         }
 
             #progressBar div {
@@ -46,14 +46,14 @@
                         Markér kun personer, som bor i Danmark. Du behøver ikke kende deres præcise filmsmag – det er tilstrækkeligt, hvis du bare tror, at de har en smag, som du kunne blive inspireret af, hvis du f.eks. skulle vælge en film at se i aften. Som før beskrevet vil dine venner ikke få at vide, at du har markeret dem her. 
                     </p>
                 </div>
-                <div id="users" class="col-lg-12" style="margin-top: 10px !important; margin-left: 0px !important;">
+                <div id="users" class="col-lg-12" style="margin-top: -15px !important; margin-left: 0px !important;">
                     <div>
                         <h4>Søg</h4>
                         <input class="search" placeholder="search" id="txtSearch" style="width: 60% !important;" />
                         &nbsp;&nbsp;<input type="button" id="btnClearAll" value="Vis alle" />
                     </div>
                     <div style="margin-top: 10px; margin-bottom: 15px;">
-                        <h4>Progress</h4>
+                        <h4>Antal venner valgt</h4>
                         <div id="progressBar">
                             <div></div>
                         </div>

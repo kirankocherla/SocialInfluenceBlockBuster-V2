@@ -142,9 +142,12 @@ namespace BBSurveyVer2 {
          if (ConfigurationManager.AppSettings["SurveyMode"] != "pre")
             Response.Redirect(string.Format("FriendsDetails.aspx?Responseid={0}", ResponseId));
          else {
-            Response.Redirect(string.Format("RememberFriends.aspx?Responseid={0}", ResponseId));
+            if(ExperimentGroup != 1) 
+               Response.Redirect(string.Format("RememberFriends.aspx?Responseid={0}", ResponseId));
+            else {
+               Response.Redirect(string.Format("PrizeAndContact.aspx?Responseid={0}", ResponseId));
+            }
          }
-
       }
 
       protected void OnPreviousClick(object sender, EventArgs e) {

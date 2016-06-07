@@ -57,19 +57,29 @@
     <script>
         
         function progress(percent, $element) {
-            var progressBarWidth = percent * $element.width() / 100;
-            $element.find('div').animate({ width: progressBarWidth }, 500).html(percent + "% ");
+
+            var progressBarWidth = 0;
+
+            if (percent > 100)
+                progressBarWidth = 100 * $element.width() / 100;
+            else {
+                progressBarWidth = percent * $element.width() / 100;
+            }
+
+            $element.find('div').animate({ width: progressBarWidth }, 500).html(percent/10 + " valgt");
         }
 
         function progressBarHandle() {
             var currPlus = $("#hiddenSelectedCount").val();
             var currPlusVal = parseInt(currPlus);
             
-            if (currPlusVal > 10)
-                progress(10 * 10, $('#progressBar'));
-            else {
-               progress(currPlusVal * 10, $('#progressBar'));
-            }            
+            progress(currPlusVal * 10, $('#progressBar'));
+
+            //if (currPlusVal > 10)
+            //    progress(10 * 10, $('#progressBar'));
+            //else {
+            //   progress(currPlusVal * 10, $('#progressBar'));
+            //}            
         }
 
         function FiendIsClicked(event) {                        

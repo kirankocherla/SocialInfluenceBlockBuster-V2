@@ -90,7 +90,12 @@ namespace BBSurveyVer2 {
 
          Model.UpdateFilmTvSerier(ResponseId.Value, radioFilmSerie.SelectedValue);
 
-         Response.Redirect(string.Format("FacebookLogin.aspx?Responseid={0}", ResponseId));
+
+         if(ExperimentGroup != 1)
+            Response.Redirect(string.Format("FacebookLogin.aspx?Responseid={0}", ResponseId));
+         else {
+            Response.Redirect(string.Format("BBLauncher.aspx?Responseid={0}", ResponseId));
+         }
 
       }
 
