@@ -61,7 +61,7 @@
                   
                 <br />
                 <br />
-                <h3>Uddyb gerne din oplevelse af Blockbuster-sitet. Var der f.eks. nogen elementer eller funktioner, som særligt vakte din opmærksomhed, gjorde dig interesseret eller irriteret? </h3>
+                <h3>Uddyb gerne din oplevelse af websitet. Var der f.eks. nogen elementer eller funktioner, som særligt vakte din opmærksomhed, gjorde dig interesseret eller irriteret? </h3>
                 <br />
                 <asp:textbox runat="server" id="txtYourFeedBack" textmode="MultiLine" width="100%"></asp:textbox>
                 <br /><br />

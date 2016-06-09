@@ -5,7 +5,7 @@
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
-                <h4>Forskellige streaming-tjenester tilbyder forskellige måder at betale for de film, man ser. Hvilken mulighed foretrækker du (eller vil du sandsynligvis foretrække, hvis du ikke pt. bruger en streaming-tjeneste)?</h4>
+                <h4>Forskellige streaming-tjenester tilbyder forskellige måder at betale for de film, du ser. Hvilken mulighed foretrækker du?</h4>
                 <p>
                     <asp:label runat="server" id="lblError" forecolor="red" visible="False"></asp:label> <br />
                     <asp:radiobuttonlist runat="server" id="rdPaymentType" repeatdirection="Vertical"  cssclass="rbl">

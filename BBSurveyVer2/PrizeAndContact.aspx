@@ -10,7 +10,7 @@
                 </h2>
                 <br /><br />
                 <p>
-                    Når du har indsendt dine svar, deltager du automatisk i lodtrækningen om et gavekort á 1.000 kr. fra gavekortet.dk. Derudover trækker vi også lod blandt alle deltagere om i alt 20 x 1 biografbilletter eller gavekort til Blockbuster (kan også bruges på f.eks. tablet eller streaming på computer). Venligst angiv, hvilken af følgende du gerne vil vinde. 
+                    Når du har indsendt dine svar, deltager du automatisk i lodtrækningen om et gavekort á 1.000 kr. fra gavekortet.dk. Derudover trækker vi også lod blandt alle deltagere om i alt 20 x 1 biografbilletter eller gavekort til Blockbuster. Angiv venligst, hvilken af følgende du gerne vil vinde. 
                 </p>
                 <br />
                 <br />
@@ -23,7 +23,7 @@
                         <asp:listitem text="Ingen af ovenstående" value="None"></asp:listitem>
                     </asp:radiobuttonlist><br /><br />                    
                 </p>                
-                <h4>Vi vil gerne have mulighed for at kontakte tilfældigt udvalgte deltagere til en uddybende samtale om deres oplevelse af Blockbuster. Er dette ok med dig?</h4>
+                <h4>Vi vil gerne have mulighed for at kontakte tilfældigt udvalgte deltagere til en uddybende samtale om deres oplevelse af Blockbuster. Må vi kontakte dig?</h4>
                 <p>
                     <asp:radiobuttonlist runat="server" id="rdContactPermission" cssclass="rbl">
                         <asp:listitem text="Ja, det er ok, at jeg muligvis bliver kontaktet via e-mail efter denne undersøgelse" value="1"></asp:listitem>

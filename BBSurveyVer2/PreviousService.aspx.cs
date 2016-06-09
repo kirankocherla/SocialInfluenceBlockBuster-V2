@@ -65,7 +65,7 @@ namespace BBSurveyVer2 {
                rdPreviousServices.Items.Add(new ListItem("TDC Play / YouSee Play", "TDCPlay"));
                rdPreviousServices.Items.Add(new ListItem("Netflix", "Netflix"));
                rdPreviousServices.Items.Add(new ListItem("HBO", "HBO"));
-               rdPreviousServices.Items.Add(new ListItem("Blockbuster (på digitale platforme såsom PC, smart tv og tablet, dvs. ikke leje af film i fysiske butikker)", "BlockBuster"));
+               rdPreviousServices.Items.Add(new ListItem("Blockbuster (på digitale platforme såsom PC, smart-tv og tablet, dvs. ikke leje af film i fysiske butikker)", "BlockBuster"));
                rdPreviousServices.Items.Add(new ListItem("Google Play", "GooglePlay"));
                rdPreviousServices.Items.Add(new ListItem("iTunes", "iTunes"));
                rdPreviousServices.Items.Add(new ListItem("Viaplay", "Viaplay"));

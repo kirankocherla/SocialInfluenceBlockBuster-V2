@@ -4,24 +4,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container" style="margin-top: 100px;">
         <div class="row">
-            <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
-                 <%--<h4>Vi vil nu bede dig se på nogle forskellige dele af Blockbuster.dk og bagefter fortælle os om din oplevelse af sitet. Vær opmærksom på, at det site, vi viser dig, er en begrænset udgave af Blockbuster.dk. Det betyder, at du ikke kan klikke på alting – f.eks. vil du ikke kunne klikke på filmene og læse mere om dem. Men du vil kunne se sidens struktur, layout, hvilke typer film du kan se her etc. Som minimum bør du se på forsiden og de to undersider ”Genrer” og ”Inspiration”. Klar? Så tryk på knappen ”Blockbuster”. Websitet åbner nu i en ny fane i din browser. </h4>--%>
+            <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">                
                                  
-                   <p>Vi vil nu bede dig se på Blockbuster.dk og bagefter fortælle os om din oplevelse af websitet.(vigtigt: Brug linket nederst på denne side)</p>
+                   <p>Vi vil nu bede dig se på et film-website og bagefter fortælle os din mening om det (vigtigt: Brug linket nederst på denne side).</p>
                      
-                    <p>Vær opmærksom på, at det site, vi viser dig, er en begrænset udgave af Blockbuster.dk. Det betyder, at du ikke kan klikke på alting – f.eks. 
-                    vil du ikke kunne klikke på en film og læse mere om den. Men du vil kunne se sidens struktur, layout, hvilke typer film du kan se her etc. og heraf kunne 
-                    danne dig et overordnet indtryk af Blockbuster.</p> 
+                    <p>Websitet er en testversion, så vær opmærksom på, at det har visse begrænsninger, som det naturligvis ikke vil have, når det går live. F.eks. vil du ikke kunne klikke på en film og læse mere om den, ligesom der heller ikke er information om, hvad de enkelte film koster (regn med, at man betaler pr. film man ser, og at alle film koster mellem 19 og 49 kr. at leje i to døgn). Men du vil kunne se sidens struktur, layout, hvilke typer film du kan se her etc. og heraf kunne danne dig et overordnet indtryk af Blockbuster, hvilket er formålet med undersøgelsen. </p> 
                       
-                    <p>Du vil ikke kunne se, hvad de enkelte film koster. Regn med, at man betaler pr. film, og at alle film koster mellem 19 og 49 kr. at leje i to døgn.</p> 
+                    <p>Som minimum bør du besøge forsiden og de to undersider ”Genrer” og ”Inspiration”. Prøv fx at finde en film, du gerne vil se. </p> 
                                            
-                    <p>Som minimum bør du klikke dig ind på forsiden og de to undersider ”Genrer” og ”Inspiration”.<br> 
-
-                    Klar? Så tryk på knappen ”Blockbuster”. Websitet åbner nu i en ny fane i din browser. </p>
-                               
+                    <p>Klar? Så tryk på knappen ”Blockbuster”. Websitet åbner nu i en ny fane i din browser. </p><br/>                     
+                
+                <p>               
                 <h3>
-                    Når du er færdig med at se på websitet, så gå tilbage til denne fane og klik på knapen Næste
+                    Når du er færdig med at se på websitet, så gå tilbage til denne fane og klik på knappen ”Næste”
                 </h3>
+                 </p> 
                 <br />
                 <br />
                 <asp:label runat="server" id="lblError" forecolor="red" visible="False"></asp:label><br />
@@ -31,13 +28,13 @@
                         Trin 1)
                     </div>
                     <div class="col-lg-6" style="padding-left: 15px;">
-                    <ul class="nav navbar-nav">
-                    <li style="border-left: 1px solid rgba(255, 255, 255, 0.28); border-right: 1px solid rgba(255, 255, 255, 0.28);">
+                    <%--<ul class="nav navbar-nav">
+                    <li style="border-left: 1px solid rgba(255, 255, 255, 0.28); border-right: 1px solid rgba(255, 255, 255, 0.28);">--%>
                         <a class="navbar-brand" target="_blank" href="BBHome.aspx?ResponseId=<%=ResponseId.Value %>" style="float:none;color: #1E4797 !important;text-decoration:underline !important;">BLOCKBUSTER</a>
                         <%--<asp:button runat="server" text="Blockbuster.dk" onclick="OnBBClick" id="cmdBB" width="150" />
                     </div>--%>
-                    </li>                 
-                </ul>
+                    <%--</li>                 
+                </ul>--%>
                 </div>
 
                 <div class="row">
@@ -53,4 +50,5 @@
             </div>            
         </div>
     </div>
+</div>
 </asp:Content>

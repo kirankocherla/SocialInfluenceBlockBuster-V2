@@ -36,6 +36,7 @@ namespace BBSurveyVer2 {
             if (friend != null) {
                var imgControl = (Image) e.Item.FindControl("img");
                imgControl.ImageUrl = Model.GetFacebookFriendById(friend.FriendId.GetValueOrDefault()).ImageUrl;
+               imgControl.Attributes.Add("title", Model.GetFacebookFriendById(friend.FriendId.GetValueOrDefault()).Name);
             }
          }
          else if (e.Item.ItemType == ListItemType.Header) {

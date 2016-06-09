@@ -5,7 +5,7 @@
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
-                <h2>Vigtig information</h2>
+                <h2>Information</h2>
                 <br /><br />
                 <p>
                     Vær opmærksom, at den version af Blockbuster.dk, som du har set i denne undersøgelse, ikke er den nuværende version af Blockbuster.dk. Det betyder også, at informationen om dine Facebook-venners brug af Blockbuster er fiktiv og har haft til formål at illustrere, hvordan information fra Facebook kan integreres i en film streaming-tjeneste.  

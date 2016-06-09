@@ -27,8 +27,8 @@
                 <h4>Hvordan ser du størstedelen af dine film? </h4>
                 <p>                    
                     <asp:radiobuttonlist runat="server" id="rdFilmMedium" repeatdirection="Vertical"  cssclass="rbl">
-                        <asp:ListItem text="På TV (live tv eller optaget fra tv)" value="OnLiveTVOrRecorded"></asp:ListItem>   
-                        <asp:ListItem text="Smart TV (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)" value="SmartTv"></asp:ListItem>   
+                        <asp:ListItem text="På tv (live tv eller optaget fra tv)" value="OnLiveTVOrRecorded"></asp:ListItem>   
+                        <asp:ListItem text="Smart-tv (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)" value="SmartTv"></asp:ListItem>   
                         <asp:ListItem text="Tablet (f.eks. iPad)" value="Tablet"></asp:ListItem>   
                         <asp:ListItem text="Mobil" value="Mobil"></asp:ListItem>   
                         <asp:ListItem text="Computer" value="Computer"></asp:ListItem>   

@@ -6,7 +6,9 @@
 <asp:content id="Content2" contentplaceholderid="ContentPlaceHolder1" runat="server">
     <div class="container" style="margin-top: 100px;">
         <div class="row">
+
             <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
+
                 <h4>Hvilke af følgende film og tv streaming-tjenester har du brugt inden for det seneste halve år? Det betyder ikke noget, hvilken platform (f.eks. tablet eller PC) du bruger tjenesten på</h4>
                 <p>
                     <asp:label runat="server" id="lblError" forecolor="red" visible="False"></asp:label><br />
@@ -36,6 +38,7 @@
                     <asp:button runat="server" id="cmdNotTargetGroup" text="Gem e-mail" onclick="NotTargetGroup"/>
                 </p>
             </div>
+
         </div>
     </div>
 </asp:content>

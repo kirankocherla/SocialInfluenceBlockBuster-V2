@@ -185,13 +185,12 @@
 
         <%--action--%>
         <div class="row">
-            <div class="col-lg-12" style="height: 30px;">
-            </div>
+           <%-- <div class="col-lg-12" style="height: 30px;">
+            </div>--%>
         </div>
         <div class="row">
             <div class="col-lg-12" style="">
                 <div style="visible: true;" id="divTableWrapper" runat="server">
-
                     <table style="margin-top: 15px;">
                         <asp:repeater runat="server" id="rptFriends" onitemdatabound="rptFriends_OnItemDataBound">
                             <headertemplate>
@@ -213,9 +212,7 @@
                             </footertemplate>
                         </asp:repeater>
                     </table>                    
-                </div>
-                <br />
-                <br />
+                </div>               
                 <br />
                 <%--<h1 style="margin-left: 0; padding-left: 0;"><b>ACTION ></b></h1>--%>
             </div>

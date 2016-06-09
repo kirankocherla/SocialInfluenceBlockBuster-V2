@@ -25,7 +25,7 @@
                          <asp:ListItem text="Kvinde" value="Female"></asp:ListItem>                            
                       </asp:dropdownlist>
                 </p><br />
-                <h4>Hvad er din ægteskabelige status? </h4>
+                <h4>Hvad er din civilstatus? </h4>
                 <p>                    
                      <asp:dropdownlist runat="server" id="rdMarries">
                          <asp:ListItem text="Vælg" value="-1"></asp:ListItem>  
