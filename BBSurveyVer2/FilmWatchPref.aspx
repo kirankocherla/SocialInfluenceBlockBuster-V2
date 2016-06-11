@@ -10,17 +10,11 @@
                 <p>
                     <asp:label runat="server" id="lblError" forecolor="red" visible="False"></asp:label> <br />                    
                     <asp:radiobuttonlist runat="server" id="rdFilmPerMonth" repeatdirection="Vertical"  cssclass="rbl">
-                        <asp:ListItem text="1" value="1"></asp:ListItem>   
-                        <asp:ListItem text="2" value="2"></asp:ListItem>   
-                        <asp:ListItem text="3" value="3"></asp:ListItem>   
-                        <asp:ListItem text="4" value="4"></asp:ListItem>   
-                        <asp:ListItem text="5" value="5"></asp:ListItem>   
-                        <asp:ListItem text="6" value="6"></asp:ListItem>   
-                        <asp:ListItem text="7" value="7"></asp:ListItem>   
-                        <asp:ListItem text="8" value="8"></asp:ListItem>   
-                        <asp:ListItem text="9" value="9"></asp:ListItem>   
-                        <asp:ListItem text="10" value="10"></asp:ListItem>   
-                        <asp:ListItem text="Over 10" value="10+"></asp:ListItem>   
+                        <asp:ListItem text="0" value="0"></asp:ListItem>   
+                        <asp:ListItem text="1-3" value="1-3"></asp:ListItem>   
+                        <asp:ListItem text="3-6" value="3-6"></asp:ListItem>   
+                        <asp:ListItem text="7-9" value="7-9"></asp:ListItem>                           
+                        <asp:ListItem text="10 eller flere" value="10+"></asp:ListItem>   
                          
                       </asp:radiobuttonlist>
                 </p><br />

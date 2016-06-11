@@ -57,6 +57,12 @@ namespace BBSurveyVer2
         public string WereFriendsPics { get; set; }
         public string RememberFriendsName { get; set; }
         public string FriendsName { get; set; }
+        public string RememberFriendPics { get; set; }
+        public string RememberChildFilm { get; set; }
+        public string RememberJuleFilm { get; set; }
+        public string RememberKlippekort { get; set; }
+        public string RememberMusicalTheme { get; set; }
+        public string RememberJuliaRobert { get; set; }
     
         public virtual ResponseItem ResponseItem { get; set; }
     }

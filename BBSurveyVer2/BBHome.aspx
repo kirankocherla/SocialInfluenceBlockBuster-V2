@@ -669,7 +669,7 @@
 		</div>
 		<div id="DIV_2490">
 			<p id="P_2491">
-				©2014 BLOCKBUSTER. Alle rettigheder forbeholdes. BLOCKBUSTER udbydes af TDC A/S, Teglholmsgade 1, 0900 K&#248;benhavn CVR 14773908, kundeservice@blockbuster.dk <a href="/hj&#230;lp/cookies" id="A_2492">cookies</a>
+				©2014 BLOCKBUSTER. Alle rettigheder forbeholdes. BLOCKBUSTER udbydes af TDC A/S, Teglholmsgade 1, 0900 K&#248;benhavn CVR 14773908, kundeservice@blockbuster.dk <a href="#" id="A_2492">cookies</a>
 			</p>
 			</div>
 		</div>

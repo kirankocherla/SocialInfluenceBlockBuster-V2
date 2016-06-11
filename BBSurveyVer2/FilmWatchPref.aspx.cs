@@ -40,8 +40,8 @@ namespace BBSurveyVer2 {
 
          switch (rndInstance) {
             case 1:
-               rdFilmMedium.Items.Add(new ListItem("Smart TV (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)", "SmartTv")); 
-               rdFilmMedium.Items.Add(new ListItem("På TV (live tv eller optaget fra tv)", "OnLiveTVOrRecorded"));                
+               rdFilmMedium.Items.Add(new ListItem("Smart-tv (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)", "SmartTv")); 
+               rdFilmMedium.Items.Add(new ListItem("På tv (live tv eller optaget fra tv)", "OnLiveTVOrRecorded"));                
                rdFilmMedium.Items.Add(new ListItem("Tablet (f.eks. iPad)", "Tablet")); 
                rdFilmMedium.Items.Add(new ListItem("Mobil", "Mobil"));                
                rdFilmMedium.Items.Add(new ListItem("Spillekonsol, fx Xbox eller Playstation (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)", "GameConsole")); 
@@ -52,14 +52,14 @@ namespace BBSurveyVer2 {
                rdFilmMedium.Items.Add(new ListItem("Ved ikke", "Do not know")); 
                break;
             case 2:
-               rdFilmMedium.Items.Add(new ListItem("På TV (live tv eller optaget fra tv)", "OnLiveTVOrRecorded"));                
+               rdFilmMedium.Items.Add(new ListItem("På tv (live tv eller optaget fra tv)", "OnLiveTVOrRecorded"));                
                rdFilmMedium.Items.Add(new ListItem("Tablet (f.eks. iPad)", "Tablet"));
                rdFilmMedium.Items.Add(new ListItem("I biografen", "Cinema")); 
                rdFilmMedium.Items.Add(new ListItem("Mobil", "Mobil")); 
                rdFilmMedium.Items.Add(new ListItem("Computer", "Computer")); 
                rdFilmMedium.Items.Add(new ListItem("Spillekonsol, fx Xbox eller Playstation (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)", "GameConsole"));                
                rdFilmMedium.Items.Add(new ListItem("På DVD", "DVD"));
-               rdFilmMedium.Items.Add(new ListItem("Smart TV (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)", "SmartTv")); 
+               rdFilmMedium.Items.Add(new ListItem("Smart-tv (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)", "SmartTv")); 
                rdFilmMedium.Items.Add(new ListItem("Andet", "Others")); 
                rdFilmMedium.Items.Add(new ListItem("Ved ikke", "Do not know")); 
                break;
@@ -67,19 +67,19 @@ namespace BBSurveyVer2 {
                rdFilmMedium.Items.Add(new ListItem("På DVD", "DVD"));
                rdFilmMedium.Items.Add(new ListItem("Computer", "Computer")); 
                rdFilmMedium.Items.Add(new ListItem("I biografen", "Cinema"));                
-               rdFilmMedium.Items.Add(new ListItem("Smart TV (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)","SmartTv")); 
+               rdFilmMedium.Items.Add(new ListItem("Smart-tv (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)","SmartTv")); 
                rdFilmMedium.Items.Add(new ListItem("Tablet (f.eks. iPad)", "Tablet")); 
                rdFilmMedium.Items.Add(new ListItem("Mobil", "Mobil"));                
                rdFilmMedium.Items.Add(new ListItem("Spillekonsol, fx Xbox eller Playstation (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)", "GameConsole"));                
                rdFilmMedium.Items.Add(new ListItem("Andet", "Others")); 
                rdFilmMedium.Items.Add(new ListItem("Ved ikke", "Do not know"));
-               rdFilmMedium.Items.Add(new ListItem("På TV (live tv eller optaget fra tv)", "OnLiveTVOrRecorded")); 
+               rdFilmMedium.Items.Add(new ListItem("På tv (live tv eller optaget fra tv)", "OnLiveTVOrRecorded")); 
                break;
             default:
                rdFilmMedium.Items.Add(new ListItem("Mobil", "Mobil")); 
                rdFilmMedium.Items.Add(new ListItem("Spillekonsol, fx Xbox eller Playstation (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)", "GameConsole"));
-               rdFilmMedium.Items.Add(new ListItem("Smart TV (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)", "SmartTv")); 
-               rdFilmMedium.Items.Add(new ListItem("På TV (live tv eller optaget fra tv)", "OnLiveTVOrRecorded"));                
+               rdFilmMedium.Items.Add(new ListItem("Smart-tv (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)", "SmartTv")); 
+               rdFilmMedium.Items.Add(new ListItem("På tv (live tv eller optaget fra tv)", "OnLiveTVOrRecorded"));                
                rdFilmMedium.Items.Add(new ListItem("Tablet (f.eks. iPad)", "Tablet"));                
                rdFilmMedium.Items.Add(new ListItem("Computer", "Computer"));                
                rdFilmMedium.Items.Add(new ListItem("I biografen", "Cinema")); 

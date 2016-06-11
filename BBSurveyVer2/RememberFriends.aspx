@@ -6,17 +6,55 @@
         <div class="row">
             <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
                 <h2>
-                    Kan du huske, om der på det Blockbuster website, du lige har besøgt, var billeder af nogle af dine Facebook-venner?
+                    Prøv at tænke tilbage på det website, du lige har besøgt. <br/><br/>Var der på websitet…
                 </h2>
                 <br />                
                 <asp:label runat="server" id="lblError" forecolor="red" visible="False"></asp:label><br />                
-                <p>
-                    <asp:radiobuttonlist runat="server" id="rdRememberFriends" cssclass="rbl" repeatdirection="Vertical">
-                        <asp:listitem text="Ja, det var der" value="1"></asp:listitem>
-                        <asp:listitem text="Nej, det var der ikke" value="0"></asp:listitem>
-                        <asp:listitem text="Kan ikke huske det" value="99"></asp:listitem>
-                    </asp:radiobuttonlist><br /><br />                    
-                </p>                
+                <table class="table-striped">
+                    <tr>
+                        <td></td>
+                        <td class="text-center" style="padding: 10px;">Ja</td>
+                        <td class="text-center" style="padding: 10px;">Nej</td>
+                        <td class="text-center" style="padding: 10px;">Kan ikke huske</td>
+                        
+                    </tr>
+                    <tr>
+                        <td style="margin-bottom:10px;padding-bottom:10px;">Billeder af nogle af dine Facebook-venner?</td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioFriendPics1" groupname="friend"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioFriendPics0" groupname="friend"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioFriendPicsX" groupname="friend"/></td>                        
+                    </tr>
+                    <tr>
+                        <td style="margin-bottom:10px;padding-bottom:10px;">Et børnefilm-tema</td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioChildFilm1" groupname="child"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioChildFilm0" groupname="child"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioChildFilmX" groupname="child"/></td>
+                    </tr>
+                    <tr>
+                        <td style="margin-bottom:10px;padding-bottom:10px;">Et julefilm-tema</td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioJuleFilm1" groupname="chrismas"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioJuleFilm0" groupname="chrismas"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioJuleFilmX" groupname="chrismas"/></td>
+                    </tr>
+                    <tr>
+                        <td style="margin-bottom:10px;padding-bottom:10px;">Information om en klippekort-ordning</td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioKlipKort1" groupname="klipkort"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioKlipKort0" groupname="klipkort"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioKlipKortX" groupname="klipkort"/></td>
+                    </tr>
+                    <tr>
+                        <td style="margin-bottom:10px;padding-bottom:10px;">Et musical-tema</td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioMusicTheme1" groupname="music"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioMusicTheme0" groupname="music"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioMusicThemeX" groupname="music"/></td>
+                    </tr>
+                    <tr>
+                        <td style="margin-bottom:10px;padding-bottom:10px;">Et Julia Roberts-film tema</td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioJuliaRobert1" groupname="julia"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioJuliaRobert0" groupname="julia"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioJuliaRobertX" groupname="julia"/></td>
+                    </tr>
+                </table>                
                 
                 <br /><br />
                 

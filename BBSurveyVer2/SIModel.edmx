@@ -52,6 +52,12 @@
           <Property Name="WereFriendsPics" Type="varchar" MaxLength="50" />
           <Property Name="RememberFriendsName" Type="varchar" MaxLength="50" />
           <Property Name="FriendsName" Type="varchar(max)" />
+          <Property Name="RememberFriendPics" Type="varchar" MaxLength="50" />
+          <Property Name="RememberChildFilm" Type="varchar" MaxLength="50" />
+          <Property Name="RememberJuleFilm" Type="varchar" MaxLength="50" />
+          <Property Name="RememberKlippekort" Type="varchar" MaxLength="50" />
+          <Property Name="RememberMusicalTheme" Type="varchar" MaxLength="50" />
+          <Property Name="RememberJuliaRobert" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="ExperimentDefData">
           <Key>
@@ -360,6 +366,12 @@
           <Property Name="WereFriendsPics" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="RememberFriendsName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="FriendsName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RememberFriendPics" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RememberChildFilm" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RememberJuleFilm" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RememberKlippekort" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RememberMusicalTheme" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RememberJuliaRobert" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="ExperimentDefData">
           <Key>
@@ -560,6 +572,12 @@
           <EntitySetMapping Name="ExperimentData">
             <EntityTypeMapping TypeName="SocialInfluenceModel.ExperimentData">
               <MappingFragment StoreEntitySet="ExperimentData">
+                <ScalarProperty Name="RememberJuliaRobert" ColumnName="RememberJuliaRobert" />
+                <ScalarProperty Name="RememberMusicalTheme" ColumnName="RememberMusicalTheme" />
+                <ScalarProperty Name="RememberKlippekort" ColumnName="RememberKlippekort" />
+                <ScalarProperty Name="RememberJuleFilm" ColumnName="RememberJuleFilm" />
+                <ScalarProperty Name="RememberChildFilm" ColumnName="RememberChildFilm" />
+                <ScalarProperty Name="RememberFriendPics" ColumnName="RememberFriendPics" />
                 <ScalarProperty Name="FriendsName" ColumnName="FriendsName" />
                 <ScalarProperty Name="RememberFriendsName" ColumnName="RememberFriendsName" />
                 <ScalarProperty Name="WereFriendsPics" ColumnName="WereFriendsPics" />

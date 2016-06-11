@@ -494,5 +494,18 @@ namespace BBSurveyVer2 {
             context.SaveChanges();
          }
       }
+
+      public void UpdateRememberAll(int responseId, string friend, string child, string jule, string julia, string klippekort, string music) {
+         using (var context = new SocialInfluenceEntities()) {
+            ExperimentData experimentData = context.ExperimentData.Single(s => s.ResponseId == responseId);
+            experimentData.RememberFriendPics = friend;
+            experimentData.RememberChildFilm = child;
+            experimentData.RememberJuleFilm = jule;
+            experimentData.RememberJuliaRobert = julia;
+            experimentData.RememberKlippekort = klippekort;
+            experimentData.RememberMusicalTheme = music;
+            context.SaveChanges();
+         }
+      }
    }
 }
