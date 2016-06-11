@@ -71,7 +71,7 @@ namespace BBSurveyVer2 {
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de mest sete film på tjenesten", "MostSeen"));
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de nyeste film på tjenesten", "NewFilm"));
                rdFilmInspiration.Items.Add(new ListItem("Bruger redaktionens anbefalinger på den tjeneste, jeg skal se filmen på", "RedaktionRecommendation"));
-               rdFilmInspiration.Items.Add(new ListItem("Bruger venner og bekendtes anbefalinger", "FriendsRecommendation"));
+               rdFilmInspiration.Items.Add(new ListItem("Bruger venners anbefalinger", "FriendsRecommendation"));
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de film, som tjenesten foreslår mig at se baseret på min historik", "MyOwnHistory"));                              
                rdFilmInspiration.Items.Add(new ListItem("Ved ikke", "Do not know"));
                

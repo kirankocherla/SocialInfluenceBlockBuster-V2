@@ -117,8 +117,9 @@
     </script>
     <div class="container" style="margin-top: 100px;">
         <div class="row">
-            <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
-                <h4>Venligst klik på den blå Facebook-knap nedenfor. Facebook-app’en ”CSSL Survey Tool” vil herefter bede om adgang til de af dine oplysninger på Facebook, som er offentligt tilgængelige, samt din liste over venner. Som tidligere nævnt er denne tilladelse nødvendig for at kunne gennemføre resten af undersøgelsen, og app’en vil IKKE kunne poste opslag på hverken din eller dine venners sider, og vi vil ikke kontakte dine venner. Disse informationer vil udelukkende blive brugt i denne undersøgelse og vil - ligesom dine svar i resten af undersøgelsen - blive behandlet fortroligt.</h4>
+            <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">                
+                <h4>><p> Klik venligst på den blå Facebook-knap nedenfor. Facebook-app’en ”CSSL Survey Tool” vil herefter bede om adgang til de af dine oplysninger på Facebook, som er offentligt tilgængelige, samt din liste over venner. ?</p><br />
+                    <p>Denne tilladelse nødvendig for at kunne gennemføre resten af undersøgelsen, og app’en vil ikke kunne poste opslag på hverken din eller dine venners sider, og vi vil ikke kontakte dine venner. Informationerne vil udelukkende blive brugt i denne undersøgelse og vil - ligesom dine svar i resten af undersøgelsen - blive behandlet fortroligt og uden at identificere enkeltpersoner.</p></h4>
 
                 <div class="row">
                     <div class="col-lg-6 text-right" style="padding-right: 15px;">
