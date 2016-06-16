@@ -12,6 +12,18 @@
     <link href="css/customfont.css" rel="stylesheet" />
     <title></title>
 
+
+    <!-- Begin Inspectlet Embed Code -->
+    <script type="text/javascript" id="inspectletjs">
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 312617230]);
+        (function () {
+            function ldinsp() { if (typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+            setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+        })();
+    </script>
+    <!-- End Inspectlet Embed Code -->
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
@@ -35,16 +47,16 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-            <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">
                     <li style="border-left: 1px solid rgba(255, 255, 255, 0.28); border-right: 1px solid rgba(255, 255, 255, 0.28);">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="BBHome.aspx">BLOCKBUSTER</a>
-                </li>                 
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="BBHome.aspx">BLOCKBUSTER</a>
+                    </li>
                 </ul>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -76,7 +88,7 @@
                                 <h1 style="color: #ffc429;">OM BLOCKBUSTER</h1>
                             </div>
                             <div style="visible: true; padding-top: 50px;">
-                                <img style="height:250px;" src="https:////images.blockbuster.dk/web?url=http%3A%2F%2Fdk.blockbuster.bbking.s3.amazonaws.com%2Fuploads%2F1431334042823_bb-stock__devices.png" />
+                                <img style="height: 250px;" src="https:////images.blockbuster.dk/web?url=http%3A%2F%2Fdk.blockbuster.bbking.s3.amazonaws.com%2Fuploads%2F1431334042823_bb-stock__devices.png" />
                             </div>
                         </div>
                     </div>
@@ -91,7 +103,7 @@
         <div class="row">
             <div class="col-lg-12" style="height: 80px;">
             </div>
-        </div>       
+        </div>
         <div class="row">
             <div class="col-lg-6" style="">
                 <table>
@@ -103,36 +115,38 @@
                             <img src="https://images.blockbuster.dk/movie/de-satans-chefer-2?width=140&height=201" />
                         </td>
                     </tr>
-                    <tr>                        
+                    <tr>
                         <td>
                             <img src="https://images.blockbuster.dk/movie/dum-og-dummere-2?width=140&height=201" />
                         </td>
                     </tr>
 
-                </table>                
+                </table>
             </div>
             <div class="col-lg-6" style="">
-                <h1 style="margin-top:0px;color:#1e4798;">BETAL KUN FOR DET DU SER</h1>
-                <p style="line-height:1.7;font-size:22px;">
-                    På Blockbuster er der intet abonnement. Du betaler kun for det du ser. Og du kan ikke få bøder for at aflevere dine film for sent! Du kan leje de nyeste premierefilm og alle de kendte favoritter og se dem, lige hvor du vil, i 48 timer.<br /><br />
-Er der film og tv-serier du er ekstra glad for, kan du købe dem og have dem til evigt eje på din digitale filmhylde i Blockbuster..
+                <h1 style="margin-top: 0px; color: #1e4798;">BETAL KUN FOR DET DU SER</h1>
+                <p style="line-height: 1.7; font-size: 22px;">
+                    På Blockbuster er der intet abonnement. Du betaler kun for det du ser. Og du kan ikke få bøder for at aflevere dine film for sent! Du kan leje de nyeste premierefilm og alle de kendte favoritter og se dem, lige hvor du vil, i 48 timer.<br />
+                    <br />
+                    Er der film og tv-serier du er ekstra glad for, kan du købe dem og have dem til evigt eje på din digitale filmhylde i Blockbuster..
                 </p>
-            </div>            
+            </div>
         </div>
-        
-        
+
+
         <div class="row">
             <div class="col-lg-12" style="height: 80px;">
             </div>
-        </div>       
+        </div>
         <div class="row">
             <div class="col-lg-6" style="">
-                <h1 style="margin-top:0px;color:#1e4798;">SE FILM PÅ ALLE DINE SKÆRME</h1>
-                <p style="line-height:1.7;font-size:22px;margin-right:25px;">
-                   Blockbuster kan ses på alle dine skærme. Vi synes nemlig selv du skal vælge, hvor og hvornår du vil se dine film.<br /><br />
+                <h1 style="margin-top: 0px; color: #1e4798;">SE FILM PÅ ALLE DINE SKÆRME</h1>
+                <p style="line-height: 1.7; font-size: 22px; margin-right: 25px;">
+                    Blockbuster kan ses på alle dine skærme. Vi synes nemlig selv du skal vælge, hvor og hvornår du vil se dine film.<br />
+                    <br />
                     Derfor har vi lavet Blockbuster apps til iPhone og iPad. Android mobil og tablet. Samsung, LG og Panasonic Smart TV samt Playstation 3 og 4. Og så kan du selvfølgelig også se Blockbuster på din PC og Mac.
                 </p>
-                            
+
             </div>
             <div class="col-lg-6" style="">
                 <table>
@@ -144,46 +158,47 @@ Er der film og tv-serier du er ekstra glad for, kan du købe dem og have dem til
                             <img src="https://images.blockbuster.dk/movie/hunger-games-mockingjay-del-1?width=140&height=201" />
                         </td>
                     </tr>
-                    <tr>                        
+                    <tr>
                         <td>
                             <img src="https://images.blockbuster.dk/movie/stille-hjerte?width=140&height=201" />
                         </td>
                     </tr>
 
-                </table>                    
-            </div>            
+                </table>
+            </div>
         </div>
-        
-        
+
+
         <div class="row">
             <div class="col-lg-12" style="height: 80px;">
             </div>
-        </div>       
+        </div>
         <div class="row">
-            <div class="col-lg-6" style="height:403px;">
-                <img style="height:403px;" src="https://images.blockbuster.dk/web?url=http%3A%2F%2Fdk.blockbuster.bbking.s3.amazonaws.com%2Fuploads%2F1424337932581_Klippekort.png" />
+            <div class="col-lg-6" style="height: 403px;">
+                <img style="height: 403px;" src="https://images.blockbuster.dk/web?url=http%3A%2F%2Fdk.blockbuster.bbking.s3.amazonaws.com%2Fuploads%2F1424337932581_Klippekort.png" />
             </div>
             <div class="col-lg-6" style="">
-                <h1 style="margin-top:0px;color:#1e4798;">SE BILLIGE PREMIEREFILM</h1>
-                <p style="line-height:1.7;font-size:22px;">
-                    Hvis du ligesom os, er vild med film, bliver du glad for et Blockbuster klippekort. Med sådan et, kan du nemlig frit vælge mellem 3 lejefilm for bare 99 kr.<br /><br />
+                <h1 style="margin-top: 0px; color: #1e4798;">SE BILLIGE PREMIEREFILM</h1>
+                <p style="line-height: 1.7; font-size: 22px;">
+                    Hvis du ligesom os, er vild med film, bliver du glad for et Blockbuster klippekort. Med sådan et, kan du nemlig frit vælge mellem 3 lejefilm for bare 99 kr.<br />
+                    <br />
                     Du kan altid tanke op og købe 3 nye klip. På din profil kan du se, hvor mange klip du har tilbage. Dit klippekort kan bruges som betalingsmiddel alle de steder du kan leje Blockbuster film.
                 </p>
-            </div>            
+            </div>
         </div>
-        
 
 
-    <div class="row">
-        <div class="col-lg-12>" style="height: 100px;">
+
+        <div class="row">
+            <div class="col-lg-12>" style="height: 100px;">
+            </div>
         </div>
-    </div>
 
 
-    <div class="container text-center" style="background-color: #192236; width: 100%; text-align: center !important; margin: 0px-auto;">
-        <div class="container">
+        <div class="container text-center" style="background-color: #192236; width: 100%; text-align: center !important; margin: 0px-auto;">
+            <div class="container">
 
-            <bb id="BB-FOOTER_2392">
+                <bb id="BB-FOOTER_2392">
 	<div id="DIV_2393">
 		<h2 id="H2_2394">
 			Her kan du se BLOCKBUSTER
@@ -373,30 +388,30 @@ Er der film og tv-serier du er ekstra glad for, kan du købe dem og have dem til
 			</div>
 		</div>
 	</bb>
+            </div>
         </div>
-    </div>
 
 
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-     <script>
-         $(document).ready(function () {
-             $.each($('#bs-example-navbar-collapse-1').find('a'), function (index, aItem) {
-                 if (window.location.href.indexOf($(aItem).attr('href')) >= 0) {
-                     $(aItem).css('color', '#ffc429');
-                 }
-                 else {
-                     $(aItem).css('color', '#FFFFFF');
-                 }
-             });
-         });
-    </script>
-    <!-- /.container -->
+        <script>
+            $(document).ready(function () {
+                $.each($('#bs-example-navbar-collapse-1').find('a'), function (index, aItem) {
+                    if (window.location.href.indexOf($(aItem).attr('href')) >= 0) {
+                        $(aItem).css('color', '#ffc429');
+                    }
+                    else {
+                        $(aItem).css('color', '#FFFFFF');
+                    }
+                });
+            });
+        </script>
+        <!-- /.container -->
     </form>
 </body>
 </html>

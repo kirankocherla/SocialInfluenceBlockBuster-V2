@@ -15,6 +15,18 @@
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet" />
     <link href="css/Footer.css" rel="stylesheet" />
+
+    <!-- Begin Inspectlet Embed Code -->
+    <script type="text/javascript" id="inspectletjs">
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 312617230]);
+        (function () {
+            function ldinsp() { if (typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+            setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+        })();
+    </script>
+    <!-- End Inspectlet Embed Code -->
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,19 +38,19 @@
     <form id="form1" runat="server">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container" >
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-            <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">
                     <li style="border-left: 1px solid rgba(255, 255, 255, 0.28); border-right: 1px solid rgba(255, 255, 255, 0.28);">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>                
-                <a class="navbar-brand" href="BBHome.aspx">BLOCKBUSTER</a>
-                </li>                 
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="BBHome.aspx">BLOCKBUSTER</a>
+                    </li>
                 </ul>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,23 +76,20 @@
     	.bannerimage{ background:url('images/1188x270_Everest_03.png') no-repeat top center; width:100%; min-height:300px; display:block;} 
 		.container{width:1200px; margin:auto; min-height:300px; display:block; cursor:pointer;}
     </style>--%>
-    <div style="min-height: 300px; top: 51px; position:relative; padding: 0px; width: 100%;
-        background-image: url(images/banner-img.jpg); background-position: center top;
-        background-repeat: no-repeat;">
+    <div style="min-height: 300px; top: 51px; position: relative; padding: 0px; width: 100%; background-image: url(images/banner-img.jpg); background-position: center top; background-repeat: no-repeat;">
         <div class="row">
             <div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div style="visible: true; padding-left:1%;padding-top: 9%;">
+                            <div style="visible: true; padding-left: 1%; padding-top: 9%;">
                                 <div class="row" id="divTableWrapper" runat="server">
                                     <div class="col-lg-12 text-center">
                                         <table style="margin-top: 8%;">
                                             <asp:Repeater runat="server" ID="rptFriends" OnItemDataBound="rptFriends_OnItemDataBound">
                                                 <HeaderTemplate>
                                                     <tr>
-                                                        <td style="wrap: no-wrap; text-wrap: none; text-align: left; padding-right: 0px;
-                                                            font-size: 18px; font-weight: bold; vertical-align: middle; color: #ffc429; font-family: Conv_AvenirNextLTPro-DemiCn;">
+                                                        <td style="wrap: no-wrap; text-wrap: none; text-align: left; padding-right: 0px; font-size: 18px; font-weight: bold; vertical-align: middle; color: #ffc429; font-family: Conv_AvenirNextLTPro-DemiCn;">
                                                             <asp:Literal runat="server" ID="textForFriend" Text="Disse venner bruger allerede Blockbuster:" />
                                                         </td>
                                                         <td style="text-align: center; padding-left: 5px; font-size: 14px; font-weight: bold;">
@@ -115,7 +124,8 @@
         <div class="row">
             <div class="col-lg-12" style="margin-top: 60px;">
                 <h1 style="margin-left: 0; padding-left: 0;">
-                    <b>PREMIEREFILM</b></h1>
+                    <b>PREMIEREFILM</b>
+                </h1>
             </div>
         </div>
         <div class="row">
@@ -231,7 +241,8 @@
         <div class="row">
             <div class="col-lg-12" style="margin-top: 60px;">
                 <h1 style="margin-left: 0; padding-left: 0;">
-                    <b>DIGITALE FORPREMIERER</b></h1>
+                    <b>DIGITALE FORPREMIERER</b>
+                </h1>
             </div>
         </div>
         <div class="row">
@@ -251,7 +262,8 @@
         <div class="row">
             <div class="col-lg-12" style="margin-top: 60px;">
                 <h1 style="margin-left: 0; padding-left: 0;">
-                    <b>MEST POPULÆRE</b></h1>
+                    <b>MEST POPULÆRE</b>
+                </h1>
             </div>
         </div>
         <div class="row">
@@ -383,7 +395,8 @@
         <div class="row">
             <div class="col-lg-12" style="margin-top: 60px;">
                 <h1 style="margin-left: 0; padding-left: 0;">
-                    <b>SUSANNE BIER</b></h1>
+                    <b>SUSANNE BIER</b>
+                </h1>
             </div>
         </div>
         <div class="row">
@@ -420,7 +433,8 @@
         <div class="row">
             <div class="col-lg-12" style="margin-top: 60px;">
                 <h1 style="margin-left: 0; padding-left: 0;">
-                    <b>REDAKTIONENS FAVORITTER</b></h1>
+                    <b>REDAKTIONENS FAVORITTER</b>
+                </h1>
             </div>
         </div>
         <div class="row">
@@ -488,8 +502,7 @@
         <div class="col-lg-12>" style="height: 100px;">
         </div>
     </div>
-    <div class="container text-center" style="background-color: #192236; width: 100%;
-        text-align: center !important; margin: 0px-auto;">
+    <div class="container text-center" style="background-color: #192236; width: 100%; text-align: center !important; margin: 0px-auto;">
         <div class="container">
             <bb id="BB-FOOTER_2392">
 	<div id="DIV_2393">

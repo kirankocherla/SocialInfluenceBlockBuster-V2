@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" codebehind="BBInspiration.aspx.cs" inherits="BBSurveyVer2.BBInspiration" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BBInspiration.aspx.cs" Inherits="BBSurveyVer2.BBInspiration" %>
 
 <!DOCTYPE html>
 
@@ -11,6 +11,17 @@
     <meta name="author" content="" />
 
     <title></title>
+
+    <!-- Begin Inspectlet Embed Code -->
+    <script type="text/javascript" id="inspectletjs">
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 312617230]);
+        (function () {
+            function ldinsp() { if (typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+            setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+        })();
+    </script>
+    <!-- End Inspectlet Embed Code -->
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -35,16 +46,16 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-           <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">
                     <li style="border-left: 1px solid rgba(255, 255, 255, 0.28); border-right: 1px solid rgba(255, 255, 255, 0.28);">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="BBHome.aspx">BLOCKBUSTER</a>
-                 </li>                 
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="BBHome.aspx">BLOCKBUSTER</a>
+                    </li>
                 </ul>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,30 +86,31 @@
             <div class="col-lg-12" style="height: 30px;">
             </div>
         </div>
-        <div class="row" style="margin-top: 30px;margin-bottom: 15px;">
+        <div class="row" style="margin-top: 30px; margin-bottom: 15px;">
             <div class="col-lg-12" style="">
                 <div style="visible: true;" id="divTableWrapper" runat="server">
                     <table style="margin-top: 15px;">
-                        <asp:repeater runat="server" id="rptFriends" onitemdatabound="rptFriends_OnItemDataBound">
-                            <headertemplate>
+                        <asp:Repeater runat="server" ID="rptFriends" OnItemDataBound="rptFriends_OnItemDataBound">
+                            <HeaderTemplate>
                                 <tr>
                                     <td style="wrap: no-wrap; text-wrap: none; text-align: left; padding-right: 0px; font-size: 18px; font-weight: bold; vertical-align: middle; color: #000; font-family: Conv_AvenirNextLTPro-DemiCn;">
-                                        <h1><b><asp:literal runat="server" id="textForFriend" text="Disse venner bruger allerede Blockbuster:" /></b></h1>
+                                        <h1><b>
+                                            <asp:Literal runat="server" ID="textForFriend" Text="Disse venner bruger allerede Blockbuster:" /></b></h1>
                                     </td>
                                     <td style="text-align: center; padding-left: 5px; font-size: 14px; font-weight: bold;">
                                         <img src="images/FbIcon.png" style="height: 50px; width: 50px;" />
                                     </td>
-                            </headertemplate>
-                            <itemtemplate>
+                            </HeaderTemplate>
+                            <ItemTemplate>
                                 <td style="text-align: center; padding-left: 5px; font-size: 14px; font-weight: bold;">
-                                    <asp:image runat="server" id="img" width="50" height="50" />
+                                    <asp:Image runat="server" ID="img" Width="50" Height="50" />
                                 </td>
-                            </itemtemplate>
-                            <footertemplate>
+                            </ItemTemplate>
+                            <FooterTemplate>
                                 </tr>            
-                            </footertemplate>
-                        </asp:repeater>
-                    </table>                    
+                            </FooterTemplate>
+                        </asp:Repeater>
+                    </table>
                 </div>
                 <%--<h1 style="margin-left: 0; padding-left: 0;"><b>REDAKTIONENS FAVORITTER</b></h1>--%>
             </div>
@@ -106,13 +118,13 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/tordenhjerte?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/tordenhjerte?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/universal-soldier?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/total-recall?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/total-recall?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/love-actually?width=141&height=207" />
@@ -120,13 +132,13 @@
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/leaving-las-vegas?width=141&height=207" /> 
-                </div>
-                <div class="col-lg-3 text-left"> 
-                    <img src="http://images.blockbuster.dk/movie/iskoldt-begaer?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/leaving-las-vegas?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/doors-the?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/iskoldt-begaer?width=141&height=207" />
+                </div>
+                <div class="col-lg-3 text-left">
+                    <img src="http://images.blockbuster.dk/movie/doors-the?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/cliffhanger?width=141&height=207" />
@@ -136,30 +148,30 @@
         <div class="row" style="margin-top: 15px;">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/billy-elliot?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/billy-elliot?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/about-a-boy?width=141&height=207" />  
+                    <img src="http://images.blockbuster.dk/movie/about-a-boy?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/en-russer-rydder-op-i-chicago?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/en-russer-rydder-op-i-chicago?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/bedrag?width=141&height=207" />  
+                    <img src="http://images.blockbuster.dk/movie/bedrag?width=141&height=207" />
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/moon?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/moon?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/spraengfarlig-bombe?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/spraengfarlig-bombe?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/son-of-rambow?width=141&height=207" />  
+                    <img src="http://images.blockbuster.dk/movie/son-of-rambow?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/ondskabens-oejne?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/ondskabens-oejne?width=141&height=207" />
                 </div>
             </div>
         </div>
@@ -176,13 +188,13 @@
                     <img src="http://images.blockbuster.dk/movie/the-godfather?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/indiana-jones-jagten-paa-den-forsvundne-skat?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/indiana-jones-jagten-paa-den-forsvundne-skat?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/en-verden-udenfor?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/en-verden-udenfor?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/doedens-gab?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/doedens-gab?width=141&height=207" />
                 </div>
             </div>
             <div class="col-lg-6">
@@ -196,37 +208,37 @@
                     <img src="http://images.blockbuster.dk/movie/festen?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/patton-pansergeneralen?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/patton-pansergeneralen?width=141&height=207" />
                 </div>
             </div>
         </div>
         <div class="row" style="margin-top: 15px;">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/pulp-fiction?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/pulp-fiction?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/fight-club?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/vredens-druer?width=141&height=207" />
-                    
+
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/affair-to-remember-an?width=141&height=207" />                  
-                    
+                    <img src="http://images.blockbuster.dk/movie/affair-to-remember-an?width=141&height=207" />
+
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/apartment-the?width=141&height=207" />                   
+                    <img src="http://images.blockbuster.dk/movie/apartment-the?width=141&height=207" />
 
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/chinatown?width=141&height=207" />                  
+                    <img src="http://images.blockbuster.dk/movie/chinatown?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/gentlemen-foretraekker-blondiner?width=141&amp;height=207" />                    
+                    <img src="http://images.blockbuster.dk/movie/gentlemen-foretraekker-blondiner?width=141&amp;height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/singing-in-the-rain?width=141&height=207" />
@@ -250,7 +262,7 @@
                     <img src="http://images.blockbuster.dk/movie/fast-furious-5?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/fast-furious?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/fast-furious?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/2-fast-2-furious?width=141&height=207" />
@@ -258,13 +270,13 @@
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/gone-in-60-seconds?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/gone-in-60-seconds?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/gone-in-60-seconds-1974?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/need-for-speed?width=141&height=207 " />                  
+                    <img src="http://images.blockbuster.dk/movie/need-for-speed?width=141&height=207 " />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/drive-angry?width=141&height=207" />
@@ -277,27 +289,27 @@
                     <img src="http://images.blockbuster.dk/movie/rush?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/drive?width=141&height=207" />  
+                    <img src="http://images.blockbuster.dk/movie/drive?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/death-race?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/speed-racer?width=141&height=207" />  
+                    <img src="http://images.blockbuster.dk/movie/speed-racer?width=141&height=207" />
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/boerning?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/boerning?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/days-of-thunder?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/drive-hard?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/drive-hard?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/med-stroemerne-i-bakspejlet?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/med-stroemerne-i-bakspejlet?width=141&height=207" />
                 </div>
             </div>
         </div>
@@ -312,7 +324,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/dredd?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/dredd?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/paul?width=141&height=207" />
@@ -382,16 +394,16 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/project-almanac?width=141&height=207" /> 
-                 </div>    
-                <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/interstellar?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/project-almanac?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/predestination?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/interstellar?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/edge-of-tomorrow?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/predestination?width=141&height=207" />
+                </div>
+                <div class="col-lg-3 text-left">
+                    <img src="http://images.blockbuster.dk/movie/edge-of-tomorrow?width=141&height=207" />
                 </div>
             </div>
             <div class="col-lg-6">
@@ -399,37 +411,37 @@
                     <img src="http://images.blockbuster.dk/movie/the-jacket?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/tilbage-til-fremtiden?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/tilbage-til-fremtiden?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/timecrimes?width=141&height=207" />                     
+                    <img src="http://images.blockbuster.dk/movie/timecrimes?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/looper?width=141&height=207" />                    
+                    <img src="http://images.blockbuster.dk/movie/looper?width=141&height=207" />
                 </div>
             </div>
         </div>
         <div class="row" style="margin-top: 15px;">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/lake-house-the?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/lake-house-the?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/repeaters?width=141&height=207" />  
+                    <img src="http://images.blockbuster.dk/movie/repeaters?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/safety-not-guaranteed?width=141&height=207" /> 
-                </div> 
+                    <img src="http://images.blockbuster.dk/movie/safety-not-guaranteed?width=141&height=207" />
+                </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/deja-vu?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/deja-vu?width=141&height=207" />
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/jumper?width=141&height=207" />                    
+                    <img src="http://images.blockbuster.dk/movie/jumper?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/army-of-darkness?width=141&height=207" />                    
+                    <img src="http://images.blockbuster.dk/movie/army-of-darkness?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/bagstiv-i-boblebadet?width=141&height=207" />
@@ -488,7 +500,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/marathonmanden?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/marathonmanden?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/jagten-paa-roede-oktober?width=141&height=207" />
@@ -497,7 +509,7 @@
                     <img src="http://images.blockbuster.dk/movie/body-of-lies?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/en-fjende-iblandt-os?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/en-fjende-iblandt-os?width=141&height=207" />
                 </div>
             </div>
             <div class="col-lg-6">
@@ -505,10 +517,10 @@
                     <img src="http://images.blockbuster.dk/movie/spy-game?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/debt-the?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/debt-the?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/007-never-say-never-again?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/007-never-say-never-again?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/dame-konge-es-spion?width=141&height=207" />
@@ -585,7 +597,7 @@
         <div class="row" style="margin-top: 15px;">
             <div class="col-lg-6">
                 <div class="col-lg-3 text-left">
-                    <img src="http://images.blockbuster.dk/movie/battledogs?width=141&height=207" /> 
+                    <img src="http://images.blockbuster.dk/movie/battledogs?width=141&height=207" />
                 </div>
                 <div class="col-lg-3 text-left">
                     <img src="http://images.blockbuster.dk/movie/bermuda-tentacles?width=141&height=207" />
@@ -883,17 +895,17 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-     <script>
-         $(document).ready(function () {
-             $.each($('#bs-example-navbar-collapse-1').find('a'), function (index, aItem) {
-                 if (window.location.href.indexOf($(aItem).attr('href')) >= 0) {
-                     $(aItem).css('color', '#ffc429');
-                 }
-                 else {
-                     $(aItem).css('color', '#FFFFFF');
-                 }
-             });
-         });
+    <script>
+        $(document).ready(function () {
+            $.each($('#bs-example-navbar-collapse-1').find('a'), function (index, aItem) {
+                if (window.location.href.indexOf($(aItem).attr('href')) >= 0) {
+                    $(aItem).css('color', '#ffc429');
+                }
+                else {
+                    $(aItem).css('color', '#FFFFFF');
+                }
+            });
+        });
     </script>
     <!-- /.container -->
     </form>
