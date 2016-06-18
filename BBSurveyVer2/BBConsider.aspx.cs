@@ -39,10 +39,7 @@ namespace BBSurveyVer2 {
                break;
             case "7":
                radioConsider7.Checked = true;
-               break;
-            case "99":
-               radioConsider99.Checked = true;
-               break;
+               break;            
          }
 
          switch (ExperimentData.PreferBB) {
@@ -66,21 +63,18 @@ namespace BBSurveyVer2 {
                break;
             case "7":
                radioPrefer7.Checked = true;
-               break;
-            case "99":
-               radioPrefer8.Checked = true;
-               break;
+               break;            
          }
       }
 
       private bool IsItValid() {
          if (!radioPrefer1.Checked && !radioPrefer2.Checked && !radioPrefer3.Checked && !radioPrefer4.Checked
-             && !radioPrefer5.Checked && !radioPrefer6.Checked && !radioPrefer7.Checked && !radioPrefer8.Checked)
+             && !radioPrefer5.Checked && !radioPrefer6.Checked && !radioPrefer7.Checked)
             return false;
 
          if (!radioConsider1.Checked && !radioConsider2.Checked && !radioConsider3.Checked
              && !radioConsider4.Checked && !radioConsider5.Checked && !radioConsider6.Checked
-             && !radioConsider7.Checked && !radioConsider99.Checked)
+             && !radioConsider7.Checked)
             return false;
 
          return true;
@@ -102,8 +96,8 @@ namespace BBSurveyVer2 {
             return "6";
          if (radioConsider7.Checked)
             return "7";
-         if (radioConsider99.Checked)
-            return "99";
+         //if (radioConsider99.Checked)
+         //   return "99";
 
          return string.Empty;
 
@@ -124,8 +118,8 @@ namespace BBSurveyVer2 {
             return "6";
          if (radioPrefer7.Checked)
             return "7";
-         if (radioPrefer8.Checked)
-            return "99";
+         //if (radioPrefer8.Checked)
+         //   return "99";
          return string.Empty;
       }
 

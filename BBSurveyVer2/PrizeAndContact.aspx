@@ -20,7 +20,7 @@
                     <asp:radiobuttonlist runat="server" id="rdGift" cssclass="rbl" repeatdirection="Vertical">
                         <asp:listitem text="1 biografbillet (værdi 80 kr.)" value="CinemaTicket"></asp:listitem>
                         <asp:listitem text="1 gavekort til Blockbuster (værdi 80 kr.)" value="GiftCardBlockbuster"></asp:listitem>
-                        <asp:listitem text="Ingen af ovenstående" value="None"></asp:listitem>
+                        <%--<asp:listitem text="Ingen af ovenstående" value="None"></asp:listitem>--%>
                     </asp:radiobuttonlist><br /><br />                    
                 </p>                
                 <h4>Vi vil gerne have mulighed for at kontakte tilfældigt udvalgte deltagere til en uddybende samtale om deres oplevelse af Blockbuster. Må vi kontakte dig?</h4>

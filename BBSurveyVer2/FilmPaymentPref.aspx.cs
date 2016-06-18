@@ -41,25 +41,25 @@ namespace BBSurveyVer2 {
             case 1:
                rdPaymentType.Items.Add(new ListItem("Abonnement (se så meget du vil for et fast, månedligt beløb)", "Subscription"));
                rdPaymentType.Items.Add(new ListItem("Pay per view (du betaler kun for de film, du ser)", "PayPerView"));
-               rdPaymentType.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdPaymentType.Items.Add(new ListItem("Ved ikke", "Do not know"));
                
                break;
             case 2:               
                rdPaymentType.Items.Add(new ListItem("Pay per view (du betaler kun for de film, du ser)", "PayPerView"));
                rdPaymentType.Items.Add(new ListItem("Abonnement (se så meget du vil for et fast, månedligt beløb)", "Subscription"));
-               rdPaymentType.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdPaymentType.Items.Add(new ListItem("Ved ikke", "Do not know"));
 
                break;
             case 3:
                rdPaymentType.Items.Add(new ListItem("Pay per view (du betaler kun for de film, du ser)", "PayPerView"));
                rdPaymentType.Items.Add(new ListItem("Abonnement (se så meget du vil for et fast, månedligt beløb)", "Subscription"));
-               rdPaymentType.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdPaymentType.Items.Add(new ListItem("Ved ikke", "Do not know"));
 
                break;
             default:
                rdPaymentType.Items.Add(new ListItem("Abonnement (se så meget du vil for et fast, månedligt beløb)", "Subscription"));
                rdPaymentType.Items.Add(new ListItem("Pay per view (du betaler kun for de film, du ser)", "PayPerView"));               
-               rdPaymentType.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdPaymentType.Items.Add(new ListItem("Ved ikke", "Do not know"));
 
                break;
          }
@@ -67,7 +67,7 @@ namespace BBSurveyVer2 {
          radioFilmSerie.Items.Add(new ListItem("Film", "Film"));
          radioFilmSerie.Items.Add(new ListItem("Tv-serier", "TVSerier"));
          radioFilmSerie.Items.Add(new ListItem("Lige meget film og tv-serier", "LigeMeget"));
-         radioFilmSerie.Items.Add(new ListItem("Ved ikke", "vedIkke"));
+         //radioFilmSerie.Items.Add(new ListItem("Ved ikke", "vedIkke"));
 
       }
 

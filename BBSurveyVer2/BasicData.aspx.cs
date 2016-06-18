@@ -43,13 +43,13 @@ namespace BBSurveyVer2 {
          }
 
 
-         if ((rdAge.SelectedValue == "Under25") || (rdAge.SelectedValue == "50+")) {
-            Model.UpdateExperimentDataForBasicService(ResponseId.GetValueOrDefault(), rdAge.SelectedValue, rdGender.SelectedValue, int.Parse(rdChildrenCount.SelectedValue), "0", "0", "0", rdMarries.SelectedValue, string.Empty);
-            divQuestion.Visible = false;
-            divResult.Visible = true;
-            cmdNext.Visible = false;
-            return;
-         }
+         //if ((rdAge.SelectedValue == "Under25") || (rdAge.SelectedValue == "50+")) {
+         //   Model.UpdateExperimentDataForBasicService(ResponseId.GetValueOrDefault(), rdAge.SelectedValue, rdGender.SelectedValue, int.Parse(rdChildrenCount.SelectedValue), "0", "0", "0", rdMarries.SelectedValue, string.Empty);
+         //   divQuestion.Visible = false;
+         //   divResult.Visible = true;
+         //   cmdNext.Visible = false;
+         //   return;
+         //}
          try {
             Model.UpdateExperimentDataForBasicService(ResponseId.GetValueOrDefault(), rdAge.SelectedValue, rdGender.SelectedValue,
                                                       int.Parse(rdChildrenCount.SelectedValue), "0", "0", "0",
@@ -58,6 +58,7 @@ namespace BBSurveyVer2 {
          catch (Exception) {
             Model.CreatePageVisitLog("BasicData.aspx: Error", ResponseId.GetValueOrDefault());
          }
+
 
          Response.Redirect(string.Format("FilmWatchPref.aspx?Responseid={0}", ResponseId));
 

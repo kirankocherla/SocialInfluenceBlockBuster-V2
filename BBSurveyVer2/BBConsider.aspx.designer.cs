@@ -94,15 +94,6 @@ namespace BBSurveyVer2 {
         protected global::System.Web.UI.WebControls.RadioButton radioConsider7;
         
         /// <summary>
-        /// radioConsider99 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton radioConsider99;
-        
-        /// <summary>
         /// radioPrefer1 control.
         /// </summary>
         /// <remarks>
@@ -164,15 +155,6 @@ namespace BBSurveyVer2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton radioPrefer7;
-        
-        /// <summary>
-        /// radioPrefer8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton radioPrefer8;
         
         /// <summary>
         /// cmdPrevious control.

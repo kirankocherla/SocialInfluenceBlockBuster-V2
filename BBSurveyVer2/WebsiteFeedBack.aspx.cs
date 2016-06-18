@@ -39,10 +39,7 @@ namespace BBSurveyVer2 {
                break;
             case "7":
                radioWebsite7.Checked = true;
-               break;
-            case "99":
-               radioWebsite99.Checked = true;
-               break;
+               break;            
          }
 
          switch (ExperimentData.FilmFinding) {
@@ -66,10 +63,7 @@ namespace BBSurveyVer2 {
                break;
             case "7":
                radiowebsiteEasyFindFilm7.Checked = true;
-               break;
-            case "99":
-               radiowebsiteEasyFindFilm99.Checked = true;
-               break;
+               break;            
          }
 
          switch (ExperimentData.IsGoodService) {
@@ -93,10 +87,7 @@ namespace BBSurveyVer2 {
                break;
             case "7":
                radiofilmService7.Checked = true;
-               break;
-            case "99":
-               radiofilmService99.Checked = true;
-               break;
+               break;           
          }
 
          txtYourFeedBack.Text = ExperimentData.WebsiteExperienceText;
@@ -104,18 +95,18 @@ namespace BBSurveyVer2 {
 
       private bool IsItValid() {
          if (!radioWebsite1.Checked && !radioWebsite2.Checked && !radioWebsite3.Checked && !radioWebsite4.Checked
-             && !radioWebsite5.Checked && !radioWebsite6.Checked && !radioWebsite7.Checked && !radioWebsite99.Checked)
+             && !radioWebsite5.Checked && !radioWebsite6.Checked && !radioWebsite7.Checked)
             return false;
 
          if (!radiofilmService1.Checked && !radiofilmService2.Checked && !radiofilmService3.Checked
              && !radiofilmService4.Checked && !radiofilmService5.Checked && !radiofilmService6.Checked
-             && !radiofilmService7.Checked && !radiofilmService99.Checked)
+             && !radiofilmService7.Checked)
             return false;
 
          if (!radiowebsiteEasyFindFilm1.Checked && !radiowebsiteEasyFindFilm2.Checked
              && !radiowebsiteEasyFindFilm3.Checked && !radiowebsiteEasyFindFilm4.Checked
              && !radiowebsiteEasyFindFilm5.Checked && !radiowebsiteEasyFindFilm6.Checked
-             && !radiowebsiteEasyFindFilm7.Checked && !radiowebsiteEasyFindFilm99.Checked)
+             && !radiowebsiteEasyFindFilm7.Checked)
             return false;
 
          return true;
@@ -137,8 +128,7 @@ namespace BBSurveyVer2 {
             return "6";
          if (radioWebsite7.Checked)
             return "7";
-         if (radioWebsite99.Checked)
-            return "99";
+         
          return string.Empty;
       }
 
@@ -157,8 +147,7 @@ namespace BBSurveyVer2 {
             return "6";
          if (radiowebsiteEasyFindFilm7.Checked)
             return "7";
-         if (radiowebsiteEasyFindFilm99.Checked)
-            return "99";
+         
          return string.Empty;
       }
 
@@ -177,8 +166,7 @@ namespace BBSurveyVer2 {
             return "6";
          if (radiofilmService7.Checked)
             return "7";
-         if (radiofilmService99.Checked)
-            return "99";
+         
          return string.Empty;
       }
 

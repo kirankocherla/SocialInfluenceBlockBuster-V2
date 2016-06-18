@@ -19,17 +19,17 @@
                         
                     </tr>
                     <tr>
-                        <td style="margin-bottom:10px;padding-bottom:10px;">Billeder af nogle af dine Facebook-venner?</td>
-                        <td class="text-center"><asp:radiobutton runat="server" id="radioFriendPics1" groupname="friend"/></td>
-                        <td class="text-center"><asp:radiobutton runat="server" id="radioFriendPics0" groupname="friend"/></td>
-                        <td class="text-center"><asp:radiobutton runat="server" id="radioFriendPicsX" groupname="friend"/></td>                        
-                    </tr>
-                    <tr>
                         <td style="margin-bottom:10px;padding-bottom:10px;">Et børnefilm-tema</td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radioChildFilm1" groupname="child"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radioChildFilm0" groupname="child"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radioChildFilmX" groupname="child"/></td>
                     </tr>
+                    <tr>
+                        <td style="margin-bottom:10px;padding-bottom:10px;">Billeder af nogle af dine Facebook-venner?</td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioFriendPics1" groupname="friend"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioFriendPics0" groupname="friend"/></td>
+                        <td class="text-center"><asp:radiobutton runat="server" id="radioFriendPicsX" groupname="friend"/></td>                        
+                    </tr>                    
                     <tr>
                         <td style="margin-bottom:10px;padding-bottom:10px;">Et julefilm-tema</td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radioJuleFilm1" groupname="chrismas"/></td>

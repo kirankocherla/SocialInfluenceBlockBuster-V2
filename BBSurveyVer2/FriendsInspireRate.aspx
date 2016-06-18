@@ -73,7 +73,7 @@
                                 <ItemTemplate>
                                     <li style="display: inline;">
                                         <div onclick="FiendIsClicked(this);" class="divFriend" style="float: left; width: 110px; text-align: center; padding: 5px; font-size: 12px; font-weight: bold; border: 1px solid lightgray;">
-                                            <table style="text-align: center; width: 100px;" id="tableCntainer" runat="server">
+                                            <table style="text-align: center; width: 100px;height:150px;overflow:hidden;" id="tableCntainer" runat="server">
                                                 <tr>
                                                     <td>
                                                         <asp:Literal runat="server" Visible="false" ID="ltrFriendId" />
@@ -87,7 +87,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="text-align: center; vertical-align: middle;">
+                                                    <td style="height: 50px;text-align: center; vertical-align: middle;">
                                                         <asp:Image runat="server" ID="img" />
                                                     </td>
                                                 </tr>

@@ -22,7 +22,7 @@
                         <td class="text-center" style="padding: 10px;">Til dels enig</td>
                         <td class="text-center" style="padding: 10px;">Enig</td>
                         <td class="text-center" style="padding: 10px;">Fuldstændig enig</td>
-                        <td class="text-center" style="padding: 10px;">Ved ikke</td>
+                        <%--<td class="text-center" style="padding: 10px;">Ved ikke</td>--%>
                     </tr>
                     <tr style="padding-top: 10px;">
                         <td style="margin-bottom:10px;padding-bottom:10px;">Jeg kan godt lide websitet</td>
@@ -33,7 +33,7 @@
                         <td class="text-center"><asp:radiobutton runat="server" id="radioWebsite5" groupname="website"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radioWebsite6" groupname="website"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radioWebsite7" groupname="website"/></td>
-                        <td class="text-center"><asp:radiobutton runat="server" id="radioWebsite99" groupname="website"/></td>
+                        <%--<td class="text-center"><asp:radiobutton runat="server" id="radioWebsite99" groupname="website"/></td>--%>
                     </tr>
                     <tr style="padding-top: 10px;">
                         <td style="margin-bottom:10px;padding-bottom:10px;">Websitet gør det nemt at finde en film, jeg gerne vil se</td>
@@ -44,7 +44,7 @@
                         <td class="text-center"><asp:radiobutton runat="server" id="radiowebsiteEasyFindFilm5" groupname="websiteEasyFindFilm"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radiowebsiteEasyFindFilm6" groupname="websiteEasyFindFilm"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radiowebsiteEasyFindFilm7" groupname="websiteEasyFindFilm"/></td>
-                        <td class="text-center"><asp:radiobutton runat="server" id="radiowebsiteEasyFindFilm99" groupname="websiteEasyFindFilm"/></td>
+                        <%--<td class="text-center"><asp:radiobutton runat="server" id="radiowebsiteEasyFindFilm99" groupname="websiteEasyFindFilm"/></td>--%>
                     </tr>                    
                     <tr style="margin-bottom:10px;padding-bottom:10px;">
                         <td>Jeg synes, det virker som en god filmtjeneste</td>
@@ -55,7 +55,7 @@
                         <td class="text-center"><asp:radiobutton runat="server" id="radiofilmService5" groupname="filmService"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radiofilmService6" groupname="filmService"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radiofilmService7" groupname="filmService"/></td>
-                        <td class="text-center"><asp:radiobutton runat="server" id="radiofilmService99" groupname="filmService"/></td>
+                        <%--<td class="text-center"><asp:radiobutton runat="server" id="radiofilmService99" groupname="filmService"/></td>--%>
                     </tr>                                        
                 </table>
                   

@@ -29,8 +29,7 @@
                         <asp:ListItem text="Spillekonsol, fx Xbox eller Playstation (via en on-demand service som f.eks. Netflix, Viaplay el. lign.)" value="GameConsole"></asp:ListItem>   
                         <asp:ListItem text="I biografen" value="Cinema"></asp:ListItem>   
                         <asp:ListItem text="På DVD" value="DVD"></asp:ListItem>   
-                        <asp:ListItem text="Andet" value="Other"></asp:ListItem>   
-                        <asp:ListItem text="Ved ikke" value="Do not know"></asp:ListItem>                           
+                        <asp:ListItem text="Andet" value="Other"></asp:ListItem>                           
                       </asp:radiobuttonlist>
                 </p>
                 

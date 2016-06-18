@@ -65,7 +65,7 @@ namespace BBSurveyVer2 {
                rdFilmType.Items.Add(new ListItem("Dokumentar", "Dokumentar"));
                rdFilmType.Items.Add(new ListItem("Science fiction", "Sciencefiction"));               
                rdFilmType.Items.Add(new ListItem("Ingen af ovenstående", "Ingen"));
-               rdFilmType.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdFilmType.Items.Add(new ListItem("Ved ikke", "Do not know"));
 
                rdFilmInspiration.Items.Add(new ListItem("Læser anmeldelser i aviser og på filmsider (f.eks. kino.dk eller iMDB)", "Reviews"));
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de mest sete film på tjenesten", "MostSeen"));
@@ -73,7 +73,7 @@ namespace BBSurveyVer2 {
                rdFilmInspiration.Items.Add(new ListItem("Bruger redaktionens anbefalinger på den tjeneste, jeg skal se filmen på", "RedaktionRecommendation"));
                rdFilmInspiration.Items.Add(new ListItem("Bruger venners anbefalinger", "FriendsRecommendation"));
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de film, som tjenesten foreslår mig at se baseret på min historik", "MyOwnHistory"));                              
-               rdFilmInspiration.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdFilmInspiration.Items.Add(new ListItem("Ved ikke", "Do not know"));
                
                
                break;
@@ -89,7 +89,7 @@ namespace BBSurveyVer2 {
                rdFilmType.Items.Add(new ListItem("Science fiction", "Sciencefiction"));               
                rdFilmType.Items.Add(new ListItem("Krigsfilm", "Krigsfilm"));          
                rdFilmType.Items.Add(new ListItem("Ingen af ovenstående", "Ingen"));
-               rdFilmType.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdFilmType.Items.Add(new ListItem("Ved ikke", "Do not know"));
 
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de film, som tjenesten foreslår mig at se baseret på min historik", "MyOwnHistory"));               
                rdFilmInspiration.Items.Add(new ListItem("Bruger redaktionens anbefalinger på den tjeneste, jeg skal se filmen på", "RedaktionRecommendation"));
@@ -97,7 +97,7 @@ namespace BBSurveyVer2 {
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de mest sete film på tjenesten", "MostSeen"));
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de nyeste film på tjenesten", "NewFilm"));
                rdFilmInspiration.Items.Add(new ListItem("Læser anmeldelser i aviser og på filmsider (f.eks. kino.dk eller iMDB)", "Reviews"));
-               rdFilmInspiration.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdFilmInspiration.Items.Add(new ListItem("Ved ikke", "Do not know"));
 
                break;
             case 3:
@@ -112,7 +112,7 @@ namespace BBSurveyVer2 {
                rdFilmType.Items.Add(new ListItem("Krigsfilm", "Krigsfilm"));               
                rdFilmType.Items.Add(new ListItem("Indiefilm", "Indiefilm"));
                rdFilmType.Items.Add(new ListItem("Ingen af ovenstående", "Ingen"));
-               rdFilmType.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdFilmType.Items.Add(new ListItem("Ved ikke", "Do not know"));
 
                rdFilmInspiration.Items.Add(new ListItem("Bruger redaktionens anbefalinger på den tjeneste, jeg skal se filmen på", "RedaktionRecommendation"));
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de mest sete film på tjenesten", "MostSeen"));
@@ -120,7 +120,7 @@ namespace BBSurveyVer2 {
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de film, som tjenesten foreslår mig at se baseret på min historik", "MyOwnHistory"));               
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de nyeste film på tjenesten", "NewFilm"));
                rdFilmInspiration.Items.Add(new ListItem("Læser anmeldelser i aviser og på filmsider (f.eks. kino.dk eller iMDB)", "Reviews"));               
-               rdFilmInspiration.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdFilmInspiration.Items.Add(new ListItem("Ved ikke", "Do not know"));
 
                break;
             default:
@@ -135,7 +135,7 @@ namespace BBSurveyVer2 {
                rdFilmType.Items.Add(new ListItem("Eventyr", "Eventyr"));
                rdFilmType.Items.Add(new ListItem("Action", "Action"));
                rdFilmType.Items.Add(new ListItem("Ingen af ovenstående", "Ingen"));
-               rdFilmType.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdFilmType.Items.Add(new ListItem("Ved ikke", "Do not know"));
 
                rdFilmInspiration.Items.Add(new ListItem("Bruger venners anbefalinger", "FriendsRecommendation"));
                rdFilmInspiration.Items.Add(new ListItem("Bruger redaktionens anbefalinger på den tjeneste, jeg skal se filmen på", "RedaktionRecommendation"));
@@ -143,7 +143,7 @@ namespace BBSurveyVer2 {
                rdFilmInspiration.Items.Add(new ListItem("Læser anmeldelser i aviser og på filmsider (f.eks. kino.dk eller iMDB)", "Reviews"));                              
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de film, som tjenesten foreslår mig at se baseret på min historik", "MyOwnHistory"));               
                rdFilmInspiration.Items.Add(new ListItem("Søger inspiration i de nyeste film på tjenesten", "NewFilm"));
-               rdFilmInspiration.Items.Add(new ListItem("Ved ikke", "Do not know"));
+               //rdFilmInspiration.Items.Add(new ListItem("Ved ikke", "Do not know"));
 
                break;
          }

@@ -19,7 +19,9 @@ namespace BBSurveyVer2 {
          if (!IsPostBack && !ResponseId.HasValue) {
             ResponseId = Model.CreateNewSession(Request.UserHostName);
             Session["RESPONSEID"] = ResponseId;
-
+            string srcBrowser = HttpContext.Current.Request.ServerVariables["HTTP_USER_AGENT"].ToString();
+            Model.CreatePageVisitLog(srcBrowser.Length >= 500 ? srcBrowser.Substring(0, 500) : srcBrowser,
+               ResponseId.Value);
 
             //Choose category etc and go next
             int experimentGroup = 0;

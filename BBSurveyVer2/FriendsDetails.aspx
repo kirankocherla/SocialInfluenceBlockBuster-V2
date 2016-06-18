@@ -91,7 +91,7 @@
                                                     <asp:listitem text="Til dels sandsynligt" value="5"></asp:listitem>
                                                     <asp:listitem text="Sandsynligt" value="6"></asp:listitem>
                                                     <asp:listitem text="Meget sandsynligt" value="7"></asp:listitem>
-                                                    <asp:listitem text="Ved ikke" value="99"></asp:listitem>
+                                                    <%--<asp:listitem text="Ved ikke" value="99"></asp:listitem>--%>
                                                 </asp:dropdownlist>
                                             </td>
                                         </tr>

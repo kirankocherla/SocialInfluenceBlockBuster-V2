@@ -18,7 +18,7 @@
                         <td class="text-center" style="padding: 10px;">Til dels enig</td>
                         <td class="text-center" style="padding: 10px;">Enig</td>
                         <td class="text-center" style="padding: 10px;">Fuldstændig enig</td>
-                        <td class="text-center" style="padding: 10px;">Ved ikke</td>
+                        <%--<td class="text-center" style="padding: 10px;">Ved ikke</td>--%>
                     </tr>
                     <tr>
                         <td style="margin-bottom:10px;padding-bottom:10px;">Hvis jeg skulle se en film, som ikke går i biografen, så ville jeg overveje at se den via Blockbuster (enten via blockbuster.dk eller en af de andre måder man kan se Blockbuster på, f.eks. på tablet eller smart tv)</td>
@@ -29,7 +29,7 @@
                         <td class="text-center"><asp:radiobutton runat="server" id="radioConsider5" groupname="consider"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radioConsider6" groupname="consider"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radioConsider7" groupname="consider"/></td>
-                        <td class="text-center"><asp:radiobutton runat="server" id="radioConsider99" groupname="consider"/></td>
+                        <%--<td class="text-center"><asp:radiobutton runat="server" id="radioConsider99" groupname="consider"/></td>--%>
                     </tr>
                     <tr>
                         <td style="margin-bottom:10px;padding-bottom:10px;">Hvis jeg skulle se en film, som ikke går i biografen, så ville jeg foretrække at se den via Blockbuster (enten via blockbuster.dk eller en af de andre måder man kan se Blockbuster på, f.eks. på tablet eller smart tv)</td>
@@ -40,7 +40,7 @@
                         <td class="text-center"><asp:radiobutton runat="server" id="radioPrefer5" groupname="prefer"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radioPrefer6" groupname="prefer"/></td>
                         <td class="text-center"><asp:radiobutton runat="server" id="radioPrefer7" groupname="prefer"/></td>
-                        <td class="text-center"><asp:radiobutton runat="server" id="radioPrefer8" groupname="prefer"/></td>
+                        <%--<td class="text-center"><asp:radiobutton runat="server" id="radioPrefer8" groupname="prefer"/></td>--%>
                     </tr>                                        
                 </table>
                   

@@ -13,8 +13,9 @@
                         <asp:ListItem text="Under 25år" value="Under25"></asp:ListItem>   
                          <asp:ListItem text="25-30" value="25-30"></asp:ListItem>   
                          <asp:ListItem text="31-40" value="31-40"></asp:ListItem>   
-                         <asp:ListItem text="41-50" value="41-50"></asp:ListItem>   
-                         <asp:ListItem text="Over 50" value="50+"></asp:ListItem>                            
+                         <asp:ListItem text="41-50" value="41-50"></asp:ListItem> 
+                         <asp:ListItem text="51-60" value="51-50"></asp:ListItem>   
+                         <asp:ListItem text="Over 60" value="60+"></asp:ListItem>                            
                       </asp:dropdownlist>
                 </p><br />
                 <h4>Er du ..?</h4>

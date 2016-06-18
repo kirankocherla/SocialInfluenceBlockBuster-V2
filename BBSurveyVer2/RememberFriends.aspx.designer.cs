@@ -31,33 +31,6 @@ namespace BBSurveyVer2 {
         protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
-        /// radioFriendPics1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton radioFriendPics1;
-        
-        /// <summary>
-        /// radioFriendPics0 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton radioFriendPics0;
-        
-        /// <summary>
-        /// radioFriendPicsX control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton radioFriendPicsX;
-        
-        /// <summary>
         /// radioChildFilm1 control.
         /// </summary>
         /// <remarks>
@@ -83,6 +56,33 @@ namespace BBSurveyVer2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton radioChildFilmX;
+        
+        /// <summary>
+        /// radioFriendPics1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton radioFriendPics1;
+        
+        /// <summary>
+        /// radioFriendPics0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton radioFriendPics0;
+        
+        /// <summary>
+        /// radioFriendPicsX control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton radioFriendPicsX;
         
         /// <summary>
         /// radioJuleFilm1 control.

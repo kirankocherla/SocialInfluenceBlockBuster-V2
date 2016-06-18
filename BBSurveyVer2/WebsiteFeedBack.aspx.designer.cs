@@ -94,15 +94,6 @@ namespace BBSurveyVer2 {
         protected global::System.Web.UI.WebControls.RadioButton radioWebsite7;
         
         /// <summary>
-        /// radioWebsite99 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton radioWebsite99;
-        
-        /// <summary>
         /// radiowebsiteEasyFindFilm1 control.
         /// </summary>
         /// <remarks>
@@ -166,15 +157,6 @@ namespace BBSurveyVer2 {
         protected global::System.Web.UI.WebControls.RadioButton radiowebsiteEasyFindFilm7;
         
         /// <summary>
-        /// radiowebsiteEasyFindFilm99 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton radiowebsiteEasyFindFilm99;
-        
-        /// <summary>
         /// radiofilmService1 control.
         /// </summary>
         /// <remarks>
@@ -236,15 +218,6 @@ namespace BBSurveyVer2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton radiofilmService7;
-        
-        /// <summary>
-        /// radiofilmService99 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton radiofilmService99;
         
         /// <summary>
         /// txtYourFeedBack control.
