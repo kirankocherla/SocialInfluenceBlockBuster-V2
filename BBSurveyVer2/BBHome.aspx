@@ -76,7 +76,7 @@
     	.bannerimage{ background:url('images/1188x270_Everest_03.png') no-repeat top center; width:100%; min-height:300px; display:block;} 
 		.container{width:1200px; margin:auto; min-height:300px; display:block; cursor:pointer;}
     </style>--%>
-    <div style="min-height: 300px; top: 51px; position: relative; padding: 0px; width: 100%; background-image: url(images/banner-img.jpg); background-position: center top; background-repeat: no-repeat;">
+    <div style="min-height: 300px; top: 51px; position: relative; padding: 0px; width: 100%; background-image: url(images/banner-img_02.jpg); background-position: center top; background-repeat: no-repeat;">
         <div class="row">
             <div>
                 <div class="container">
@@ -93,7 +93,7 @@
                                                             <asp:Literal runat="server" ID="textForFriend" Text="Disse venner bruger allerede Blockbuster:" />
                                                         </td>
                                                         <td style="text-align: center; padding-left: 5px; font-size: 14px; font-weight: bold;">
-                                                            <img src="images/FbIcon.png" style="height: 50px; width: 50px;" />
+                                                            <img src="images/fb logo2_transparent (3).jpg" style="height: 50px; width: 50px;" />
                                                         </td>
                                                 </HeaderTemplate>
                                                 <ItemTemplate>

@@ -84,7 +84,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div style="visible: true; padding-top: 70px;">
+                            <div style="visible: true; padding-top: 30px;">
                                 <h1 style="color: #ffc429;">OM BLOCKBUSTER</h1>
                             </div>
                             <div style="visible: true; padding-top: 50px;">

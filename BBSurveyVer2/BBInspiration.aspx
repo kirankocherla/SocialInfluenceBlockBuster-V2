@@ -98,7 +98,7 @@
                                             <asp:Literal runat="server" ID="textForFriend" Text="Disse venner bruger allerede Blockbuster:" /></b></h1>
                                     </td>
                                     <td style="text-align: center; padding-left: 5px; font-size: 14px; font-weight: bold;">
-                                        <img src="images/FbIcon.png" style="height: 50px; width: 50px;" />
+                                        <img src="images/fb logo2_transparent (3).jpg" style="height: 50px; width: 50px;" />
                                     </td>
                             </HeaderTemplate>
                             <ItemTemplate>

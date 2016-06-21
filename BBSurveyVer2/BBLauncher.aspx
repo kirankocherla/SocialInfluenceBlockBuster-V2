@@ -2,11 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container" style="margin-top: 100px;">
+    <div class="container" style="margin-top: 70px;">
         <div class="row">
             <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">                
                                  
-                   <p>Vi vil nu bede dig se på et film-website og bagefter fortælle os din mening om det (vigtigt: Brug linket nederst på denne side).</p>
+                   <p><h3>Vi vil nu bede dig se på et film-website og bagefter fortælle os din mening om det (vigtigt: Brug linket nederst på denne side)</h3></p>
                      
                     <p>Websitet er en testversion, så vær opmærksom på, at det har visse begrænsninger, som det naturligvis ikke vil have, når det går live. F.eks. vil du ikke kunne klikke på en film og læse mere om den, ligesom der heller ikke er information om, hvad de enkelte film koster (regn med, at man betaler pr. film man ser, og at alle film koster mellem 19 og 49 kr. at leje i to døgn). Men du vil kunne se sidens struktur, layout, hvilke typer film du kan se her etc. og heraf kunne danne dig et overordnet indtryk af Blockbuster, hvilket er formålet med undersøgelsen. </p> 
                       

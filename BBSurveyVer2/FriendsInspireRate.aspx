@@ -36,7 +36,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container" style="margin-top: 100px;">
+    <div class="container" style="margin-top: 70px;">
         <div class="row">
             <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
                 <div>
@@ -46,6 +46,9 @@
                     </p>
                     <p>
                         Dine venner vil ikke få at vide, at du har markeret dem her.
+                   </p>
+                    <p>
+                        Når du er færdig, så tryk på knappen "Næste" nederst på siden.
                    </p>
                 </div>
                 <div id="users" class="col-lg-12" style="margin-top: 10px !important; margin-left: 0px !important;">

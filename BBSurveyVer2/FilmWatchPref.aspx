@@ -2,19 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container" style="margin-top: 100px;">
+    <div class="container" style="margin-top: 70px;">
         <div class="row">
             <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
-                <h2>Vi vil nu stille dig et par spørgsmål om dine vaner og præferencer i forhold til film og tv-serier.</h2><br />
+                <h2>Vi vil nu stille dig et par spørgsmål om dine vaner og præferencer i forhold til film</h2><br />
                 <h4>Hvor mange film ser du i gennemsnit på en måned? Om du ser dem på fx tv, i biografen, på nettet etc. er underordnet.</h4>
                 <p>
                     <asp:label runat="server" id="lblError" forecolor="red" visible="False"></asp:label> <br />                    
                     <asp:radiobuttonlist runat="server" id="rdFilmPerMonth" repeatdirection="Vertical"  cssclass="rbl">
                         <asp:ListItem text="0" value="0"></asp:ListItem>   
-                        <asp:ListItem text="1-3" value="1-3"></asp:ListItem>   
-                        <asp:ListItem text="3-6" value="3-6"></asp:ListItem>   
-                        <asp:ListItem text="7-9" value="7-9"></asp:ListItem>                           
-                        <asp:ListItem text="10 eller flere" value="10+"></asp:ListItem>   
+                        <asp:ListItem text="1-2" value="1-3"></asp:ListItem>   
+                        <asp:ListItem text="3-5" value="3-6"></asp:ListItem>   
+                        <%--<asp:ListItem text="7-9" value="7-9"></asp:ListItem> --%>                          
+                        <asp:ListItem text="6 eller flere" value="10+"></asp:ListItem>   
                          
                       </asp:radiobuttonlist>
                 </p><br />

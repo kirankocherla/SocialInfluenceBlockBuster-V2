@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container" style="margin-top: 100px;">
+    <div class="container" style="margin-top: 70px;">
         <div class="row">
             <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
                 <h3>Nedenstående spørgsmål handler om sandsynligheden for, at du vil bruge Blockbuster (enten via blockbuster.dk eller en af de andre måder man kan se Blockbuster på, f.eks. på tablet eller smart tv). </h3>                

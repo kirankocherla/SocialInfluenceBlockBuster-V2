@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Page Content -->
-    <div class="container" style="margin-top: 100px;">
+    <div class="container" style="margin-top: 50px;">
         <div class="row">
             <div class="col-lg-12" style="height: 30px;">
                 <asp:Literal runat="server" ID="cmdLiteral"></asp:Literal>
@@ -21,7 +21,7 @@
                 <p>
                    Du starter undersøgelsen ved at trykke på Start-knappen nedenfor, hvorefter vi vil stille dig et nogle indledende spørgsmål. Herefter vil vi bede dig se på nogle forskellige dele af Blockbuster.dk og derefter svare på et par spørgsmål. Og så er du færdig!
                 </p>
-                <p>
+                <p>   
                     Skulle du have nogen spørgsmål til undersøgelsen, er du meget velkommen til at skrive til os på <a href="mailto:kalk.itm@cbs.dk">kalk.itm@cbs.dk </a>
                 </p>
                 <p>
@@ -33,6 +33,9 @@
                     </div>
                     <div class="col-lg-6">
                         <asp:button runat="server" text="Næste" onclick="OnNextClick" width="100"/>
+                    </div>
+                    <div  class="col-lg-12" style="height: 30px;padding-top:40px;">
+                          <p style="color:#8A8A8A"><i>Når du deltager, accepterer du samtidig, at din deltagelse logges af software stillet til rådighed af firmaet Inspectlet, som bl.a. gør brug af cookies. Du kan læse mere om Inspectlet’s politik til beskyttelse af personlige oplysninger <span style='color:blue'>her</span> (<a href="http://www.inspectlet.com/legal#privacy" target="_blank">http://www.inspectlet.com/legal#privacy</a>). Dine svar forbliver anonyme, og vi identificerer ikke enkeltpersoner.</i></p> 
                     </div>
                 </div>
             </div>

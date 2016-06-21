@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BBCategory.aspx.cs" Inherits="BBSurveyVer2.BBCategory" %>
+﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BBCategory.aspx.cs" Inherits="BBSurveyVer2.BBCategory" %>
 
 <!DOCTYPE html>
 
@@ -80,8 +80,8 @@
 
     <div style="position: relative; width: 100%; background-color: #000; margin-top: 40px;">
         <div class="container">
-            <div class="row" style="padding-top: 60px; padding-bottom: 60px;">
-                <div class="col-lg-6">
+            <div class="row" style="padding-top: 20px; padding-bottom: 80px;">
+                <div class="col-lg-6" style="padding-bottom: 20px;">
                     <div class="col-lg-3 text-right">
                         <div id="blackMenu" class="text-right blackMenu" style="padding-top: 50px; padding-right: 30px;">
                             <a href="#">Action</a><br />
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <div class="row">
+                        <div class="row" style="margin-left: 0px; margin-right: 0px;">
                             <div class="col-lg-4 text-left">
                                 <img src="//images.blockbuster.dk/movie/frank-hvam-upassende?width=141&height=207" />
                             </div>
@@ -113,7 +113,7 @@
                                 <img src="//images.blockbuster.dk/movie/linda-p-linda-ps-hovedpine?width=141&height=207" />
                             </div>
                         </div>
-                        <div class="row" style="margin-top: 15px;">
+                        <div class="row" style="margin-left: 0px; margin-right: 0px; margin-top: 15px;">
                             <div class="col-lg-4 text-left">
                                 <img src="//images.blockbuster.dk/movie/carsten-bang-dyret?width=141&height=207" />
                             </div>
@@ -126,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" style="padding-top: 20px;">
                     <div class="row" style="margin-left: 0px; margin-right: 0px;">
                         <div class="col-lg-3 text-left">
                             <img src="//images.blockbuster.dk/movie/thomas-hartmann-xii?width=141&height=207" />

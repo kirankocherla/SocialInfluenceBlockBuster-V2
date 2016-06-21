@@ -4,7 +4,7 @@
 </asp:content>
 
 <asp:content id="Content2" contentplaceholderid="ContentPlaceHolder1" runat="server">
-    <div class="container" style="margin-top: 100px;">
+    <div class="container" style="margin-top: 70px;">
         <div class="row">
             <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
                 <h3>Vi vil nu stille dig et par spørgsmål om dit indtryk af det website, som du lige har set. </h3>

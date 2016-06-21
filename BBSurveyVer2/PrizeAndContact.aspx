@@ -2,17 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container" style="margin-top: 100px;">
+    <div class="container" style="margin-top: 70px;">
         <div class="row">
             <div class="col-lg-12" style="height: 30px;" id="divQuestion" runat="server">
                 <h2>
                     Du er næsten færdig – vælg en præmie
                 </h2>
-                <br /><br />
+                <br />
                 <p>
                     Når du har indsendt dine svar, deltager du automatisk i lodtrækningen om et gavekort á 1.000 kr. fra gavekortet.dk. Derudover trækker vi også lod blandt alle deltagere om i alt 20 x 1 biografbilletter eller gavekort til Blockbuster. Angiv venligst, hvilken af følgende du gerne vil vinde. 
-                </p>
-                <br />
+                </p>               
                 <br />
                 <asp:label runat="server" id="lblError" forecolor="red" visible="False"></asp:label><br />
                 <h4>Foruden lodtrækningen om et gavekort på 1.000 kr. vil jeg gerne deltage i lodtrækningen om:</h4>
@@ -28,15 +27,13 @@
                     <asp:radiobuttonlist runat="server" id="rdContactPermission" cssclass="rbl">
                         <asp:listitem text="Ja, det er ok, at jeg muligvis bliver kontaktet via e-mail efter denne undersøgelse" value="1"></asp:listitem>
                         <asp:listitem text="Nej, jeg ønsker ikke at blive kontaktet via e-mail efter denne undersøgelse" value="0"></asp:listitem>
-                    </asp:radiobuttonlist><br /><br />                    
-                    <br /><br />
-                </p>
-                
+                    </asp:radiobuttonlist><br />                   
+                    <br /></p>                
                 <h4>Venligst angiv din e-mail adresse i feltet. Obs: Den vil kun blive brugt til at kontakte dig, hvis du vinder en af præmierne, eller hvis du har sagt ok til at blive kontaktet via e-mail efter undersøgelsen.</h4>
-                <br /><br />
-                <b>Email: </b><br /><br />
+                <br />
+                <b>Email: </b><br />
                 <asp:textbox runat="server" id="txtEmail" width="70%"></asp:textbox>
-                <br /><br />
+                <br />
                 
                 <div class="row">
                     <div class="col-lg-6 text-right" style="padding-right: 15px;">
