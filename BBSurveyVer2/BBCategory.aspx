@@ -78,9 +78,9 @@
         <!-- /.container -->
     </nav>
 
-    <div style="position: relative; width: 100%; background-color: #000; margin-top: 40px;">
+    <div style="position: relative; width: 100%; background-color: #000; margin-top: 10px;">
         <div class="container">
-            <div class="row" style="padding-top: 20px; padding-bottom: 80px;">
+            <div class="row" style="padding-top: 20px; padding-bottom: 60px;">
                 <div class="col-lg-6" style="padding-bottom: 20px;">
                     <div class="col-lg-3 text-right">
                         <div id="blackMenu" class="text-right blackMenu" style="padding-top: 50px; padding-right: 30px;">
@@ -212,7 +212,7 @@
                                             <asp:Literal runat="server" ID="textForFriend" Text="Disse venner bruger allerede Blockbuster:" /></b></h1>
                                     </td>
                                     <td style="text-align: center; padding-left: 5px; font-size: 14px; font-weight: bold;">
-                                        <img src="images/FbIcon.png" style="height: 50px; width: 50px;" />
+                                        <img src="images/Facebook_logo_(square)4.png" style="height: 50px; width: 50px;" />
                                     </td>
                             </HeaderTemplate>
                             <ItemTemplate>

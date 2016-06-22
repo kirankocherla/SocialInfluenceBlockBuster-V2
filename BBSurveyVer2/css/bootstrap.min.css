@@ -4,6 +4,13 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */ /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
+@font-face {
+font-family: 'Avenir Next LT Pro Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Condensed'), url('../Font/AvenirNextLTPro-Cn.woff') format('woff');
+}
+
  @font-face {
 	font-family: 'Conv_AvenirNextLTPro-Regular';
 	src: url('fonts/AvenirNextLTPro-Regular.eot');
@@ -4541,8 +4548,9 @@ font-family: Conv_AvenirNextLTPro-Regular !important;
 }
 
 .navbar-brand {
-   font-family: Conv_AvenirNextLTPro-BoldCn !important;
-   /* font-family: 'Glyphicons Halflings' !important; */
+    /*font-family: 'Avenir Next LT Pro Condensed';*/
+   font-family: Conv_AvenirNextLTPro-BoldCn,'Avenir Next LT Pro Condensed','Glyphicons Halflings';
+   /*font-family: 'Glyphicons Halflings' !important;*/
    float: left;
    height: 50px;
    padding: 15px 0px;

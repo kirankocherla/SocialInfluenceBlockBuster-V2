@@ -35,7 +35,7 @@
                         <asp:button runat="server" text="Næste" onclick="OnNextClick" width="100"/>
                     </div>
                     <div  class="col-lg-12" style="height: 30px;padding-top:40px;">
-                          <p style="color:#8A8A8A"><i>Når du deltager, accepterer du samtidig, at din deltagelse logges af software stillet til rådighed af firmaet Inspectlet, som bl.a. gør brug af cookies. Du kan læse mere om Inspectlet’s politik til beskyttelse af personlige oplysninger <span style='color:blue'>her</span> (<a href="http://www.inspectlet.com/legal#privacy" target="_blank">http://www.inspectlet.com/legal#privacy</a>). Dine svar forbliver anonyme, og vi identificerer ikke enkeltpersoner.</i></p> 
+                          <p style="color:#8A8A8A"><i>Når du deltager, accepterer du samtidig, at din deltagelse logges af software stillet til rådighed af firmaet Inspectlet, som bl.a. gør brug af cookies. Du kan læse mere om Inspectlet’s politik til beskyttelse af personlige oplysninger <span style='color:blue'>her : </span><a href="http://www.inspectlet.com/legal#privacy" target="_blank">http://www.inspectlet.com/legal#privacy</a>. Dine svar forbliver anonyme, og vi identificerer ikke enkeltpersoner.</i></p> 
                     </div>
                 </div>
             </div>
