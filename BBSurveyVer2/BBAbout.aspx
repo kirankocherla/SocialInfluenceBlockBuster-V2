@@ -23,9 +23,10 @@
         })();
     </script>
     <!-- End Inspectlet Embed Code -->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet" />
@@ -80,121 +81,125 @@
 
     <div style="position: relative; width: 100%; background-color: #000;">
         <div class="row">
-            <div class="col-lg-12 text-center" style="height: 500px; opacity: 1; background-image: url(https:////images.blockbuster.dk/web?url=http%3A%2F%2Fdk.blockbuster.bbking.s3.amazonaws.com%2Fuploads%2F1418221416268_covers.png); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+            <div class="col-lg-12 text-center" style="opacity: 1; background-image: url(images/about_header_devices.jpg);background-position: center center; background-size: cover; background-repeat: no-repeat;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div style="visible: true; padding-top: 30px;">
+                            <div class="c-cms-about-title">
                                 <h1 style="color: #ffc429;">OM BLOCKBUSTER</h1>
                             </div>
-                            <div style="visible: true; padding-top: 50px;">
-                                <img style="height: 250px;" src="https:////images.blockbuster.dk/web?url=http%3A%2F%2Fdk.blockbuster.bbking.s3.amazonaws.com%2Fuploads%2F1431334042823_bb-stock__devices.png" />
-                            </div>
+                            <%--<div style="visible: true; padding-top: 50px;">
+                                <img style="height: 250px;" src="images/about_header_devices.jpg" />
+                            </div>--%>
+                            <div class="c-cms-underlay c-cms-about-title-background"></div>
+                            <div class="c-cms-underlay-dark-blur"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+       <%-- <div class="main-container col1-layout">
+            <div class="main container_12">
+                <div class="col-main">
+                    <div class="c-cms-block-wrapper">
+                        <div class="c-cms-about-title">
+                            <h1>Om Blockbuster</h1>
+                        </div>
+                        <div class="c-cms-underlay c-cms-about-title-background"></div>
+                        <div class="c-cms-underlay-dark-blur"></div>
+                    </div>
+                </div>
+            </div>
+        </div>--%>
     <!-- Page Content -->
+        <div class="c-cms-block-wrapper" style="margin-top:2.6%;">
+            <div class="c-cms-txt-wrapper c-cms-about-top-txt">
+                <div class="c-cms-txt-block">
+                    <h3 class="c-cms-orange">Velkommen til BLOCKBUSTER!</h3>
+                    <p class="hyphenate c-cms-justify">
+                        Vi er Danmarks største online filmtjeneste med over
+                            7.000 titler som du kan leje eller købe og streame som det passer dig. BLOCKBUSTER
+                        tilbyder både de nyeste film som de absolut første efter biograferne, samt de nyeste
+                        tv-serier. Vores mission er at give dig det absolut fedeste indhold og lade det
+                        være op til dig hvor og hvornår du vil se det; kort sagt, så er vi din online biograf.
+                    </p>
+                </div>
+                <div class="c-cms-txt-block">
+                    <h3 class="c-cms-orange">Fra butikker til online streaming</h3>
+                    <p class="hyphenate c-cms-justify">
+                        Mange kender BLOCKBUSTER fra de utallige butikker
+                            man tidligere kunne finde rundt i landet. Disse hører dog fortiden til, og BLOCKBUSTER
+                        er nu en rendyrket online streaming tjeneste, som hører hjemme på blockbuster.dk.
+                        Vi har set en klar udvikling hvor vores måde at se film på, er gået fra at leje
+                        og købe fysiske produkter til nu at være noget vi gør online og streamer som det
+                        passer os. Derfor er det også muligt at se det indhold du lejer eller køber på blockbuster.dk
+                        på alle dine enheder. <a href="/kundeservice/streaming-og-enheder/">Klik her</a>
+                        for mere info om enheder og skærme.
+                    </p>
+                </div>
+                <div class="c-cms-txt-block">
+                    <h3 class="c-cms-orange">Intet abonnement</h3>
+                    <p class="hyphenate c-cms-justify">
+                        BLOCKBUSTER skiller sig ud fra andre streamingtjenester
+                            eftersom vi ikke har noget abonnement, og du betaler kun for det du ser. Du
+                        kan
+                            derfor oprette en gratis profil lige her, og så er du ellers klar til at leje
+                        og
+                            købe præcis de film og tv-serier du vil. Har du brug for en smule hjælp til
+                        at komme
+                            i gang, så vil vi anbefale at du læser vores guide til brug af BLOCKBUSTER <a href="/kundeservice/guides-til-brug/fede-maader-at-streame-paa.html">
+                                her</a>. Rigtig god fornøjelse!
+                    </p>
+                </div>
+            </div>
+            <div class="c-cms-underlay c-cms-alt-bg-blue"></div>
+        </div>
     <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12" style="height: 80px;">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6" style="">
-                <table>
-                    <tr>
-                        <td rowspan="2">
-                            <img src="https://images.blockbuster.dk/movie/hobbitten-femhaereslaget?width=280&height=403" />
-                        </td>
-                        <td>
-                            <img src="https://images.blockbuster.dk/movie/de-satans-chefer-2?width=140&height=201" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://images.blockbuster.dk/movie/dum-og-dummere-2?width=140&height=201" />
-                        </td>
-                    </tr>
-
-                </table>
-            </div>
-            <div class="col-lg-6" style="">
-                <h1 style="margin-top: 0px; color: #1e4798;">BETAL KUN FOR DET DU SER</h1>
-                <p style="line-height: 1.7; font-size: 22px;">
-                    På Blockbuster er der intet abonnement. Du betaler kun for det du ser. Og du kan ikke få bøder for at aflevere dine film for sent! Du kan leje de nyeste premierefilm og alle de kendte favoritter og se dem, lige hvor du vil, i 48 timer.<br />
-                    <br />
-                    Er der film og tv-serier du er ekstra glad for, kan du købe dem og have dem til evigt eje på din digitale filmhylde i Blockbuster..
-                </p>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-lg-12" style="height: 80px;">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6" style="">
-                <h1 style="margin-top: 0px; color: #1e4798;">SE FILM PÅ ALLE DINE SKÆRME</h1>
-                <p style="line-height: 1.7; font-size: 22px; margin-right: 25px;">
-                    Blockbuster kan ses på alle dine skærme. Vi synes nemlig selv du skal vælge, hvor og hvornår du vil se dine film.<br />
-                    <br />
-                    Derfor har vi lavet Blockbuster apps til iPhone og iPad. Android mobil og tablet. Samsung, LG og Panasonic Smart TV samt Playstation 3 og 4. Og så kan du selvfølgelig også se Blockbuster på din PC og Mac.
-                </p>
-
-            </div>
-            <div class="col-lg-6" style="">
-                <table>
-                    <tr>
-                        <td rowspan="2">
-                            <img src="https://images.blockbuster.dk/movie/interstellar?width=280&height=403" />
-                        </td>
-                        <td>
-                            <img src="https://images.blockbuster.dk/movie/hunger-games-mockingjay-del-1?width=140&height=201" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://images.blockbuster.dk/movie/stille-hjerte?width=140&height=201" />
-                        </td>
-                    </tr>
-
-                </table>
+        <div class="main-container col1-layout">            
+        <div>
+            <div class="c-cms-block-wrapper grid_full c-cms-feature-block" data-name="punchcard-buy-rent-facebook">
+                <div class="grid_4 hyphenate c-cms-pos-relative">
+                    <a href="http://blockbuster.dk/klippekort/" class="c-cms-feature-text c-cms-center left-block c-cms-block-link-wrapper">
+                        <div class="feature-icon left-icon">
+                            <div class="fa-icon-wrapper"><span class="fa fa-ticket"></span></div>
+                        </div>
+                        <h5>Klippekort</h5>
+                        <p>Hvis du ligesom os, er vild med film, bliver du glad for et BLOCKBUSTER klippekort.
+                            Med sådan et, kan du nemlig frit vælge mellem 3 lejefilm for bare 99 kr.</p>
+                        <h6 class="imitate-link">Læs mere...</h6>
+                    </a>
+                </div>
+                <div class="grid_4 hyphenate c-cms-pos-relative">
+                    <a href="http://blockbuster.dk/kundeservice/leje-og-køb/" class="c-cms-feature-text c-cms-center center-block c-cms-block-link-wrapper">
+                        <div class="feature-icon">
+                            <div class="fa-icon-wrapper fa-icon-left-correction-3"><span class="fa fa-play"></span>
+                            </div>
+                        </div>
+                        <h5>Leje & køb</h5>
+                        <p>Du kan afspille dine lejefilm i 48 timer, og du har 28 dage til at starte afspilningen.
+                            Når du køber indhold, ligger det i "Min samling". Det kan også downloades og afspilles
+                            uden internetforbindelse.</p>
+                        <h6 class="imitate-link">Læs mere...</h6>
+                    </a>
+                </div>
+                <div class="grid_4 hyphenate c-cms-pos-relative">
+                    <a href="https://www.facebook.com/blockbusterdenmark/?fref=ts" target="_blank" class="c-cms-feature-text c-cms-center right-block c-cms-block-link-wrapper">
+                        <div class="feature-icon right-icon">
+                            <div class="fa-icon-wrapper"><span class="fa fa-facebook-square"></span></div>
+                        </div>
+                        <h5>Facebook</h5>
+                        <p>Kom og mød os på Facebook. Hold dig opdateret på de nyeste film samt deltag i konkurrencer
+                            og meget mere.</p>
+                        <h6 class="imitate-link">Læs mere...</h6>
+                    </a>
+                </div>
+                <div class="c-cms-underlay c-cms-alt-bg-grey"></div>
             </div>
         </div>
 
-
-        <div class="row">
-            <div class="col-lg-12" style="height: 80px;">
-            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6" style="height: 403px;">
-                <img style="height: 403px;" src="https://images.blockbuster.dk/web?url=http%3A%2F%2Fdk.blockbuster.bbking.s3.amazonaws.com%2Fuploads%2F1424337932581_Klippekort.png" />
-            </div>
-            <div class="col-lg-6" style="">
-                <h1 style="margin-top: 0px; color: #1e4798;">SE BILLIGE PREMIEREFILM</h1>
-                <p style="line-height: 1.7; font-size: 22px;">
-                    Hvis du ligesom os, er vild med film, bliver du glad for et Blockbuster klippekort. Med sådan et, kan du nemlig frit vælge mellem 3 lejefilm for bare 99 kr.<br />
-                    <br />
-                    Du kan altid tanke op og købe 3 nye klip. På din profil kan du se, hvor mange klip du har tilbage. Dit klippekort kan bruges som betalingsmiddel alle de steder du kan leje Blockbuster film.
-                </p>
-            </div>
         </div>
-
-
-
-        <div class="row">
-            <div class="col-lg-12>" style="height: 100px;">
-            </div>
-        </div>
-
-
         <div class="container text-center" style="background-color: #192236; width: 100%; text-align: center !important; margin: 0px-auto;">
             <div class="container">
 

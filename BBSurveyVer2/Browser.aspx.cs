@@ -7,14 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace BBSurveyVer2
 {
-    public partial class BBAbout : BasePage
+    public partial class Browser : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (!IsPostBack) {
-            //   if (ResponseId.HasValue)
-            //      Model.CreatePageVisitLog("BBHome HomePage BB", ResponseId.Value);
-            //}      
+
         }
     }
 }

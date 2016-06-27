@@ -1,5 +1,31 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SurveyMaster.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="BBSurveyVer2.Index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+
+        function GetIEVersion() {
+            var sAgent = window.navigator.userAgent;
+            var Idx = sAgent.indexOf("MSIE");
+            // If IE, return version number.
+            if (Idx > 0)
+                return parseInt(sAgent.substring(Idx + 5, sAgent.indexOf(".", Idx)));
+
+                // If IE 11 then look for Updated user agent string.
+            else if (!!navigator.userAgent.match(/Trident\/7\./))
+                return 11;
+
+            else
+                return 0; //It is not IE
+
+        }
+        if ((GetIEVersion() > 0) || (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)) {
+            window.location.href = "Browser.aspx";
+            //alert("This is IE " + GetIEVersion());
+        } else {
+            //alert("This no is IE ");
+        }
+
+</script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Page Content -->

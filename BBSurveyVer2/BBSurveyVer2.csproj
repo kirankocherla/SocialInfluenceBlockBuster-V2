@@ -73,6 +73,7 @@
     <Content Include="BBCategory.aspx" />
     <Content Include="BBHome.aspx" />
     <Content Include="BBInspiration.aspx" />
+    <Content Include="Browser.aspx" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\customfont.css" />
@@ -83,6 +84,7 @@
     <Content Include="css\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="css\Footer.css" />
     <Content Include="css\half-slider.css" />
+    <Content Include="css\styles.css" />
     <Content Include="fonts\AvenirNextLTPro-BoldCn.svg" />
     <Content Include="fonts\AvenirNextLTPro-BoldCnIt.svg" />
     <Content Include="fonts\AvenirNextLTPro-DemiCn.svg" />
@@ -91,6 +93,7 @@
     <Content Include="Font\example.html" />
     <Content Include="Font\style.css" />
     <Content Include="images\1188x270_Everest_03.png" />
+    <Content Include="images\about_header_devices.jpg" />
     <Content Include="images\banner-img.jpg" />
     <Content Include="images\banner-img_02.jpg" />
     <Content Include="images\bb-icon__computer.png" />
@@ -160,6 +163,13 @@
     </Compile>
     <Compile Include="BBInspiration.aspx.designer.cs">
       <DependentUpon>BBInspiration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Browser.aspx.cs">
+      <DependentUpon>Browser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Browser.aspx.designer.cs">
+      <DependentUpon>Browser.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExperimentData.cs">
       <DependentUpon>SIModel.tt</DependentUpon>
