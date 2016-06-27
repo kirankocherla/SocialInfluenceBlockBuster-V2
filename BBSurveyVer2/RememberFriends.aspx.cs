@@ -211,13 +211,8 @@ namespace BBSurveyVer2 {
          }
          else {
             lblError.Visible = true;
-            lblError.Text = "Besvar venligst spørgsmål";
-            return;
+            lblError.Text = "Besvar venligst spørgsmålet";
          }
-         
-         
-
-          
       }
    }
 }
