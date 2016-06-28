@@ -80,7 +80,7 @@
     </nav>
        <div style="position: relative; width: 100%; background-color: #000;">
         <div class="row">
-            <div class="col-lg-12 text-center" style="opacity: 1; background-image: url(images/about_header_devices.jpg);background-position: center center; background-size: cover; background-repeat: no-repeat;">
+            <div class="col-lg-12 text-center" style="height: 300px; opacity: 1; background-image: url(images/about_header_devices.jpg);background-position: center center; background-size: cover; background-repeat: no-repeat;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
@@ -112,11 +112,11 @@
             </div>
         </div>--%>
     <!-- Page Content -->
-        <div class="c-cms-block-wrapper" style="margin-top:2.1%;">
-            <div class="c-cms-txt-wrapper c-cms-about-top-txt" style="padding:50px 20% 30px 20%;text-align:left;">
+        <div class="c-cms-block-wrapper" style="margin-top:1%;">
+            <div class="c-cms-txt-wrapper c-cms-about-top-txt" style="padding:40px 25% 30px 25%;text-align:left;">
                 <div class="c-cms-txt-block">
                      <h3 class="c-cms-orange">Velkommen til BLOCKBUSTER!</h3>
-                    <p style="line-height: 1.7; text-align: left; font-size: 22px;">
+                    <p>
                         Vi er Danmarks største online filmtjeneste med over
                             7.000 titler som du kan leje eller købe og streame som det passer dig. BLOCKBUSTER
                         tilbyder både de nyeste film som de absolut første efter biograferne, samt de nyeste
@@ -126,7 +126,7 @@
                 </div>
                 <div class="c-cms-txt-block">
                     <h3 class="c-cms-orange">Fra butikker til online streaming</h3>
-                    <p style="line-height: 1.7; font-size: 22px;">
+                    <p>
                         Mange kender BLOCKBUSTER fra de utallige butikker
                             man tidligere kunne finde rundt i landet. Disse hører dog fortiden til, og BLOCKBUSTER
                         er nu en rendyrket online streaming tjeneste, som hører hjemme på blockbuster.dk.
@@ -138,7 +138,7 @@
                 </div>
                 <div class="c-cms-txt-block">
                     <h3 class="c-cms-orange">Intet abonnement</h3>
-                    <p style="line-height: 1.7; font-size: 22px;">
+                    <p>
                         BLOCKBUSTER skiller sig ud fra andre streamingtjenester
                             eftersom vi ikke har noget abonnement, og du betaler kun for det du ser. Du
                         kan
@@ -155,41 +155,32 @@
         <div class="main-container col1-layout">            
         <div>
             <div class="c-cms-block-wrapper grid_full c-cms-feature-block" data-name="punchcard-buy-rent-facebook">
-                <div class="grid_4 hyphenate c-cms-pos-relative">
-                    <a href="#" class="c-cms-feature-text c-cms-center left-block c-cms-block-link-wrapper">
-                        <div class="feature-icon left-icon">
-                            <div class="fa-icon-wrapper"><span class="fa fa-ticket"></span></div>
-                        </div>
-                        <h5>Klippekort</h5>
-                        <p style="line-height: 1.7; font-size: 22px;">Hvis du ligesom os, er vild med film, bliver du glad for et BLOCKBUSTER klippekort.
-                            Med sådan et, kan du nemlig frit vælge mellem 3 lejefilm for bare 99 kr.</p>
-                        <h6 class="imitate-link">Læs mere...</h6>
-                    </a>
+                <div class="grid_4 hyphenate c-cms-pos-relative"> 
+                  <div class="c-cms-feature-text c-cms-center left-block c-cms-block-link-wrapper">
+                  <div class="feature-icon left-icon">
+                    <div class="fa-icon-wrapper"> <span class="fa fa-ticket"></span></div>
+                  </div>
+                  <h5>Klippekort</h5>
+                  <p>Hvis du ligesom os, er vild med film, bliver du glad for et BLOCKBUSTER klippekort. Med sådan et, kan du nemlig frit vælge mellem 3 lejefilm for bare 99 kr.</p>
+                  <h6 class="imitate-link">Læs mere...</h6>
+                  </div>
                 </div>
-                <div class="grid_4 hyphenate c-cms-pos-relative">
-                    <a href="#" class="c-cms-feature-text c-cms-center center-block c-cms-block-link-wrapper">
-                        <div class="feature-icon">
-                            <div class="fa-icon-wrapper fa-icon-left-correction-3"><span class="fa fa-play"></span>
-                            </div>
-                        </div>
-                        <h5>Leje & køb</h5>
-                        <p style="line-height: 1.7; font-size: 22px;">Du kan afspille dine lejefilm i 48 timer, og du har 28 dage til at starte afspilningen.
-                            Når du køber indhold, ligger det i "Min samling". Det kan også downloades og afspilles
-                            uden internetforbindelse.</p>
-                        <h6 class="imitate-link">Læs mere...</h6>
-                    </a>
-                </div>
-                <div class="grid_4 hyphenate c-cms-pos-relative">
-                    <a href="#" target="_blank" class="c-cms-feature-text c-cms-center right-block c-cms-block-link-wrapper">
-                        <div class="feature-icon right-icon">
-                            <div class="fa-icon-wrapper"><span class="fa fa-facebook-square"></span></div>
-                        </div>
-                        <h5>Facebook</h5>
-                        <p style="line-height: 1.7; font-size: 22px;">Kom og mød os på Facebook. Hold dig opdateret på de nyeste film samt deltag i konkurrencer
-                            og meget mere.</p>
-                        <h6 class="imitate-link">Læs mere...</h6>
-                    </a>
-                </div>
+                <div class="grid_4 hyphenate c-cms-pos-relative"> <div class="c-cms-feature-text c-cms-center center-block c-cms-block-link-wrapper">
+                  <div class="feature-icon">
+                    <div class="fa-icon-wrapper fa-icon-left-correction-3"> <span class="fa fa-play"></span></div>
+                  </div>
+                  <h5>Leje & køb</h5>
+                  <p>Du kan afspille dine lejefilm i 48 timer, og du har 28 dage til at starte afspilningen. Når du køber indhold, ligger det i "Min samling". Det kan også downloades og afspilles uden internetforbindelse.</p>
+                  <h6 class="imitate-link">Læs mere...</h6>
+                  </div></div>
+                <div class="grid_4 hyphenate c-cms-pos-relative"> <div target="_blank" class="c-cms-feature-text c-cms-center right-block c-cms-block-link-wrapper">
+                  <div class="feature-icon right-icon">
+                    <div class="fa-icon-wrapper"> <span class="fa fa-facebook-square"></span></div>
+                  </div>
+                  <h5>Facebook</h5>
+                  <p>Kom og mød os på Facebook. Hold dig opdateret på de nyeste film samt deltag i konkurrencer og meget mere.</p>
+                  <h6 class="imitate-link">Læs mere...</h6>
+                  </div></div>
                 <div class="c-cms-underlay c-cms-alt-bg-grey"></div>
             </div>
         </div>
