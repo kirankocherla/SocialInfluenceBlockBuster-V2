@@ -42,7 +42,7 @@ body {
 	font-size:14px;
 	line-height:20px;
 	color:#141925;
-	text-align:center
+	text-align:left;
 }
 
 .wrapper {
@@ -123,7 +123,7 @@ a.c-cms-feature-text, span.c-cms-feature-text {
     position: relative;
 }
 .c-cms-block-wrapper a {
-    color: #ffc427;
+    /*color: #ffc427;*/
     text-decoration: none;
 }
 .c-cms-center {
@@ -257,7 +257,7 @@ padding-right:4%
 	text-align:center
 }
 .c-cms-block-wrapper a {
-	color:#FFC427;
+	/*color:#FFC427;*/
 	text-decoration:none
 }
 .c-cms-block-wrapper a:hover {
@@ -280,7 +280,7 @@ a.c-cms-block-link-wrapper:hover {
 	background-size:50% auto
 }
 a.c-cms-block-link-wrapper:hover .feature-icon .fa-icon-wrapper {
-	color:#FFC427
+	/*color:#FFC427*/
 }
 .c-cms-feature-block .feature-icon .fa-icon-wrapper {
 	width:100%;
@@ -325,7 +325,7 @@ a.c-cms-feature-text, span.c-cms-feature-text {
 	color:#818181
 }
 .c-cms-feature-block h6.imitate-link:hover {
-	color:#FFC427;
+	/*color:#FFC427;*/
 	cursor:pointer
 }
 @media only screen and ( min-width: 768px ) {
