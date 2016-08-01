@@ -11,10 +11,10 @@ namespace BBSurveyVer2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (!IsPostBack) {
-            //   if (ResponseId.HasValue)
-            //      Model.CreatePageVisitLog("BBHome HomePage BB", ResponseId.Value);
-            //}      
+           if (!IsPostBack) {
+              if (ResponseId.HasValue)
+                 Model.CreatePageVisitLog("BBAbout", ResponseId.Value);
+           }      
         }
     }
 }

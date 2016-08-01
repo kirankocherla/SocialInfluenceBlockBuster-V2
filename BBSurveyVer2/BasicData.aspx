@@ -14,7 +14,7 @@
                          <asp:ListItem text="25-30" value="25-30"></asp:ListItem>   
                          <asp:ListItem text="31-40" value="31-40"></asp:ListItem>   
                          <asp:ListItem text="41-50" value="41-50"></asp:ListItem> 
-                         <asp:ListItem text="51-60" value="51-50"></asp:ListItem>   
+                         <asp:ListItem text="51-60" value="51-60"></asp:ListItem>   
                          <asp:ListItem text="Over 60" value="60+"></asp:ListItem>                            
                       </asp:dropdownlist>
                 </p><br />
@@ -43,7 +43,7 @@
                          <asp:ListItem text="1" value="1"></asp:ListItem>   
                          <asp:ListItem text="2" value="2"></asp:ListItem>
                          <asp:ListItem text="3" value="3"></asp:ListItem>                            
-                         <asp:ListItem text="4 eller flere" value="4+"></asp:ListItem>                                                        
+                         <asp:ListItem text="4 eller flere" value="4"></asp:ListItem>                                                        
                       </asp:dropdownlist>
                 </p>                
                 <div class="row">

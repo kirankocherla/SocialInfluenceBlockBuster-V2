@@ -101,7 +101,26 @@ namespace BBSurveyVer2 {
 
       }
 
+
+      private bool IsValid() {
+         int countNotBoth = 0;
+         foreach (ListItem item in rdPreviousServices.Items) {
+            if (item.Selected) {
+               if ((item.Value == "NoneAndNever") || (item.Value == "NoneYetButWillTry"))
+                  countNotBoth++;
+            }
+         }
+
+         return countNotBoth <= 1;
+      }
+
       protected void OnNextClick(object sender, EventArgs e) {
+
+         if (!IsValid()) {
+            lblError.Visible = true;
+            lblError.Text = "Ugyldigt svaret";
+            return;
+         }
 
          bool isOutOfScope = false;
          int selectedCount = 0;

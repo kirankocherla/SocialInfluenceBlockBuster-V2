@@ -7,11 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace BBSurveyVer2
 {
-    public partial class Browser : System.Web.UI.Page
+    public partial class Browser : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           if (!IsPostBack) {              
+                 Model.CreatePageVisitLog("RedirectIE", 0);
+           }
         }
     }
 }
