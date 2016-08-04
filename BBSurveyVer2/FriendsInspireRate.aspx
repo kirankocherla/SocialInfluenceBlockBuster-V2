@@ -75,7 +75,7 @@
                             <asp:Repeater runat="server" ID="rptCloseness" OnItemDataBound="rptCloseness_OnItemDataBound">
                                 <ItemTemplate>
                                     <li style="display: inline;">
-                                        <div onclick="FiendIsClicked(this);" class="divFriend" style="float: left; width: 110px; text-align: center; padding: 5px; font-size: 12px; font-weight: bold; border: 1px solid lightgray;">
+                                        <div onclick="FiendIsClicked(this);" class="divFriend" style="float: left; width: 110px; text-align: center; padding: 5px; font-size: 12px; font-weight: bold; border: 1px solid lightgray; height: 160px; overflow: hidden;">
                                             <table style="text-align: center; width: 100px;height:150px;overflow:hidden;" id="tableCntainer" runat="server">
                                                 <tr>
                                                     <td>
