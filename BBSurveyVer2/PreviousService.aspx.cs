@@ -98,27 +98,33 @@ namespace BBSurveyVer2 {
                rdPreviousServices.Items.Add(new ListItem("Bruger ikke streaming-tjenester og har heller ikke tænkt mig at gøre det", "NoneAndNever"));
                break;
          }
-
       }
 
 
       private bool IsValid() {
-         int countNotBoth = 0;
+         int countNot = 0;
+         int countYes = 0;
          foreach (ListItem item in rdPreviousServices.Items) {
             if (item.Selected) {
                if ((item.Value == "NoneAndNever") || (item.Value == "NoneYetButWillTry"))
-                  countNotBoth++;
+                  countNot++;
+               else {
+                  countYes++;
+               }
             }
          }
 
-         return countNotBoth <= 1;
+         if ((countNot > 0 && countYes > 0) || countNot > 1)
+            return false;
+
+         return true;
       }
 
       protected void OnNextClick(object sender, EventArgs e) {
 
          if (!IsValid()) {
             lblError.Visible = true;
-            lblError.Text = "Ugyldigt svaret";
+            lblError.Text = "Ugyldigt svar";
             return;
          }
 
@@ -162,7 +168,7 @@ namespace BBSurveyVer2 {
       protected void NotTargetGroup(object sender, EventArgs e) {
          if (!string.IsNullOrEmpty(txtEmail.Text)) {
             Model.UpdateExperimentDataForEmail(ResponseId.Value, txtEmail.Text);
-            txtEmail.Text = "Email is saved";
+            txtEmail.Text = "Din e-mail adresse blev gemt";
          }
       }
    }
